@@ -125,18 +125,23 @@ body{
     .cuerpoPrincipal {
         height: 100vh;
         display: grid;
-        grid-template-columns: repeat(2, 50vw);
+        grid-template-columns: repeat(4, 25vw);
         grid-template-rows: repeat(2, 50vh);
         grid-template-areas: 
-        "poetas poetas"
-        "musica ."
+        "poetas poetas poetas poetas"
+        "musica musica libros libros"
         ;
     }
 }
 
-
 .poetas {
-    height: 30vh;
+    margin: 10px;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
@@ -144,14 +149,17 @@ body{
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    overflow: auto;
 }
 
 .poetas div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
+    overflow: auto;
 }
 
 .poetas div ul {
@@ -159,18 +167,35 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items:flex-start;
     gap: 15vw;
-    background-color: rgba(128, 128, 128, 0.566);
-    padding: 10px;
 }
 
-.poetas div ul li {
+.ner {
+    position: sticky;
+    top: 0;
+}
+
+.cor{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.byr{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.poetas div ul div li {
     padding: 10px;
+    background-color: rgba(128, 128, 128, 0.858);
 }
 
 .poetas div ul li img {
-    height: 35vh;
+    height: 25vh;
     border: 2px groove black;
     padding: 3px;
 }
@@ -179,19 +204,32 @@ body{
 
 @media (min-width:765px) {
     .poetas {
-        padding: 15px;
+        width: 100vw;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         border-style: groove;
         border-color: black;
         border-width: 2px;
         border-radius: 5px;
-        overflow: auto;
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
+        overflow: auto;
         grid-area: poetas;
+    }
+
+    .poetas div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 10px;
+        border-style: groove;
+        background-color: rgba(128, 128, 128, 0.541);
+        overflow: auto;
     }
 
     .poetas div ul {
@@ -201,7 +239,6 @@ body{
         flex-direction: row;
         align-items: center;
         gap: 15vw;
-        background-color: rgba(128, 128, 128, 0.566);
         padding: 10px;
     }
 
@@ -270,37 +307,55 @@ body{
 }
 
 .musicaParaLeer {
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
+    background-color: rgba(128, 128, 128, 0.444);
+}
+
+.musicaParaLeer div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: auto;
 }
 
 .musicaParaLeer h2 {
     margin: 10px;
     font-size: 32px;
     background-color: rgba(128, 128, 128, 0.56);
-    width: 50vw;
+    width: 40vw;
     border-color: black;
     border-width: 2px;
     border-style: groove;
     border-radius: 5px;
-
+    position: sticky;
+    top:0;
 }
 
-
-.musicaParaLeer ul{
-    height: 40vh;
+.musicaParaLeer div ul{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    overflow: auto;
 }
+
+
+.musicaParaLeer div ul li {
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
 
 @media (min-width:765px) {
     .musicaParaLeer {
+        height: 50vh;
         display: flex;
         flex-direction: row;
         padding: 10px;
@@ -310,6 +365,7 @@ body{
         border-style: groove;
         border-radius: 5px;
         grid-area: musica;
+        overflow:auto;
     }
 
     .musicaParaLeer h2 {
@@ -321,18 +377,27 @@ body{
         border-style: groove;
         border-radius: 5px;
     }
-    .musicaParaLeer ul {
-        margin: 10px;
+
+    .musicaParaLeer div {
         padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .musicaParaLeer div ul {
+        margin: 5px;
+        padding: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         gap: 50px;
-        overflow: auto;
     }
 
-    .musicaParaLeer ul li {
+    .musicaParaLeer div ul li {
         border-color: black;
         border-width: 2px;
         border-style: groove;
@@ -345,9 +410,89 @@ body{
     height: 50vh;
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    background-color: rgba(128, 128, 128, 0.444);
+    gap: 20px;
+}
+
+.librosPoetas h2{
+    padding: 10px;
+    margin: 10px;
+    width: 45vw;
+    font-size: 32px;
+    background-color: rgba(128, 128, 128, 0.679);
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px;
+    position: sticky;
+    top:0;
+}
+
+.librosPoetas div {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
     overflow: auto;
+}
+
+.librosPoetas div ul {
+    background-color: rgba(128, 128, 128, 0.679);
+    margin: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media (min-width: 765px){
+    .librosPoetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.485);
+        gap: 10px;
+        grid-area: libros;
+        border-color: black;
+        border-radius: 5px;
+        border-width: 2px;
+        border-style: groove;
+
+    }
+    .librosPoetas div{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .librosPoetas div h2 {
+        width: 20vw;
+    }
+
+    .librosPoetas div ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px;
+    }
+
 }
 
 .pieDePaginaIndex {
