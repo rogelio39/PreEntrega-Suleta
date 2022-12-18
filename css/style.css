@@ -46,19 +46,21 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 /* ==========index========== */
 
 /* =========body============= */
-
-.index {
-    height: 100vh;
+body{
     width: 100vw;
+    height: 100vh;
     background-image: url(../views/img/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+
+
 /*================ header =================== */
 
 .encabezadoIndex {
+    width: 100vw;
     font-size: 15px;
     padding: 5px;
     background-color: rgba(128, 128, 128, 0.677);
@@ -66,13 +68,11 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     border-width: 2px;
     border-style: groove;
     border-radius: 5px;
-    height: 14vh;
     overflow: auto;
     position: sticky;
     top: 0;
     z-index: 2;
 }
-
 
 
 .encabezadoIndex nav {
@@ -111,27 +111,50 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 
 
 /* ==========MAIN=========== */
+
 .cuerpoPrincipal {
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+@media (min-width: 765px){
+    .cuerpoPrincipal {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        grid-template-rows: repeat(2, 50vh);
+        grid-template-areas: 
+        "poetas poetas"
+        "musica ."
+        ;
+    }
+}
+
+
+.poetas {
+    height: 30vh;
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
-    overflow: auto;
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
+    overflow: auto;
 }
 
-
-.cuerpoPrincipal div {
+.poetas div {
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
 }
 
-.cuerpoPrincipal div ul {
+.poetas div ul {
     font-size: 24px;
     padding: 20px;
     display: flex;
@@ -142,11 +165,11 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     padding: 10px;
 }
 
-.cuerpoPrincipal div ul li {
+.poetas div ul li {
     padding: 10px;
 }
 
-.cuerpoPrincipal div ul li img {
+.poetas div ul li img {
     height: 35vh;
     border: 2px groove black;
     padding: 3px;
@@ -155,8 +178,7 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 
 
 @media (min-width:765px) {
-    .cuerpoPrincipal {
-        height: 70vh;
+    .poetas {
         padding: 15px;
         display: flex;
         justify-content: space-between;
@@ -169,10 +191,10 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
+        grid-area: poetas;
     }
 
-    .cuerpoPrincipal div ul {
-        height: 40vh;
+    .poetas div ul {
         font-size: 48px;
         display: flex;
         justify-content: space-between;
@@ -181,10 +203,9 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
         gap: 15vw;
         background-color: rgba(128, 128, 128, 0.566);
         padding: 10px;
-
     }
 
-    .cuerpoPrincipal div ul li img {
+    .poetas div ul li img {
         height: 35vh;
         border: 2px groove black;
         padding: 3px;
@@ -248,10 +269,89 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     }
 }
 
+.musicaParaLeer {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
 
+.musicaParaLeer h2 {
+    margin: 10px;
+    font-size: 32px;
+    background-color: rgba(128, 128, 128, 0.56);
+    width: 50vw;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px;
+
+}
+
+
+.musicaParaLeer ul{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: auto;
+}
+
+@media (min-width:765px) {
+    .musicaParaLeer {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        border-radius: 5px;
+        grid-area: musica;
+    }
+
+    .musicaParaLeer h2 {
+        padding: 10px;
+        font-size: 32px;
+        background-color: rgba(128, 128, 128, 0.56);
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        border-radius: 5px;
+    }
+    .musicaParaLeer ul {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        overflow: auto;
+    }
+
+    .musicaParaLeer ul li {
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        border-radius: 5px;
+    }
+}
+
+
+.librosPoetas {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
 
 .pieDePaginaIndex {
-    height: 15vh;
+    height: 10vh;
     font-size: 16px;
     padding: 10px;
     border-style: groove;
@@ -263,8 +363,6 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     gap: 10px;
     overflow: auto;
 }
-
-
 
 .pieDePaginaIndex div ul {
     padding: 2px;
@@ -279,7 +377,7 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     .pieDePaginaIndex {
         font-size: 18px;
         width: 100vw;
-        height: 15vh;
+        height: 10vh;
         padding: 10px;
         border-style: groove;
         border-color: black;
@@ -503,6 +601,7 @@ form {
         overflow: auto;
     }
 }
+
 .ambientacion h2 {
     font-size: 28px;
     border-radius: 5px;

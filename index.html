@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2? family=Syne+Mono&display=swap" rel="stylesheet">
 
 </head>
-<body class="index">
+
+<body>
 
     <header class="encabezadoIndex">
         <h1>Poemario</h1>
@@ -25,9 +26,9 @@
         </nav>
     </header>
 
-    <main>
-        <div class="cuerpoPrincipal">
-            <div class="animation">
+    <main class="cuerpoPrincipal">
+        <section class="poetas">
+            <div>
                 <ul>
                     <li><img src="./views/img/imgNeruda.jpg" alt="imagenNeruda"></li>
                     <li><a href="./views/neruda.html">Pablo Neruda</a></li>
@@ -37,8 +38,35 @@
                     <li><a href="./views/lordByron.html">Lord Byron</a></li>
                 </ul>
             </div>
-        </div>
-
+        </section>
+        <section class="musicaParaLeer">
+            <div>
+                <h2>Musica para leer</h2>
+                <ul>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/eit2nlhDVMk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/XT92zJzc-sQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/aepIEsxlaXc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                </ul>
+            </div>
+            <section class="librosPoetas">
+                <div>
+                    <h2>Ultimos libros</h2>
+                    <ul>
+                        <li><img src="./views/img/libroNeruda.jpg" alt=""></li>
+                        <li><img src="./views/img/libroNeruda2.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
     </main>
 
 
@@ -53,7 +81,6 @@
         </div>
 
     </footer>
-
 
 
 </body>
