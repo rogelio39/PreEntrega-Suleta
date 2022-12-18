@@ -23,12 +23,18 @@ a {
 
 /* =======SECTION POEMAS GENERAL===== */
 .poemas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    justify-items: center;
+    display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (min-width:765px) {
+    .poemas {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
 }
 
 
@@ -128,6 +134,12 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 .cuerpoPrincipal div ul {
     font-size: 24px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15vw;
+    background-color: rgba(128, 128, 128, 0.566);
+    padding: 10px;
 }
 
 .cuerpoPrincipal div ul li {
@@ -164,6 +176,7 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
         font-size: 48px;
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         gap: 15vw;
         background-color: rgba(128, 128, 128, 0.566);
@@ -464,7 +477,7 @@ form {
 .cuerpoPrincipalNeruda {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 50px;
     padding: 90px;
     border-radius: 5px;
@@ -475,6 +488,21 @@ form {
     overflow: auto;
 }
 
+@media (min-width: 765px) {
+    .cuerpoPrincipalNeruda {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding: 90px;
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        font-size: 28px;
+        overflow: auto;
+    }
+}
 .ambientacion h2 {
     font-size: 28px;
     border-radius: 5px;
