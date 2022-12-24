@@ -12,8 +12,9 @@
     <link href="https://fonts.googleapis.com/css2? family=Syne+Mono&display=swap" rel="stylesheet">
 
 </head>
-<body class="index">
 
+<body>
+<div class="index">
     <header class="encabezadoIndex">
         <h1>Poemario</h1>
         <nav>
@@ -25,20 +26,54 @@
         </nav>
     </header>
 
-    <main>
-        <section class="cuerpoPrincipal">
-            <div class="animation">
+    <main class="cuerpoPrincipal">
+        <section class="poetas">
+            <div>
                 <ul>
-                    <li><img src="./views/img/imgNeruda.jpg" alt="imagenNeruda"></li>
-                    <li><a href="./views/neruda.html">Pablo Neruda</a></li>
-                    <li><img src="./views/img/imgJulioCortazar.jpg" alt="imagenNeruda"></li>
-                    <li><a href="./views/julioCortazar.html">Julio Cortazar</a></li>
-                    <li><img src="./views/img/imgLordByron.jpg" alt="imagenNeruda"></li>
-                    <li><a href="./views/lordByron.html">Lord Byron</a></li>
+                    <div class="ner">
+                        <li><img src="./views/img/imgNeruda.jpg" alt="imagenNeruda"></li>
+                        <li><a href="./views/neruda.html">Pablo Neruda</a></li>
+                    </div>
+                    <div class="cor">
+                        <li><img src="./views/img/imgJulioCortazar.jpg" alt="imagenJulioCortazar"></li>
+                        <li><a href="./views/julioCortazar.html">Julio Cortazar</a></li>
+                    </div>
+                    <div class="byr">
+                        <li><img src="./views/img/imgLordByron.jpg" alt="imagenLordByron"></li>
+                        <li><a href="./views/lordByron.html">Lord Byron</a></li>
+                    </div>
                 </ul>
             </div>
         </section>
-
+        <section class="musicaParaLeer">
+            <div>
+                <h2>Musica para leer</h2>
+                <ul>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/eit2nlhDVMk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/XT92zJzc-sQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                    <li><iframe width="560" height="315" src="https://www.youtube.com/embed/aepIEsxlaXc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></li>
+                </ul>
+            </div>
+        </section>
+        <section class="librosPoetas">
+            <div>
+                <h2>Libros</h2>
+                <ul>
+                    <li><img src="./views/img/libroNeruda.jpg" alt=""></li>
+                    <li><img src="./views/img/libroNeruda2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        </section>
     </main>
 
 
@@ -52,22 +87,7 @@
             </ul>
         </div>
 
-
-
-
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 </body>
