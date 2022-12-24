@@ -71,7 +71,7 @@ body{
     overflow: auto;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 
@@ -99,7 +99,7 @@ body{
         overflow: auto;
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 4;
     }
 
     .encabezadoIndex nav ul {
@@ -113,7 +113,8 @@ body{
 /* ==========MAIN=========== */
 
 .cuerpoPrincipal {
-    height: 100vh;
+    margin: 10px;
+    height: 80h;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,7 +124,7 @@ body{
 
 @media (min-width: 765px){
     .cuerpoPrincipal {
-        height: 100vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: repeat(4, 25vw);
         grid-template-rows: repeat(2, 50vh);
@@ -136,16 +137,12 @@ body{
 
 .poetas {
     margin: 10px;
-    height: 40vh;
+    height: 45vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 10px;
-    border-style: groove;
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -154,44 +151,50 @@ body{
 .poetas div {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    overflow: auto;
+    background-color: rgba(128, 128, 128, 0.811);
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
-    overflow: auto;
 }
 
 .poetas div ul {
     font-size: 24px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items:flex-start;
     gap: 15vw;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: groove;
 }
 
 .ner {
     position: sticky;
     top: 0;
+    z-index: 1;
+    width: 75vw;
 }
 
 .cor{
     position: sticky;
     top: 0;
     z-index: 2;
+    width: 75vw;
 }
 
 .byr{
     position: sticky;
     top: 0;
     z-index: 3;
+    width: 75vw;
 }
 
 .poetas div ul div li {
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.858);
+    padding: 20px;
 }
 
 .poetas div ul li img {
@@ -208,11 +211,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
-        border-radius: 5px;
+        align-items: center; 
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
@@ -224,11 +223,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        border-color: black;
-        border-width: 2px;
-        border-radius: 10px;
         border-style: groove;
-        background-color: rgba(128, 128, 128, 0.541);
         overflow: auto;
     }
 
@@ -238,9 +233,40 @@ body{
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        gap: 15vw;
+        gap: 20vw;
         padding: 10px;
     }
+
+    
+.ner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.cor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.byr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
 
     .poetas div ul li img {
         height: 35vh;
