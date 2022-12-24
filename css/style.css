@@ -46,13 +46,17 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 /* ==========index========== */
 
 /* =========body============= */
-body{
+body {
     width: 100vw;
     height: 100vh;
     background-image: url(../views/img/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    border-color: black;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 2px;
 }
 
 
@@ -122,22 +126,22 @@ body{
     overflow: auto;
 }
 
-@media (min-width: 765px){
+@media (min-width: 765px) {
     .cuerpoPrincipal {
         height: 80vh;
         display: grid;
         grid-template-columns: repeat(4, 25vw);
         grid-template-rows: repeat(2, 50vh);
-        grid-template-areas: 
-        "poetas poetas poetas poetas"
-        "musica musica libros libros"
+        grid-template-areas:
+            "poetas poetas poetas poetas"
+            "musica musica libros libros"
         ;
     }
 }
 
 .poetas {
     margin: 10px;
-    height: 45vh;
+    height: 42vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -164,7 +168,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 15vw;
     border-color: black;
     border-width: 2px;
@@ -176,21 +180,21 @@ body{
     position: sticky;
     top: 0;
     z-index: 1;
-    width: 75vw;
+    width: 80vw;
 }
 
-.cor{
+.cor {
     position: sticky;
     top: 0;
     z-index: 2;
-    width: 75vw;
+    width: 80vw;
 }
 
-.byr{
+.byr {
     position: sticky;
     top: 0;
     z-index: 3;
-    width: 75vw;
+    width: 80vw;
 }
 
 .poetas div ul div li {
@@ -208,10 +212,11 @@ body{
 @media (min-width:765px) {
     .poetas {
         width: 100vw;
+        height: 50vh;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center; 
+        align-items: center;
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
@@ -233,40 +238,34 @@ body{
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        gap: 20vw;
+        gap: 10vw;
         padding: 10px;
     }
 
-    
-.ner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
 
-.cor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
+    .ner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60vw;
+    }
 
-.byr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
+    .cor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60vw;
+    }
+
+    .byr {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 60vw;
+    }
 
     .poetas div ul li img {
         height: 35vh;
@@ -332,7 +331,10 @@ body{
     }
 }
 
+
+/* =====Section musica para leer==== */
 .musicaParaLeer {
+    margin: 10px;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -340,6 +342,13 @@ body{
     align-items: flex-start;
     gap: 20px;
     background-color: rgba(128, 128, 128, 0.444);
+    border-color: black;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 2px;
+    animation-name: scale-in-top;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
 .musicaParaLeer div {
@@ -361,10 +370,10 @@ body{
     border-style: groove;
     border-radius: 5px;
     position: sticky;
-    top:0;
+    top: 0;
 }
 
-.musicaParaLeer div ul{
+.musicaParaLeer div ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -391,7 +400,7 @@ body{
         border-style: groove;
         border-radius: 5px;
         grid-area: musica;
-        overflow:auto;
+        overflow: auto;
     }
 
     .musicaParaLeer h2 {
@@ -432,17 +441,27 @@ body{
 }
 
 
+
+/* ======section libros poetas======= */
 .librosPoetas {
+    margin: 10px;
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: flex-start;
     background-color: rgba(128, 128, 128, 0.444);
     gap: 20px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 2px;
+    animation-name: scale-in-top;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
-.librosPoetas h2{
+.librosPoetas h2 {
     padding: 10px;
     margin: 10px;
     width: 45vw;
@@ -453,7 +472,7 @@ body{
     border-style: groove;
     border-radius: 5px;
     position: sticky;
-    top:0;
+    top: 0;
 }
 
 .librosPoetas div {
@@ -483,8 +502,8 @@ body{
 
 
 
-@media (min-width: 765px){
-    .librosPoetas{
+@media (min-width: 765px) {
+    .librosPoetas {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -498,7 +517,8 @@ body{
         border-style: groove;
 
     }
-    .librosPoetas div{
+
+    .librosPoetas div {
         margin-top: 70px;
         display: flex;
         flex-direction: row;
