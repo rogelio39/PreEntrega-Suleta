@@ -21,12 +21,30 @@ a {
 }
 
 
+
+
+
+/* ACLARACION: A TODAS LAS DIV CLASS QUE LLEVAN EL NOMBRE DEL POEMA CORRESPONDIENTE
+LES APLIQUE UN WIDH DE MAX-CONTENT PARA QUE SE VEA MEJOR, YA QUE SI LE APLICABA MEDIDA EN VW
+QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT SIGUE SIENDO RESPONSIVE.
+ */
+
+/* =====Body general==== */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    border-color: black;
+    border-width: 1px;
+    border-style: groove;
+    overflow: auto;
+}
+
 /* =======SECTION POEMAS GENERAL===== */
 .poemas {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 50px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media (min-width:765px) {
@@ -37,16 +55,21 @@ a {
 
 }
 
+@media (min-width:1100px) {
+    .poemas {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
 
-/* ACLARACION: A TODAS LAS DIV CLASS QUE LLEVAN EL NOMBRE DEL POEMA CORRESPONDIENTE
-LES APLIQUE UN WIDH DE MAX-CONTENT PARA QUE SE VEA MEJOR, YA QUE SI LE APLICABA MEDIDA EN VW
-QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT SIGUE SIENDO RESPONSIVE.
- */
+}
 
 /* ==========index========== */
 
 /* =========body============= */
-body {
+.body {
     width: 100vw;
     height: 100vh;
     background-image: url(../views/img/fondo.jpg);
@@ -65,6 +88,8 @@ body {
 
 .encabezadoIndex {
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     font-size: 15px;
     padding: 5px;
     background-color: rgba(128, 128, 128, 0.677);
@@ -72,26 +97,19 @@ body {
     border-width: 2px;
     border-style: groove;
     border-radius: 5px;
-    overflow: auto;
     position: sticky;
     top: 0;
     z-index: 4;
 }
 
+/* ====Vista Desktop===== */
 
-.encabezadoIndex nav {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-
-
-@media (min-width:765px) {
+@media (min-width:1100px) {
     .encabezadoIndex {
         font-size: 20px;
         padding: 5px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.737);
@@ -111,6 +129,7 @@ body {
         gap: 20px;
     }
 
+
 }
 
 
@@ -126,7 +145,9 @@ body {
     overflow: auto;
 }
 
-@media (min-width: 765px) {
+/* ====Vista Desktop===== */
+
+@media (min-width: 1100px) {
     .cuerpoPrincipal {
         height: 80vh;
         display: grid;
@@ -207,9 +228,9 @@ body {
     padding: 3px;
 }
 
+/* ====Vista Desktop===== */
 
-
-@media (min-width:765px) {
+@media (min-width:1100px) {
     .poetas {
         width: 100vw;
         height: 50vh;
@@ -388,7 +409,10 @@ body {
 }
 
 
-@media (min-width:765px) {
+
+/* ====Vista Desktop===== */
+
+@media (min-width:1100px) {
     .musicaParaLeer {
         height: 50vh;
         display: flex;
@@ -411,6 +435,8 @@ body {
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
+        position: sticky;
+        left: 5px;
     }
 
     .musicaParaLeer div {
@@ -500,9 +526,9 @@ body {
     gap: 10px;
 }
 
+/* ====Vista Desktop===== */
 
-
-@media (min-width: 765px) {
+@media (min-width: 1100px) {
     .librosPoetas {
         display: flex;
         flex-direction: row;
@@ -515,6 +541,7 @@ body {
         border-radius: 5px;
         border-width: 2px;
         border-style: groove;
+        overflow: auto;
 
     }
 
@@ -529,6 +556,8 @@ body {
 
     .librosPoetas div h2 {
         width: 20vw;
+        position: sticky;
+        left: 5px;
     }
 
     .librosPoetas div ul {
@@ -563,8 +592,9 @@ body {
     padding: 3px;
 }
 
+/* ====Vista Desktop===== */
 
-@media (min-width:765px) {
+@media (min-width:1100px) {
     .pieDePaginaIndex {
         font-size: 18px;
         width: 100vw;
@@ -731,14 +761,15 @@ form {
 /* ============BODY======== ===*/
 
 .neruda {
-    height: 100vh;
-    width: 100vw;
     background-image: url(../views/img/neruda.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    overflow: auto;
 }
-
 
 /* ========HEADER=========== */
 
@@ -751,49 +782,39 @@ form {
     position: fixed;
     top: 0;
     z-index: 2;
-    width: 100vw;
+    width: 99.5vw;
     height: 8vh;
     background-color: rgba(128, 128, 128, 0.516);
-    margin: 5px;
     border-style: groove;
     border-radius: 20px;
     border-color: black;
     border-width: 2px;
-    padding: 1px;
 }
-
 
 .cuerpoPrincipalNeruda {
     width: 100vw;
+    height: 80vh;
+    margin-top: 70px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    padding: 90px;
-    border-radius: 5px;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
-    font-size: 28px;
     overflow: auto;
 }
 
-@media (min-width: 765px) {
+@media (min-width: 1100px) {
     .cuerpoPrincipalNeruda {
-        width: 100vw;
+        margin: 100px;
         display: flex;
         flex-direction: row;
+        width: 100vw;
         gap: 50px;
-        padding: 90px;
-        border-radius: 5px;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        font-size: 28px;
-        overflow: auto;
     }
 }
 
+
 .ambientacion h2 {
+    width: 60vw;
     font-size: 28px;
     border-radius: 5px;
     border-color: black;
@@ -822,11 +843,25 @@ form {
     font-size: 18px;
     padding: 10px;
     color: black;
-    width: max-content;
+    width: 100vw;
     height: auto;
     background-color: rgba(128, 128, 128, 0.582);
 }
 
+@media (min-width: 1100px) {
+    .poema20 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        font-size: 18px;
+        padding: 10px;
+        color: black;
+        width: max-content;
+        height: auto;
+        background-color: rgba(128, 128, 128, 0.582);
+    }
+}
 
 .poema20 p {
     padding: 10px;
@@ -854,10 +889,24 @@ form {
     padding: 10px;
     color: black;
     background-color: rgba(128, 128, 128, 0.548);
-    width: max-content;
+    width: 100vw;
     height: auto;
 }
 
+@media (min-width: 1100px) {
+    .poema2 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        font-size: 18px;
+        padding: 10px;
+        color: black;
+        background-color: rgba(128, 128, 128, 0.548);
+        width: max-content;
+        height: auto;
+    }
+}
 
 .poema2 p {
     padding: 10px;
@@ -885,11 +934,26 @@ form {
     font-size: 18px;
     padding: 10px;
     color: black;
-    width: max-content;
+    width: 100vw;
     height: auto;
     background-color: rgba(128, 128, 128, 0.507);
 }
 
+@media (min-width: 1100px) {
+    .poema11 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        font-size: 18px;
+        padding: 10px;
+        color: black;
+        width: max-content;
+        height: auto;
+        background-color: rgba(128, 128, 128, 0.507);
+
+    }
+}
 
 .poema11 p {
     padding: 10px;
@@ -899,32 +963,24 @@ form {
 
 
 .pieDePaginaNeruda {
-    font-size: 18px;
     width: 100vw;
-    height: 15vh;
-    padding: 10px;
+    height: 8vh;
+    background-color: rgba(128, 128, 128, 0.516);
     border-style: groove;
+    border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    border-radius: 5px;
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.56);
-    gap: 20px;
-    overflow: auto;
+    position: sticky;
+    left: 0;
 }
 
-
-.pieDePaginaNeruda div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .pieDePaginaNeruda div ul {
+    font-size: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40vw;
+
 }
 
 
@@ -1202,52 +1258,87 @@ form {
     gap: 40vw;
 }
 
-/* ===========Quienes Somos=========== */
+/* ===========Nosotros=========== */
 
 
 /* =========Body============ */
 
-.nosotros {
+body {
     background-image: url(../views/img/quienesSomos.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    width: 100vw;
     height: 100vh;
-    width: 100vh;
+    border-color: black;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 2px;
 }
+
 
 
 /* ======Header======== */
 
-
 .encabezadoNosotros {
     font-size: 20px;
-    width: 99vw;
+    width: 99.5vw;
     height: 10vh;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
     border-style: groove;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     background-color: rgba(128, 128, 128, 0.499);
     position: sticky;
     top: 0;
     z-index: 2;
-
 }
 
 .cuerpoPrincipalNosotros {
     height: 80vh;
     width: 100vw;
-    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1100px) {
+    .encabezadoNosotros {
+        font-size: 20px;
+        width: 99.5vw;
+        height: 10vh;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(128, 128, 128, 0.499);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .cuerpoPrincipalNosotros {
+        height: 80vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 30vw 70vw);
+        grid-template-rows: repeat(2, 10vh 70vh);
+        grid-template-areas:
+            "nosotros galeria-imagenes"
+            "texto-nosotros galeria-imagenes"
+        ;
+    }
 
 }
 
 .cuerpoPrincipalNosotros h2 {
-    width: 30vw;
-    height: fit-content;
+    font-size: 28px;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
@@ -1255,47 +1346,140 @@ form {
     text-align: center;
     margin: 5px;
     padding: 10px;
-    background-color: grey;
-    opacity: 0.8;
+    background-color: rgba(146, 146, 146, 0.545);
+    grid-area: nosotros;
 }
 
-.cuerpoPrincipalNosotros div {
-    width: 99vw;
-    height: 30vh;
+.galeria-imagenes{
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .galeria-imagenes {
+        height: auto;
+        width: auto;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        display: grid;
+        grid-template-columns: repeat(2, 35vw);
+        grid-template-rows: repeat(3, 10vh 35vh 35vh);
+        grid-template-areas:
+
+            "titulo titulo"
+            "imagen1 imagen2"
+            "imagen3 imagen4"
+        ;
+
+    }
+
+    .imagen1 {
+        background-image: url(../views/img/fondo.jpg);
+        background-size: cover;
+        background-position: center;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        grid-area: imagen1;
+    }
+    
+    .imagen2 {
+        background-image: url(../views/img/julioCortazar.jpg);
+        background-size: cover;
+        background-position: center;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        grid-area: imagen2;
+    }
+    
+    .imagen3 {
+        background-image: url(../views/img/lordByron.jpg);
+        background-size: cover;
+        background-position: center;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        grid-area: imagen3;
+    }
+    
+    .imagen4 {
+        background-image: url(../views/img/neruda.jpg);
+        background-size: cover;
+        background-position: center;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        grid-area: imagen4;
+    }
+
+    .galeria-imagenes h3 {
+        grid-area: titulo;
+        font-size: 28px;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
+        text-align: center;
+        margin: 5px;
+        padding: 10px;
+        background-color: rgba(146, 146, 146, 0.545);
+    }
+    
+    .galeria-imagenes ul {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .galeria-imagenes ul li {
+        height: 10vh;
+        width: 10vw;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+.texto-nosotros {
+    margin: 10px;
+    padding: 10px;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
     border-style: groove;
     background-color: rgba(128, 128, 128, 0.542);
     text-align: justify;
-    font-size: 18px;
+    font-size: 28px;
+    grid-area: texto-nosotros;
 }
 
+
 .pieDePaginaNosotros {
-    font-size: 18px;
-    width: 99vw;
-    height: 15vh;
     padding: 10px;
+    font-size: 18px;
+    width: 100vw;
+    height: 10vh;
     border-style: groove;
     border-color: black;
     border-width: 2px;
     border-radius: 5px;
-    padding: 10px;
     background-color: rgba(128, 128, 128, 0.571);
-    gap: 20px;
-    overflow: auto;
 }
 
-
-.pieDePaginaNosotros div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .pieDePaginaNosotros div ul {
+    font-size: 20px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40vw;
 }
