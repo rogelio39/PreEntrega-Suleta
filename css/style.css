@@ -29,15 +29,15 @@ LES APLIQUE UN WIDH DE MAX-CONTENT PARA QUE SE VEA MEJOR, YA QUE SI LE APLICABA 
 QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT SIGUE SIENDO RESPONSIVE.
  */
 
-/* =====Body general==== */
 
-body {
+/* ====Body general==== */
+
+body{
     width: 100vw;
     height: 100vh;
     border-color: black;
-    border-width: 1px;
+    border-width: 1.5px;
     border-style: groove;
-    overflow: auto;
 }
 
 /* =======SECTION POEMAS GENERAL===== */
@@ -61,7 +61,7 @@ body {
 /* ==========index========== */
 
 /* =========body============= */
-.body {
+.index {
     width: 100vw;
     height: 100vh;
     background-image: url(../views/img/fondo.jpg);
@@ -72,6 +72,7 @@ body {
     border-radius: 5px;
     border-style: groove;
     border-width: 2px;
+    overflow: auto;
 }
 
 
@@ -154,7 +155,7 @@ body {
 
 .poetas {
     margin: 10px;
-    height: 42vh;
+    height: 50vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -563,7 +564,9 @@ body {
 }
 
 .pieDePaginaIndex {
-    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
     padding: 10px;
     border-style: groove;
@@ -573,7 +576,6 @@ body {
     padding: 10px;
     background-color: rgba(128, 128, 128, 0.541);
     gap: 10px;
-    overflow: auto;
 }
 
 .pieDePaginaIndex div ul {
@@ -763,10 +765,13 @@ form {
     overflow: auto;
 }
 
+
 /* ========HEADER=========== */
 
 
+
 .encabezadoNeruda {
+    margin: 5px;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -1255,7 +1260,7 @@ form {
 
 /* =========Body============ */
 
-body {
+.nosotros {
     background-image: url(../views/img/quienesSomos.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -1266,6 +1271,7 @@ body {
     border-radius: 5px;
     border-style: groove;
     border-width: 2px;
+    overflow: auto;
 }
 
 
@@ -1273,16 +1279,16 @@ body {
 /* ======Header======== */
 
 .encabezadoNosotros {
-    font-size: 20px;
+    font-size: 14px;
     width: 99.5vw;
-    height: 10vh;
+    height: 15vh;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
     border-style: groove;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     background-color: rgba(128, 128, 128, 0.499);
     position: sticky;
@@ -1295,6 +1301,7 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 @media (min-width: 1100px) {
@@ -1342,7 +1349,7 @@ body {
     grid-area: nosotros;
 }
 
-.galeria-imagenes{
+.galeria-imagenes {
     display: none;
 }
 
@@ -1375,7 +1382,7 @@ body {
         border-style: groove;
         grid-area: imagen1;
     }
-    
+
     .imagen2 {
         background-image: url(../views/img/julioCortazar.jpg);
         background-size: cover;
@@ -1385,7 +1392,7 @@ body {
         border-style: groove;
         grid-area: imagen2;
     }
-    
+
     .imagen3 {
         background-image: url(../views/img/lordByron.jpg);
         background-size: cover;
@@ -1395,7 +1402,7 @@ body {
         border-style: groove;
         grid-area: imagen3;
     }
-    
+
     .imagen4 {
         background-image: url(../views/img/neruda.jpg);
         background-size: cover;
@@ -1418,27 +1425,19 @@ body {
         padding: 10px;
         background-color: rgba(146, 146, 146, 0.545);
     }
-    
+
     .galeria-imagenes ul {
         display: flex;
         gap: 20px;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .galeria-imagenes ul li {
         height: 10vh;
         width: 10vw;
     }
-    
-
 }
-
-
-
-
-
-
 
 
 .texto-nosotros {
@@ -1450,16 +1449,16 @@ body {
     border-style: groove;
     background-color: rgba(128, 128, 128, 0.542);
     text-align: justify;
-    font-size: 28px;
+    font-size: 18px;
     grid-area: texto-nosotros;
 }
 
 
-.pieDePaginaNosotros {
+.pieDePaginaNosotros {   
     padding: 10px;
-    font-size: 18px;
+    font-size: 16px;
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     border-style: groove;
     border-color: black;
     border-width: 2px;
@@ -1470,8 +1469,8 @@ body {
 
 .pieDePaginaNosotros div ul {
     font-size: 20px;
-    width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
