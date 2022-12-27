@@ -32,7 +32,7 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
 
 /* ====Body general==== */
 
-body{
+body {
     width: 100vw;
     height: 100vh;
     border-color: black;
@@ -46,6 +46,7 @@ body{
     flex-direction: column;
     gap: 20px;
 }
+
 
 @media (min-width:1100px) {
     .poemas {
@@ -62,8 +63,6 @@ body{
 
 /* =========body============= */
 .index {
-    width: 100vw;
-    height: 100vh;
     background-image: url(../views/img/fondo.jpg);
     background-position: center;
     background-size: cover;
@@ -110,7 +109,6 @@ body{
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
-        height: 12vh;
         overflow: auto;
         position: sticky;
         top: 0;
@@ -122,7 +120,6 @@ body{
         gap: 20px;
     }
 
-
 }
 
 
@@ -130,7 +127,6 @@ body{
 
 .cuerpoPrincipal {
     margin: 10px;
-    height: 80h;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,7 +152,6 @@ body{
 .poetas {
     margin: 10px;
     height: 50vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,7 +257,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 60vw;
+        width: 40vw;
     }
 
     .cor {
@@ -270,7 +265,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 60vw;
+        width: 40vw;
     }
 
     .byr {
@@ -278,11 +273,11 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 60vw;
+        width: 40vw;
     }
 
     .poetas div ul li img {
-        height: 35vh;
+        height: 20vh;
         border: 2px groove black;
         padding: 3px;
     }
@@ -349,7 +344,7 @@ body{
 /* =====Section musica para leer==== */
 .musicaParaLeer {
     margin: 10px;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -407,9 +402,9 @@ body{
 
 @media (min-width:1100px) {
     .musicaParaLeer {
-        height: 50vh;
         display: flex;
         flex-direction: row;
+        height: 50vh;
         padding: 10px;
         margin: 10px;
         border-color: black;
@@ -464,7 +459,7 @@ body{
 /* ======section libros poetas======= */
 .librosPoetas {
     margin: 10px;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -527,6 +522,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: 50vh;
         background-color: rgba(128, 128, 128, 0.485);
         gap: 10px;
         grid-area: libros;
@@ -535,8 +531,8 @@ body{
         border-width: 2px;
         border-style: groove;
         overflow: auto;
-
     }
+
 
     .librosPoetas div {
         margin-top: 70px;
@@ -592,7 +588,6 @@ body{
     .pieDePaginaIndex {
         font-size: 18px;
         width: 100vw;
-        height: 10vh;
         padding: 10px;
         border-style: groove;
         border-color: black;
@@ -600,7 +595,6 @@ body{
         border-radius: 5px;
         padding: 10px;
         background-color: rgba(128, 128, 128, 0.555);
-        gap: 10px;
         overflow: auto;
     }
 
@@ -635,7 +629,6 @@ body{
     position: sticky;
     top: 0;
     z-index: 2;
-
 }
 
 .formulario {
@@ -780,10 +773,9 @@ form {
     top: 0;
     z-index: 2;
     width: 99.5vw;
-    height: 8vh;
     background-color: rgba(128, 128, 128, 0.516);
     border-style: groove;
-    border-radius: 20px;
+    border-radius: 15px;
     border-color: black;
     border-width: 2px;
 }
@@ -841,7 +833,6 @@ form {
     padding: 10px;
     color: black;
     width: 100vw;
-    height: auto;
     background-color: rgba(128, 128, 128, 0.582);
 }
 
@@ -855,7 +846,6 @@ form {
         padding: 10px;
         color: black;
         width: max-content;
-        height: auto;
         background-color: rgba(128, 128, 128, 0.582);
     }
 }
@@ -887,7 +877,6 @@ form {
     color: black;
     background-color: rgba(128, 128, 128, 0.548);
     width: 100vw;
-    height: auto;
 }
 
 @media (min-width: 1100px) {
@@ -901,7 +890,6 @@ form {
         color: black;
         background-color: rgba(128, 128, 128, 0.548);
         width: max-content;
-        height: auto;
     }
 }
 
@@ -909,7 +897,6 @@ form {
     padding: 10px;
     text-align: justify;
 }
-
 
 
 .poema11 h3 {
@@ -932,7 +919,6 @@ form {
     padding: 10px;
     color: black;
     width: 100vw;
-    height: auto;
     background-color: rgba(128, 128, 128, 0.507);
 }
 
@@ -946,7 +932,6 @@ form {
         padding: 10px;
         color: black;
         width: max-content;
-        height: auto;
         background-color: rgba(128, 128, 128, 0.507);
 
     }
@@ -961,7 +946,6 @@ form {
 
 .pieDePaginaNeruda {
     width: 100vw;
-    height: 8vh;
     background-color: rgba(128, 128, 128, 0.516);
     border-style: groove;
     border-radius: 10px;
@@ -977,7 +961,6 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -1020,12 +1003,10 @@ form {
     padding: 1px;
 }
 
-
-
 .cuerpoPrincipalCortazar {
     width: 100vw;
-    height: 85vh;
-    padding: 90px;
+    margin: 60px;
+    padding: 10px;
     border-radius: 5px;
     border-color: black;
     border-style: groove;
@@ -1048,7 +1029,6 @@ form {
     color: black;
     background-color: rgba(9, 243, 9, 0.585);
     width: max-content;
-    height: auto;
 }
 
 .cuerpoPrincipalCortazar h3 {
@@ -1061,7 +1041,6 @@ form {
     color: black;
     background-color: rgba(14, 237, 14, 0.521);
     width: max-content;
-    height: auto;
 }
 
 
@@ -1075,7 +1054,6 @@ form {
     color: black;
     background-color: rgba(12, 239, 12, 0.527);
     width: max-content;
-    height: auto;
 }
 
 
@@ -1088,7 +1066,6 @@ form {
 .pieDePaginaCortazar {
     font-size: 18px;
     width: 100vw;
-    height: 15vh;
     padding: 10px;
     border-style: groove;
     border-color: black;
@@ -1144,7 +1121,6 @@ form {
     top: 0;
     z-index: 2;
     width: 98vw;
-    height: 7vw;
     background-color: rgba(247, 247, 121, 0.578);
     margin: 5px;
     border-style: groove;
@@ -1217,7 +1193,6 @@ form {
     padding: 10px;
     color: black;
     width: max-content;
-    height: auto;
 }
 
 
@@ -1265,8 +1240,6 @@ form {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
     border-color: black;
     border-radius: 5px;
     border-style: groove;
@@ -1281,7 +1254,6 @@ form {
 .encabezadoNosotros {
     font-size: 14px;
     width: 99.5vw;
-    height: 15vh;
     border-radius: 10px;
     border-color: black;
     border-width: 2px;
@@ -1308,12 +1280,12 @@ form {
     .encabezadoNosotros {
         font-size: 20px;
         width: 99.5vw;
-        height: 10vh;
         border-radius: 10px;
         border-color: black;
         border-width: 2px;
         border-style: groove;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         background-color: rgba(128, 128, 128, 0.499);
@@ -1323,14 +1295,16 @@ form {
     }
 
     .cuerpoPrincipalNosotros {
+        margin: 10px;
+        gap: 10px;
         height: 80vh;
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(2, 30vw 70vw);
         grid-template-rows: repeat(2, 10vh 70vh);
         grid-template-areas:
-            "nosotros galeria-imagenes"
-            "texto-nosotros galeria-imagenes"
+            "nosotros galeria"
+            "texto-nosotros galeria"
         ;
     }
 
@@ -1343,8 +1317,6 @@ form {
     border-width: 2px;
     border-style: groove;
     text-align: center;
-    margin: 5px;
-    padding: 10px;
     background-color: rgba(146, 146, 146, 0.545);
     grid-area: nosotros;
 }
@@ -1353,24 +1325,31 @@ form {
     display: none;
 }
 
+
 @media (min-width: 1100px) {
     .galeria-imagenes {
-        height: auto;
-        width: auto;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
+        grid-area: galeria;
+        gap: 18px;
         display: grid;
-        grid-template-columns: repeat(2, 35vw);
-        grid-template-rows: repeat(3, 10vh 35vh 35vh);
+        grid-template-columns: repeat(2, 34vw);
+        grid-template-rows: repeat(5, 10vh 25vh 25vh 25vh 25vh);
         grid-template-areas:
 
             "titulo titulo"
             "imagen1 imagen2"
+            "imagen1 imagen2"
+            "imagen3 imagen4"
             "imagen3 imagen4"
         ;
 
+    }
+
+    .galeria-imagenes h2 {
+        display: grid;
+        grid-area: titulo;
+        font-size: 28px;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.575);
     }
 
     .imagen1 {
@@ -1413,30 +1392,6 @@ form {
         grid-area: imagen4;
     }
 
-    .galeria-imagenes h3 {
-        grid-area: titulo;
-        font-size: 28px;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
-        text-align: center;
-        margin: 5px;
-        padding: 10px;
-        background-color: rgba(146, 146, 146, 0.545);
-    }
-
-    .galeria-imagenes ul {
-        display: flex;
-        gap: 20px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .galeria-imagenes ul li {
-        height: 10vh;
-        width: 10vw;
-    }
 }
 
 
@@ -1454,11 +1409,10 @@ form {
 }
 
 
-.pieDePaginaNosotros {   
+.pieDePaginaNosotros {
     padding: 10px;
     font-size: 16px;
     width: 100vw;
-    height: 20vh;
     border-style: groove;
     border-color: black;
     border-width: 2px;
@@ -1473,4 +1427,14 @@ form {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+@media (min-width: 1100px) {
+
+    .pieDePaginaNosotros div ul {
+        font-size: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
