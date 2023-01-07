@@ -47,17 +47,6 @@ body {
     gap: 20px;
 }
 
-<<<<<<< HEAD
-@media (min-width:765px) {
-    .poemas {
-        align-items: flex-start;
-        flex-wrap: nowrap;
-    }
-
-}
-=======
->>>>>>> rama-trabajo
-
 @media (min-width:1100px) {
     .poemas {
         display: flex;
@@ -182,12 +171,12 @@ body {
 .poetas div {
     display: flex;
     flex-direction: column;
-    overflow: auto;
     background-color: rgba(128, 128, 128, 0.811);
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
+    overflow: auto;
 }
 
 .poetas div ul {
