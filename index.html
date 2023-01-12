@@ -14,80 +14,95 @@
 </head>
 
 <body>
-<div class="index">
-    <header class="encabezadoIndex">
-        <h1>Poemario</h1>
-        <nav>
-            <ul>
-                <li><a href="./views/nosotros.html" class="btn">NOSOTROS</a></li>
-                <li><a href="./views/contacto.html" class="btn">CONTACTO</a></li>
-                <li><a href="https://www.instagram.com/poesia_noctura/" target="_blank" class="btn" >POESIA NOCTURNA</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="index">
+        <header class="index__encabezado">
+            <h1>Poemario</h1>
+            <nav>
+                <ul>
+                    <li><a href="./views/nosotros.html" class="btn">NOSOTROS</a></li>
+                    <li><a href="./views/contacto.html" class="btn">CONTACTO</a></li>
+                    <li><a href="https://www.instagram.com/poesia_noctura/" target="_blank" class="btn">POESIA
+                            NOCTURNA</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main class="cuerpoPrincipal">
-        <section class="poetas">
+        <main class="index__cuerpoPrincipal">
+            <section class="index__poetas">
+                <div>
+                    <ul>
+                        <div class="index__ner">
+                            <li><img src="./views/img/imgNeruda.jpg" alt=""></li>
+                            <li><a href="./views/neruda.html" class="btn">Pablo Neruda</a></li>
+                        </div>
+                        <div class="index__cor">
+                            <li><img src="./views/img/imgJulioCortazar.jpg" alt=""></li>
+                            <li><a href="./views/julioCortazar.html" class="btn">Julio Cortazar</a></li>
+                        </div>
+                        <div class="index__byr">
+                            <li><img src="./views/img/imgLordByron.jpg" alt=""></li>
+                            <li><a href="./views/lordByron.html" class="btn">Lord Byron</a></li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+
+            <div>
+                <hr>
+            </div>
+
+            <section class="cuerpoPrincipal__musicaParaLeer">
+                <div>
+                    <h2>Musica para leer</h2>
+                    <ul>
+                        <li><iframe class="cuerpoPrincipal__video" width="100%" height="100%"
+                                src="https://www.youtube.com/embed/eit2nlhDVMk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></li>
+                        <li><iframe class="cuerpoPrincipal__video" width="100%" height="100%"
+                                src="https://www.youtube.com/embed/XT92zJzc-sQ" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></li>
+                        <li><iframe class="cuerpoPrincipal__video" width="100%" height="100%"
+                                src="https://www.youtube.com/embed/aepIEsxlaXc" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div>
+                <hr>
+            </div>
+
+
+            <section class="cuerpoPrincipal__librosPoetas">
+                <div>
+                    <h2>Libros</h2>
+                    <ul>
+                        <li><img src="./views/img/libroNeruda.jpg" alt=""></li>
+                        <li><img src="./views/img/libroNeruda2.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="pieDePaginaIndex">
+
             <div>
                 <ul>
-                    <div class="ner">
-                        <li><img src="./views/img/imgNeruda.jpg" alt=""></li>
-                        <li><a href="./views/neruda.html" class="btn">Pablo Neruda</a></li>
-                    </div>
-                    <div class="cor">
-                        <li><img src="./views/img/imgJulioCortazar.jpg" alt=""></li>
-                        <li><a href="./views/julioCortazar.html" class="btn">Julio Cortazar</a></li>
-                    </div>
-                    <div class="byr">
-                        <li><img src="./views/img/imgLordByron.jpg" alt=""></li>
-                        <li><a href="./views/lordByron.html" class="btn">Lord Byron</a></li>
-                    </div>
+                    <li><a href="./index.html" class="btn">INICIO</a></li>
+                    <li><a href="./views/contacto.html" class="btn">CONTACTO</a></li>
+                    <li><a href="https://www.instagram.com/migueldiosquezdupuy/" target="_blank"
+                            class="btn">SEGUINOS</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="musicaParaLeer">
-            <div>
-                <h2>Musica para leer</h2>
-                <ul>
-                    <li><iframe class="musicaParaLeer__video" width="100%" height="100%" src="https://www.youtube.com/embed/eit2nlhDVMk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></li>
-                    <li><iframe class="musicaParaLeer__video" width="100%" height="100%" src="https://www.youtube.com/embed/XT92zJzc-sQ"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></li>
-                    <li><iframe class="musicaParaLeer__video" width="100%" height="100%" src="https://www.youtube.com/embed/aepIEsxlaXc"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe></li>
-                </ul>
-            </div>
-        </section>
-        <section class="librosPoetas">
-            <div>
-                <h2>Libros</h2>
-                <ul>
-                    <li><img src="./views/img/libroNeruda.jpg" alt=""></li>
-                    <li><img src="./views/img/libroNeruda2.jpg" alt=""></li>
-                </ul>
-            </div>
-        </section>
-        </section>
-    </main>
 
+        </footer>
 
-    <footer class="pieDePaginaIndex">
-
-        <div>
-            <ul>
-                <li><a href="./index.html" class="btn">INICIO</a></li>
-                <li><a href="./views/contacto.html" class="btn">CONTACTO</a></li>
-                <li><a href="https://www.instagram.com/migueldiosquezdupuy/" target="_blank" class="btn">SEGUINOS</a></li>
-            </ul>
-        </div>
-
-    </footer>
-
-</div>
+    </div>
 </body>
