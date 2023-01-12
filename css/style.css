@@ -30,15 +30,6 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
  */
 
 
-/* ====Body general==== */
-
-body {
-    width: 100vw;
-    height: 100vh;
-    border-color: black;
-    border-width: 1.5px;
-    border-style: groove;
-}
 
 /* =======SECTION POEMAS GENERAL===== */
 .poemas {
@@ -47,6 +38,7 @@ body {
     gap: 20px;
 }
 
+<<<<<<< HEAD
 @media (min-width:1100px) {
     .poemas {
         display: flex;
@@ -55,9 +47,20 @@ body {
         align-items: flex-start;
         gap: 30px;
     }
+=======
 
+>>>>>>> rama-trabajo
+
+
+/* ======Ambientacion============= */
+
+.ambientacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
 }
-
 
 
 /* =====Botones===== */
@@ -65,6 +68,23 @@ body {
 .btn {
     color: black;
 }
+
+
+
+
+/* ======separador===== */
+
+hr {
+    background-image:-webkit-linear-gradient(left, #fff, #000, #fff);
+    margin-left: 4vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid rgb(11, 11, 11);
+    height: 7px;
+    width: 90vw;
+    background-color: black;
+}
+
 
 /* ==========index========== */
 
@@ -78,15 +98,13 @@ body {
     border-radius: 5px;
     border-style: groove;
     border-width: 2px;
-    overflow: auto;
 }
 
 
 
 /*================ header =================== */
 
-.encabezadoIndex {
-    width: 100vw;
+.index__encabezado {
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -104,7 +122,7 @@ body {
 /* ====Vista Desktop===== */
 
 @media (min-width:1100px) {
-    .encabezadoIndex {
+    .index__encabezado {
         font-size: 20px;
         padding: 5px;
         display: flex;
@@ -116,13 +134,12 @@ body {
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
-        overflow: auto;
         position: sticky;
         top: 0;
         z-index: 4;
     }
 
-    .encabezadoIndex nav ul {
+    .index__encabezado nav ul {
         display: flex;
         gap: 20px;
     }
@@ -132,33 +149,34 @@ body {
 
 /* ==========MAIN=========== */
 
-.cuerpoPrincipal {
+.index__cuerpoPrincipal {
     margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: auto;
 }
 
 /* ====Vista Desktop===== */
 
 @media (min-width: 1100px) {
-    .cuerpoPrincipal {
-        height: 80vh;
+    .index__cuerpoPrincpal {
         display: grid;
-        grid-template-columns: repeat(4, 25vw);
-        grid-template-rows: repeat(2, 50vh);
+        grid-template-columns: 100%;
+        grid-template-rows: auto 50% 50%;
         grid-template-areas:
-            "poetas poetas poetas poetas"
-            "musica musica libros libros"
+
+            "poetas"
+            "musica"
+            "libros"
         ;
+
     }
+
 }
 
-.poetas {
+.index__poetas {
     margin: 10px;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -168,7 +186,7 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.poetas div {
+.index__poetas div {
     display: flex;
     flex-direction: column;
     background-color: rgba(128, 128, 128, 0.811);
@@ -179,7 +197,7 @@ body {
     overflow: auto;
 }
 
-.poetas div ul {
+.index__poetas div ul {
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -192,32 +210,32 @@ body {
     border-style: groove;
 }
 
-.ner {
+.index__ner {
     position: sticky;
-    top: 0;
+    top: 95px;
     z-index: 1;
-    width: 80vw;
+    width: 100%;
 }
 
-.cor {
+.index__cor {
     position: sticky;
-    top: 0;
+    top: 95px;
     z-index: 2;
-    width: 80vw;
+    width: 100%;
 }
 
-.byr {
+.index__byr {
     position: sticky;
-    top: 0;
+    top: 95px;
     z-index: 3;
-    width: 80vw;
+    width: 100%;
 }
 
-.poetas div ul div li {
+.index__poetas div ul div li {
     padding: 20px;
 }
 
-.poetas div ul li img {
+.index__poetas div ul li img {
     height: 25vh;
     border: 2px groove black;
     padding: 3px;
@@ -226,64 +244,58 @@ body {
 /* ====Vista Desktop===== */
 
 @media (min-width:1100px) {
-    .poetas {
-        width: 100vw;
-        height: 50vh;
-        display: flex;
+    .index__poetas {
+        width: 100%;
+        height: 40vh;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
-        overflow: auto;
         grid-area: poetas;
-    }
-
-    .poetas div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        border-style: groove;
         overflow: auto;
     }
 
-    .poetas div ul {
-        font-size: 48px;
-        display: flex;
-        justify-content: space-between;
+    .index__poetas div {
+        height: 100%;
+        border-color: black;
+        border-width: 2px;
+        border-style: groove;
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .index__poetas div ul {
+        font-size: 48px;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         gap: 10vw;
         padding: 10px;
     }
 
 
-    .ner {
+    .index__ner {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 40vw;
     }
 
-    .cor {
+    .index__cor {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 40vw;
+
     }
 
-    .byr {
+    .index__byr {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        width: 40vw;
     }
 
-    .poetas div ul li img {
+    .index__poetas div ul div li img {
         height: 20vh;
         border: 2px groove black;
         padding: 3px;
@@ -349,9 +361,8 @@ body {
 
 
 /* =====Section musica para leer==== */
-.musicaParaLeer {
-    margin: 10px;
-    height: 80vh;
+.cuerpoPrincipal__musicaParaLeer {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -367,16 +378,15 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.musicaParaLeer div {
+.cuerpoPrincipal__musicaParaLeer div {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    overflow: auto;
 }
 
-.musicaParaLeer h2 {
+.cuerpoPrincipal__musicaParaLeer h2 {
     margin: 10px;
     font-size: 32px;
     background-color: rgba(128, 128, 128, 0.56);
@@ -386,17 +396,17 @@ body {
     border-style: groove;
     border-radius: 5px;
     position: sticky;
-    top: 0;
+    top: 95px;
 }
 
-.musicaParaLeer div ul {
+.cuerpoPrincipal__musicaParaLeer div ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 
-.musicaParaLeer div ul li {
+.cuerpoPrincipal__musicaParaLeer div ul li {
     border-color: black;
     border-width: 2px;
     border-style: groove;
@@ -408,21 +418,17 @@ body {
 /* ====Vista Desktop===== */
 
 @media (min-width:1100px) {
-    .musicaParaLeer {
+    .cuerpoPrincipal__musicaParaLeer {
         display: flex;
         flex-direction: row;
-        height: 50vh;
-        padding: 10px;
-        margin: 10px;
         border-color: black;
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
         grid-area: musica;
-        overflow: auto;
     }
 
-    .musicaParaLeer h2 {
+    .cuerpoPrincipal__musicaParaLeer h2 {
         padding: 10px;
         font-size: 32px;
         background-color: rgba(128, 128, 128, 0.56);
@@ -434,43 +440,47 @@ body {
         left: 5px;
     }
 
-    .musicaParaLeer div {
+    .cuerpoPrincipal__musicaParaLeer div {
         padding: 10px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px;
     }
 
-    .musicaParaLeer div ul {
+    .cuerpoPrincipal__musicaParaLeer div ul {
         margin: 5px;
         padding: 5px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         gap: 50px;
     }
 
-    .musicaParaLeer div ul li {
+    .cuerpoPrincipal__musicaParaLeer div ul li {
         border-color: black;
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
+    }
+
+    .cuerpoPrincipal__video {
+        width: 30vw;
+        height: 30vh;
     }
 }
 
 
 
 /* ======section libros poetas======= */
-.librosPoetas {
-    margin: 10px;
-    height: 80vh;
+.cuerpoPrincipal__librosPoetas {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     background-color: rgba(128, 128, 128, 0.444);
     gap: 20px;
     border-color: black;
@@ -482,10 +492,9 @@ body {
     animation-timing-function: ease-in-out;
 }
 
-.librosPoetas h2 {
+.cuerpoPrincipal__librosPoetas h2 {
     padding: 10px;
     margin: 10px;
-    width: 45vw;
     font-size: 32px;
     background-color: rgba(128, 128, 128, 0.679);
     border-color: black;
@@ -493,10 +502,10 @@ body {
     border-style: groove;
     border-radius: 5px;
     position: sticky;
-    top: 0;
+    top: 95px;
 }
 
-.librosPoetas div {
+.cuerpoPrincipal__librosPoetas div {
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -504,10 +513,9 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    overflow: auto;
 }
 
-.librosPoetas div ul {
+.cuerpoPrincipal__librosPoetas div ul {
     background-color: rgba(128, 128, 128, 0.679);
     margin: 10px;
     border-color: black;
@@ -524,12 +532,8 @@ body {
 /* ====Vista Desktop===== */
 
 @media (min-width: 1100px) {
-    .librosPoetas {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 50vh;
+    .cuerpoPrincipal__librosPoetas {
+        margin-top: 30px;
         background-color: rgba(128, 128, 128, 0.485);
         gap: 10px;
         grid-area: libros;
@@ -537,46 +541,43 @@ body {
         border-radius: 5px;
         border-width: 2px;
         border-style: groove;
-        overflow: auto;
+        align-self: center;
     }
 
 
-    .librosPoetas div {
-        margin-top: 70px;
+    .cuerpoPrincipal__librosPoetas div {
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 10px;
     }
 
-    .librosPoetas div h2 {
-        width: 20vw;
-        position: sticky;
-        left: 5px;
-    }
 
-    .librosPoetas div ul {
+    .cuerpoPrincipal__librosPoetas div ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin: 10px;
         padding: 10px;
+        gap: 10vw;
     }
 
 }
 
 .pieDePaginaIndex {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    padding: 10px;
     border-style: groove;
     border-color: black;
     border-width: 2px;
     border-radius: 5px;
     padding: 10px;
+    margin-top: 20px;
     background-color: rgba(128, 128, 128, 0.541);
     gap: 10px;
 }
@@ -594,28 +595,19 @@ body {
 @media (min-width:1100px) {
     .pieDePaginaIndex {
         font-size: 18px;
-        width: 100vw;
         padding: 10px;
         border-style: groove;
         border-color: black;
         border-width: 2px;
         border-radius: 5px;
-        padding: 10px;
         background-color: rgba(128, 128, 128, 0.555);
-        overflow: auto;
     }
 
-    .pieDePaginaIndex div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .pieDePaginaIndex div ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40VW;
     }
 
 }
@@ -753,24 +745,28 @@ form {
     border-color: black;
     border-width: 2px;
     border-style: groove;
-    overflow: auto;
 }
+
 
 
 /* ========HEADER=========== */
 
 
 
+<<<<<<< HEAD
 .encabezadoNeruda {
     margin: 5px;
     font-size: 16px;
+=======
+.neruda__encabezado {
+    padding: 5px;
+    font-size: 18px;
+>>>>>>> rama-trabajo
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    flex-direction: column;
+    position: sticky;
     top: 0;
     z-index: 2;
-    width: 99.5vw;
     background-color: rgba(128, 128, 128, 0.516);
     border-style: groove;
     border-radius: 15px;
@@ -778,31 +774,16 @@ form {
     border-width: 2px;
 }
 
-.cuerpoPrincipalNeruda {
-    width: 100vw;
-    height: 80vh;
+.neruda__cuerpoPrincipal {
+    gap: 20px;
     margin-top: 70px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    overflow: auto;
 }
-
-@media (min-width: 1100px) {
-    .cuerpoPrincipalNeruda {
-        margin: 100px;
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        gap: 50px;
-    }
-}
-
 
 .ambientacion h2 {
-    width: 60vw;
-    font-size: 28px;
+    font-size: 18px;
     border-radius: 5px;
     border-color: black;
     border-style: groove;
@@ -810,19 +791,12 @@ form {
     background-color: rgba(128, 128, 128, 0.484);
 }
 
-
-.poema20 h3 {
-    border-radius: 5px;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
-    font-size: 18pxpx;
-    padding: 10px;
-    color: black;
+.neruda__poema20 h2 {
+    font-size: 20px;
+    margin: 5px;
 }
 
-
-.poema20 {
+.neruda__poema20 h3 {
     border-radius: 5px;
     border-color: black;
     border-style: groove;
@@ -830,42 +804,28 @@ form {
     font-size: 18px;
     padding: 10px;
     color: black;
-    width: 100vw;
+}
+
+
+.neruda__poema20 {
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
     background-color: rgba(128, 128, 128, 0.582);
 }
 
-@media (min-width: 1100px) {
-    .poema20 {
-        border-radius: 5px;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        font-size: 18px;
-        padding: 10px;
-        color: black;
-        width: max-content;
-        background-color: rgba(128, 128, 128, 0.582);
-    }
-}
-
-.poema20 p {
+.neruda__poema20 p {
+    font-size: 16px;
     padding: 10px;
     text-align: justify;
 }
 
 
-.poema2 h3 {
-    border-radius: 5px;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
-    font-size: 18pxpx;
-    padding: 10px;
-    color: black;
-}
-
-
-.poema2 {
+.neruda__poema2 h3 {
     border-radius: 5px;
     border-color: black;
     border-style: groove;
@@ -873,12 +833,126 @@ form {
     font-size: 18px;
     padding: 10px;
     color: black;
-    background-color: rgba(128, 128, 128, 0.548);
-    width: 100vw;
 }
 
+
+.neruda__poema2 {
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+
+.neruda__poema2 p {
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+.neruda__poema11 h3 {
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+}
+
+
+.neruda__poema11 {
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.507);
+}
+
+.neruda__poema11 p {
+    font-size: 16px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.pieDePaginaNeruda {
+    background-color: rgba(128, 128, 128, 0.516);
+    border-style: groove;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+}
+
+
+.pieDePaginaNeruda div ul {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* ===========revisar============= */
 @media (min-width: 1100px) {
-    .poema2 {
+
+    .neruda__encabezado {
+        font-size: 24px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .neruda__cuerpoPrincipal {
+        display: grid;
+        grid-template-rows: 13% 43% 15% 26%;
+
+        grid-template-areas:
+
+            "ambientacion"
+            "poema20"
+            "poema2"
+            "poema11"
+        ;
+    }
+
+    .ambientacion {
+        grid-area: ambientacion;
+    }
+
+    .neruda__poema20 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        padding: 10px;
+        color: black;
+        background-color: rgba(128, 128, 128, 0.582);
+        grid-area: poema20;
+    }
+
+    .neruda__poema20 h2 {
+        font-size: 28px;
+    }
+
+    .neruda__poema20 h3 {
+        font-size: 24px;
+    }
+
+    .neruda__poema20 p {
+        font-size: 22px;
+    }
+
+    .neruda__poema2 {
+        margin-top: 30px;
         border-radius: 5px;
         border-color: black;
         border-style: groove;
@@ -887,41 +961,23 @@ form {
         padding: 10px;
         color: black;
         background-color: rgba(128, 128, 128, 0.548);
-        width: max-content;
+        grid-area: poema2;
     }
-}
 
-.poema2 p {
-    padding: 10px;
-    text-align: justify;
-}
+    .neruda__poema2 h2 {
+        font-size: 28px;
+    }
 
+    .neruda__poema2 h3 {
+        font-size: 24px;
+    }
 
-.poema11 h3 {
-    border-radius: 5px;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
-    font-size: 18pxpx;
-    padding: 10px;
-    color: black;
-}
+    .neruda__poema2 p {
+        font-size: 22px;
+    }
 
-
-.poema11 {
-    border-radius: 5px;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
-    font-size: 18px;
-    padding: 10px;
-    color: black;
-    width: 100vw;
-    background-color: rgba(128, 128, 128, 0.507);
-}
-
-@media (min-width: 1100px) {
-    .poema11 {
+    .neruda__poema11 {
+        margin-top: 30px;
         border-radius: 5px;
         border-color: black;
         border-style: groove;
@@ -929,36 +985,26 @@ form {
         font-size: 18px;
         padding: 10px;
         color: black;
-        width: max-content;
         background-color: rgba(128, 128, 128, 0.507);
-
+        grid-area: poema11;
     }
-}
 
-.poema11 p {
-    padding: 10px;
-    text-align: justify;
-}
+    .neruda__poema11 h2 {
+        font-size: 28px;
+    }
 
+    .neruda__poema11 h3 {
+        font-size: 24px;
+    }
 
+    .neruda__poema11 p {
+        font-size: 22px;
+    }
 
-.pieDePaginaNeruda {
-    width: 100vw;
-    background-color: rgba(128, 128, 128, 0.516);
-    border-style: groove;
-    border-radius: 10px;
-    border-color: black;
-    border-width: 2px;
-    position: sticky;
-    left: 0;
-}
+    .pieDePaginaNeruda div ul {
+        font-size: 24px;
+    }
 
-
-.pieDePaginaNeruda div ul {
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 
@@ -975,6 +1021,9 @@ form {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
 }
 
 
@@ -983,37 +1032,35 @@ form {
 
 
 .encabezadoCortazar {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: sticky;
     top: 0;
     z-index: 2;
-    width: 100vw;
     background-color: rgba(11, 245, 11, 0.577);
-    margin: 5px;
     border-style: groove;
-    border-radius: 20px;
+    border-radius: 10px;
     border-color: black;
     border-width: 2px;
-    padding: 1px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .cuerpoPrincipalCortazar {
-    width: 100vw;
-    height: 100vh;
-    padding: 10px;
+    padding: 5px;
+    margin: 5px;
     border-radius: 5px;
     border-color: black;
     border-style: groove;
     border-width: 2px;
-    font-size: 28px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
-    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .cuerpoPrincipalCortazar h2 {
@@ -1021,11 +1068,10 @@ form {
     border-color: black;
     border-style: groove;
     border-width: 2px;
-    font-size: 24px;
+    font-size: 18px;
     padding: 10px;
     color: black;
     background-color: rgba(9, 243, 9, 0.585);
-    width: max-content;
 }
 
 .cuerpoPrincipalCortazar h3 {
@@ -1037,9 +1083,7 @@ form {
     padding: 10px;
     color: black;
     background-color: rgba(14, 237, 14, 0.521);
-    width: max-content;
 }
-
 
 .poema1Cortazar {
     border-radius: 5px;
@@ -1050,7 +1094,6 @@ form {
     padding: 10px;
     color: black;
     background-color: rgba(12, 239, 12, 0.527);
-    width: max-content;
 }
 
 
@@ -1060,9 +1103,35 @@ form {
     background-color: rgba(13, 237, 13, 0.525);
 }
 
+
+@media (min-width:1100px) {
+
+    .encabezadoCortazar {
+        font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cuerpoPrincipalCortazar {
+        padding: 10px;
+        border-radius: 5px;
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+}
+
 .pieDePaginaCortazar {
     font-size: 18px;
-    width: 100vw;
     border-style: groove;
     border-color: black;
     border-width: 2px;
@@ -1217,10 +1286,8 @@ form {
     background-size: cover;
     background-position: center;
     border-color: black;
-    border-radius: 5px;
-    border-style: groove;
     border-width: 2px;
-    overflow: auto;
+    border-style: groove;
 }
 
 
@@ -1228,9 +1295,9 @@ form {
 /* ======Header======== */
 
 .encabezadoNosotros {
+    width: 100%;
     font-size: 14px;
-    width: 100vw;
-    border-radius: 10px;
+    border-radius: 5px;
     border-color: black;
     border-width: 2px;
     border-style: groove;
@@ -1239,23 +1306,71 @@ form {
     justify-content: flex-start;
     align-items: flex-start;
     background-color: rgba(128, 128, 128, 0.499);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 2;
 }
 
 .cuerpoPrincipalNosotros {
-    height: 80vh;
-    width: 100vw;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    overflow: auto;
 }
+
+.cuerpoPrincipalNosotros h2 {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    text-align: center;
+    background-color: rgba(146, 146, 146, 0.545);
+    grid-area: nosotros;
+}
+
+.galeria-imagenes {
+    display: none;
+}
+
+.texto-nosotros {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    background-color: rgba(128, 128, 128, 0.542);
+    text-align: justify;
+    font-size: 16px;
+    grid-area: texto-nosotros;
+}
+
+
+.pieDePaginaNosotros {
+    padding: 10px;
+    margin-top: 20px;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.571);
+}
+
+
+.pieDePaginaNosotros div ul {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 
 @media (min-width: 1100px) {
     .encabezadoNosotros {
         font-size: 20px;
-        width: 100vw;
         border-radius: 10px;
         border-color: black;
         border-width: 2px;
@@ -1273,10 +1388,8 @@ form {
     .cuerpoPrincipalNosotros {
         margin: 10px;
         gap: 10px;
-        height: 70vh;
-        width: 100vw;
         display: grid;
-        grid-template-columns: 30vw 70vw;
+        grid-template-columns: 30% 70%;
         grid-template-rows: 5vh 95vh;
         grid-template-areas:
             "nosotros galeria"
@@ -1284,35 +1397,14 @@ form {
         ;
 
         justify-content: center;
-
     }
 
-}
-
-.cuerpoPrincipalNosotros h2 {
-    font-size: 28px;
-    border-radius: 10px;
-    border-color: black;
-    border-width: 2px;
-    border-style: groove;
-    text-align: center;
-    background-color: rgba(146, 146, 146, 0.545);
-    grid-area: nosotros;
-    margin-left: 10px;
-}
-
-.galeria-imagenes {
-    display: none;
-}
-
-
-@media (min-width: 1100px) {
     .galeria-imagenes {
         grid-area: galeria;
         gap: 10px;
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: 5vh auto;
+        grid-template-rows: 5vh 47.33vh 47.33vh;
         grid-template-areas:
 
             "titulo titulo"
@@ -1320,38 +1412,42 @@ form {
             "imagen3 imagen4"
         ;
 
+
     }
 
     .galeria-imagenes h2 {
         display: grid;
         grid-area: titulo;
-        font-size: 28px;
+        font-size: 20px;
         text-align: center;
         background-color: rgba(128, 128, 128, 0.575);
     }
 
     .imagen1 img {
+        margin-top: 10px;
         width: 100%;
+        height: 100%;
         border-color: black;
         border-width: 2px;
         border-style: groove;
         grid-area: imagen1;
-        margin-top: 10px;
 
     }
 
     .imagen2 img {
+        margin-top: 10px;
         width: 100%;
-        height: 98%;
+        height: 100%;
         border-color: black;
         border-width: 2px;
         border-style: groove;
         grid-area: imagen2;
-        margin-top: 10px;
     }
 
     .imagen3 img {
+        margin-top: 10px;
         width: 100%;
+        height: 100%;
         border-color: black;
         border-width: 2px;
         border-style: groove;
@@ -1359,56 +1455,23 @@ form {
     }
 
     .imagen4 img {
+        margin-top: 10px;
         width: 100%;
+        height: 100%;
         border-color: black;
         border-width: 2px;
         border-style: groove;
         grid-area: imagen4;
     }
 
-}
+    @media (min-width: 1100px) {
 
-
-.texto-nosotros {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: black;
-    border-width: 2px;
-    border-style: groove;
-    background-color: rgba(128, 128, 128, 0.542);
-    text-align: justify;
-    font-size: 18px;
-    grid-area: texto-nosotros;
-}
-
-
-.pieDePaginaNosotros {
-    padding: 10px;
-    font-size: 16px;
-    width: 100vw;
-    border-style: groove;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 5px;
-    background-color: rgba(128, 128, 128, 0.571);
-}
-
-
-.pieDePaginaNosotros div ul {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-@media (min-width: 1100px) {
-
-    .pieDePaginaNosotros div ul {
-        font-size: 20px;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        .pieDePaginaNosotros div ul {
+            font-size: 20px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
+
 }
