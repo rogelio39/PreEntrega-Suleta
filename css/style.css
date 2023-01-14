@@ -167,22 +167,18 @@ hr {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
 .index__poetas div {
-    display: flex;
-    flex-direction: column;
     background-color: rgba(128, 128, 128, 0.811);
     border-color: black;
     border-width: 2px;
     border-radius: 10px;
     border-style: groove;
-    overflow: auto;
 }
 
 .index__poetas div ul {
@@ -219,7 +215,7 @@ hr {
     width: 100%;
 }
 
-.index__poetas div ul div li {
+.index__poetas div ul div {
     padding: 20px;
 }
 
@@ -234,57 +230,60 @@ hr {
 @media (min-width:1100px) {
     .index__poetas {
         width: 100%;
-        height: 40vh;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
         grid-area: poetas;
-        overflow: auto;
     }
 
-    .index__poetas div {
-        height: 100%;
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .index__poetas div ul {
-        font-size: 48px;
+    .index__poetas div ul{
+        gap: 10vw;
+        padding: 10px;
+        margin: 10px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 10vw;
-        padding: 10px;
+        overflow: auto;
     }
 
 
-    .index__ner {
+    .index__poetas div ul div {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
+        gap: 30px;
+
+    }
+
+    
+    .index__ner {
+        font-size: 36px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
     }
 
     .index__cor {
+        font-size: 36px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-
+        align-items: center;
     }
 
     .index__byr {
+        font-size: 36px;
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .index__poetas div ul div li img {
-        height: 20vh;
+        height: 25vh;
         border: 2px groove black;
         padding: 3px;
     }
@@ -349,24 +348,19 @@ hr {
 
 
 /* =====Section musica para leer==== */
-.cuerpoPrincipal__musicaParaLeer {
+.index__musicaParaLeer {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    background-color: rgba(128, 128, 128, 0.444);
-    border-color: black;
-    border-radius: 5px;
-    border-style: groove;
-    border-width: 2px;
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
 
-.cuerpoPrincipal__musicaParaLeer div {
+.index__musicaParaLeer div {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -374,7 +368,7 @@ hr {
     gap: 20px;
 }
 
-.cuerpoPrincipal__musicaParaLeer h2 {
+.index__musicaParaLeer h2 {
     margin: 10px;
     font-size: 32px;
     background-color: rgba(128, 128, 128, 0.56);
@@ -387,14 +381,18 @@ hr {
     top: 95px;
 }
 
-.cuerpoPrincipal__musicaParaLeer div ul {
+.index__musicaParaLeer div ul {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    background-color: rgba(128, 128, 128, 0.719);
 }
 
 
-.cuerpoPrincipal__musicaParaLeer div ul li {
+.index__musicaParaLeer div ul li {
     border-color: black;
     border-width: 2px;
     border-style: groove;
@@ -406,17 +404,21 @@ hr {
 /* ====Vista Desktop===== */
 
 @media (min-width:1100px) {
-    .cuerpoPrincipal__musicaParaLeer {
-        display: flex;
-        flex-direction: row;
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
-        border-radius: 5px;
+    .index__musicaParaLeer {
         grid-area: musica;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 90%;
+
+        grid-template-areas: 
+        
+        "titulo"
+        "video"
+        
+        ;
     }
 
-    .cuerpoPrincipal__musicaParaLeer h2 {
+    .index__musicaParaLeer h2 {
         padding: 10px;
         font-size: 32px;
         background-color: rgba(128, 128, 128, 0.56);
@@ -424,11 +426,13 @@ hr {
         border-width: 2px;
         border-style: groove;
         border-radius: 5px;
-        position: sticky;
-        left: 5px;
+        top: 60px;
+        grid-area: titulo;
+        text-align: center;
+        width: 100%;
     }
 
-    .cuerpoPrincipal__musicaParaLeer div {
+    .index__musicaParaLeer div {
         padding: 10px;
         display: flex;
         flex-direction: row;
@@ -438,7 +442,9 @@ hr {
         gap: 20px;
     }
 
-    .cuerpoPrincipal__musicaParaLeer div ul {
+    .index__musicaParaLeer div ul {
+        background-color: rgba(128, 128, 128, 0.451);
+        border: black 2px groove;
         margin: 5px;
         padding: 5px;
         display: flex;
@@ -449,14 +455,11 @@ hr {
         gap: 50px;
     }
 
-    .cuerpoPrincipal__musicaParaLeer div ul li {
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
-        border-radius: 5px;
+    .index__musicaParaLeer div ul li {
+        grid-area: video;
     }
 
-    .cuerpoPrincipal__video {
+    .index__video {
         width: 30vw;
         height: 30vh;
     }
@@ -466,15 +469,11 @@ hr {
 
 /* ======section libros poetas======= */
 .cuerpoPrincipal__librosPoetas {
+    width: 100%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(128, 128, 128, 0.444);
     gap: 20px;
-    border-color: black;
-    border-radius: 5px;
-    border-style: groove;
-    border-width: 2px;
     animation-name: scale-in-top;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
@@ -522,27 +521,21 @@ hr {
 @media (min-width: 1100px) {
     .cuerpoPrincipal__librosPoetas {
         margin-top: 30px;
-        background-color: rgba(128, 128, 128, 0.485);
         gap: 10px;
         grid-area: libros;
-        border-color: black;
-        border-radius: 5px;
-        border-width: 2px;
-        border-style: groove;
         align-self: center;
     }
 
 
     .cuerpoPrincipal__librosPoetas div {
         margin-top: 30px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
         gap: 10px;
     }
 
+    .cuerpoPrincipal__librosPoetas h2 {
+        width: 100%;
+        text-align: center;
+    }
 
     .cuerpoPrincipal__librosPoetas div ul {
         display: flex;
