@@ -38,18 +38,6 @@ QUEDABAN HILERAS DELGADAS Y NO AGRADABLES ESTETICAMENTE. LEI QUE EL MAX-CONTENT 
     gap: 20px;
 }
 
-<<<<<<< HEAD
-@media (min-width:1100px) {
-    .poemas {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 30px;
-    }
-=======
-
->>>>>>> rama-trabajo
 
 
 /* ======Ambientacion============= */
@@ -753,15 +741,9 @@ form {
 
 
 
-<<<<<<< HEAD
-.encabezadoNeruda {
-    margin: 5px;
-    font-size: 16px;
-=======
 .neruda__encabezado {
     padding: 5px;
     font-size: 18px;
->>>>>>> rama-trabajo
     display: flex;
     flex-direction: column;
     position: sticky;
