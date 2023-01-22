@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-clase-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogelio39/Proyecto-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogelio39/Proyecto-git/issues"
+  },
+  "homepage": "https://github.com/rogelio39/Proyecto-git#readme"
+}

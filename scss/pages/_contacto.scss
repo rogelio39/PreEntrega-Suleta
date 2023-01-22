@@ -1,0 +1,223 @@
+/*===============CONTACTO==============*/
+
+
+.contacto {
+    background-color: rgba(255, 235, 205, 0.651);
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+
+
+    &__encabezado {
+        padding: 1vw;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(236, 181, 108, 0.7);
+        border-color: black;
+        border-style: groove;
+        border-width: 1px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    &__formulario h2 {
+        margin-left: 18vw;
+        margin-top: 2vw;
+        font-size: 24px;
+        padding: 10px;
+        border-color: black;
+        border-style: groove;
+        border-width: 1px;
+        text-align: center;
+        background-color: rgba(222, 184, 135, 0.636);
+    }
+
+    &__usuario {
+        padding: 10px;
+        margin: 3vw;
+        border-width: 2px;
+        border-color: black;
+        border-style: groove;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(222, 184, 135, 0.697);
+    }
+
+
+
+    &__email {
+        width: 75vw;
+        padding: 10px;
+        margin: 3vw;
+        border-width: 2px;
+        border-color: black;
+        border-style: groove;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(222, 184, 135, 0.697);
+    }
+
+
+
+    &__mensaje {
+        padding: 10px;
+        margin: 3vw;
+        border-width: 2px;
+        border-color: black;
+        border-style: groove;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(222, 184, 135, 0.697);
+        width: 80%;
+
+    }
+
+    &__asuntos {
+        width: 50%;
+        padding: 5px;
+        margin: 3vw;
+        border-width: 2px;
+        border-color: black;
+        border-style: groove;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(222, 184, 135, 0.697);
+    }
+
+
+    &__genero {
+        margin: 3vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-style: groove;
+        border-color: black;
+        border-width: 2px;
+        background-color: rgba(222, 184, 135, 0.697);
+        padding: 0.5vw;
+    }
+
+    &__novedades {
+        width: 45%;
+        margin: 3vw;
+        padding: 0.5vw;
+        align-items: center;
+        border-style: groove;
+        border-color: black;
+        border-width: 2px;
+        background-color: rgba(222, 184, 135, 0.697);
+    }
+
+    &__enviar {
+        margin: 3vw;
+        padding: 1vw;
+        border-width: 2px;
+        border-color: black;
+        border-style: groove;
+        background-color: rgba(222, 184, 135, 0.697);
+    }
+
+
+    #reset {
+        padding: 0.5vw;
+    }
+
+    #submit {
+        padding: 0.5vw;
+    }
+
+    &__pieDePagina {
+        font-size: 18px;
+        width: 100%;
+        padding: 10px;
+        border-style: groove;
+        border-color: black;
+        border-width: 2px;
+        padding: 10px;
+        background-color: rgba(222, 184, 135, 0.697);
+
+        div ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+}
+
+
+
+
+
+@media (min-width:1100px) {
+
+    .contacto{
+        border-width: 2px;
+        background-image: url(../views/img/contacto.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+
+        &__encabezado {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__formulario h2 {
+            width: 30vw;
+            margin: 0;
+            margin-top: 2vw;
+            margin-left: 2vw;
+        }
+
+        &__formulario h3 {
+            width: 40vw;
+            border-style: groove;
+            border-color: black;
+            border-width: 2px;
+            padding: 10px;
+            background-color: rgba(222, 184, 135, 0.697);
+
+        }
+
+        &__usuario{
+            width: 40vw;
+        }
+
+        &__email {
+            width: 40vw;
+        }
+
+        &__mensaje{
+            width: 40vw;
+        }
+
+        &__asuntos{
+            width: 30vw;
+        }
+
+        &__genero {
+            width: 60vw;
+        }
+
+        &__novedades{
+            width: 28vw;
+            display: flex;
+            gap: 40px;
+        }
+    }
+
+
+
+
+
+}

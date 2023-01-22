@@ -1,0 +1,147 @@
+/* ===========Lord Byron=========== */
+
+
+.byron {
+    background-image: url(../views/img/lordByron.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+
+    /* ========HEADER=========== */
+
+
+    &__encabezado {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        background-color: rgba(244, 244, 160, 0.578);
+        border-style: groove;
+        border-color: black;
+        border-width: 2px;
+
+    }
+
+
+    &__cuerpoPrincipal {
+        margin: 10px;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            border-style: groove;
+            border-color: black;
+            border-width: 2px;
+            font-size: 24px;
+            padding: 10px;
+            color: black;
+            background-color: rgba(248, 248, 110, 0.608);
+        }
+    }
+
+
+    &__ambientacion {
+        margin-bottom: 10vh;
+    }
+
+    hr {
+        margin: 5px;
+        border: 1px solid rgb(11, 11, 11);
+        height: 1px;
+        width: 95vw;
+        background-color: black;
+    }
+
+    &__poemas {
+        width: 80%;
+        margin-top: 10vh;
+    }
+
+    &__poema1 {
+        border-style: groove;
+        border-color: black;
+        background-color: rgba(244, 244, 117, 0.556);
+        border-width: 2px;
+        font-size: 18px;
+        padding: 10px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            margin-top: 10px;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            font-size: 18px;
+            padding: 10px;
+            color: black;
+            background-color: rgba(249, 249, 123, 0.614);
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: justify;
+        }
+    }
+
+    &__pieDePagina {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+        border-style: groove;
+        border-color: black;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgba(241, 241, 116, 0.522);
+
+        div ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+}
+
+
+
+
+@media (min-width:1100px) {
+
+    .byron {
+        border-width: 2px;
+
+        &__encabezado {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__pieDePagina div ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__ambientacion {
+            width: 40vw;
+            height: 40vh;
+        }
+
+    }
+}

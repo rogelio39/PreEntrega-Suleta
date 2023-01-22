@@ -7,89 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- <meta name="description" content=""> AGREGAR!! -->
 </head>
 
 <body>
-    <!--FORMULARIOS
--->
 
-
-    <header class="encabezadoContacto">
-        <h2>CONTACTO</h2>
-        <ul>
-            <li><a href="../index.html" class="btn">INICIO</a></li>
-        </ul>
-    </header>
-
-    <main>
-        <form action="">
-            <h2 class="formulario">Formulario de contacto</h2>
-            <h3>Si quieres pasarnos un poema que te gusta, lo escribes y nos los envias y lo sumamos.</h3>
-            <div class="usuario">
-                <label for="user_name">Ingrese su nombre y apellido</label>
-                <input type="text" id="user_name" value="Nombre y apellido">
-            </div>
-
-            <div>
-                <label for="user_email">Ingrese su email</label>
-                <input type="email" id="user_email" value="Example@gmail.com">
-            </div>
-
-            <div>
-                <label for="user_message">Ingrese su mensaje</label>
-                <textarea name="" id="user_message" cols="30" rows="10"></textarea>
-            </div>
-
-            <div>
-                <label for="asunto_usuario">Selecciona un asunto:</label>
-                <select name="asunto_usuario" id="asunto_usuario">
-                    <option value="mensaje">Mensaje</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="consultas">Consultas</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
-
-            <div>
-                <div>Ingrese su genero: </div>
-
-                <label for="mujer">Mujer</label>
-                <input type="radio" id="mujer" name="radio_genero" value="mujer">
-
-                <label for="hombre">Hombre</label>
-                <input type="radio" id="hombre" name="radio_genero" value="hombre">
-
-                <label for="otro">Prefiero no contestar</label>
-                <input type="radio" id="sin_respuesta" name="radio_genero" value="sin_respuesta">
-
-            </div>
-
-            <div>
-                <label for="user_news">¿Desea recibir novedades?</label>
-                <input type="checkbox" id="user_news">
-            </div>
-
-            <div>
-                <input type="submit" id="submit" value="Enviar">
-                <input type="reset" id="reset" value="Restablecer formulario">
-            </div>
-
-        </form>
-    </main>
-
-    <footer class="pieDePaginaContacto">
-
-        <div>
+    <div class="contacto">
+        <header class="contacto__encabezado">
+            <h2>CONTACTO</h2>
             <ul>
                 <li><a href="../index.html" class="btn">INICIO</a></li>
-                <li><a href="../views/contacto.html" class="btn">CONTACTO</a></li>
-                <li><a href="https://www.instagram.com/migueldiosquezdupuy/" target="_blank" class="btn">SEGUINOS</a></li>
             </ul>
-        </div>
+        </header>
+
+        <main>
+            <form action="" class="contacto__formulario">
+                <h2>Formulario de contacto</h2>
+                <div class="contacto__usuario">
+                    <label for="usuario_nombre">Ingrese su nombre y apellido</label>
+                    <input type="text" id="usuario_nombre" value="Nombre y apellido">
+                </div>
+
+                <div class="contacto__email">
+                    <label for="usuario_email">Ingrese su email</label>
+                    <input type="email" id="usuario_email" value="ejemplo@gmail.com">
+                </div>
+
+                <div class="contacto__mensaje">
+                    <label for="usuario_mensaje">Ingrese su mensaje</label>
+                    <textarea name="usuario__mensaje" id="usuario_mensaje" cols="30" rows="10"
+                        placeholder="Si quieres pasarnos un poema que te gusta también puedes hacerlo por aqui."></textarea>
+                </div>
+
+                <div class="contacto__asuntos">
+                    <label for="asunto_usuario">Selecciona un asunto:</label>
+                    <select name="asunto_usuario" id="asunto_usuario">
+                        <option value="mensaje">Mensaje</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="consultas">Consultas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="contacto__genero">
+                    <div>Ingrese su genero: </div>
+
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" id="mujer" name="radio_genero" value="mujer">
+
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="hombre" name="radio_genero" value="hombre">
+
+                    <label for="otro">Prefiero no contestar</label>
+                    <input type="radio" id="otro" name="radio_genero" value="otro">
+
+                </div>
+
+                <div class="contacto__novedades">
+                    <label for="user_news">¿Desea recibir novedades?</label>
+                    <input type="checkbox" id="user_news">
+                </div>
+
+                <div class="contacto__enviar">
+                    <input type="submit" id="submit" value="Enviar">
+                    <input type="reset" id="reset" value="Restablecer formulario">
+                </div>
+
+            </form>
+        </main>
+
+        <footer class="contacto__pieDePagina">
+
+            <div>
+                <ul>
+                    <li><a href="../index.html" class="btn">INICIO</a></li>
+                    <li><a href="../views/contacto.html" class="btn">CONTACTO</a></li>
+                    <li><a href="https://www.instagram.com/roger_suleta/" target="_blank" class="btn">SEGUINOS</a>
+                    </li>
+                </ul>
+            </div>
 
 
-    </footer>
+        </footer>
 
+
+    </div>
 
 
 </body>

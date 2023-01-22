@@ -1,0 +1,240 @@
+
+/* ===============Julio Cortazar================= */
+
+
+.cortazar {
+    background-image: url(../views/img/julioCortazar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+
+    /* ========HEADER=========== */
+
+    a {
+        color: rgba(255, 255, 255, 0.718);
+    }
+
+
+
+    &__encabezado {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.718);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background-color: rgba(68, 114, 68, 0.473);
+        border-style: groove;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 2px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    &__cuerpoPrincipal {
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+
+    &__bio{
+        color: rgba(255, 255, 255, 0.718);
+        border-radius: 5px;
+        background-color: rgba(68, 114, 68, 0.473);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        img{
+            border-radius: 150px;
+            height: 30%;
+            width: 30%;
+        }
+
+        p{
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+
+
+
+    &__ambientación {
+        width: 50%;
+
+        h2 {
+            width: max-content;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            font-size: 18px;
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.718);
+            background-color: rgba(68, 114, 68, 0.473);
+        }
+    }
+
+    &__poemas {
+        background-color: rgba(68, 114, 68, 0.473);
+        color: rgba(255, 255, 255, 0.718);
+        border-color: black;
+        border-style: groove;
+        border-width: 2px;
+        padding: 2vw;
+
+        h2 {
+            width: max-content;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            font-size: 18px;
+            padding: 10px;
+            color: rgba(255, 255, 255, 0.718);
+            background-color: rgba(68, 114, 68, 0.473);
+        }
+
+        h3 {
+            width: max-content;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            font-size: 18px;
+            margin-top: 1vw;
+            color: rgba(255, 255, 255, 0.718);
+            background-color: rgba(68, 114, 68, 0.473);
+        }
+
+        p {
+            padding-top: 1vw;
+        }
+    }
+
+    &__poema1 {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.718);
+        padding: 2vw;
+    }
+
+
+    &__pieDePagina {
+        height: 15vh;
+        padding-top: 3vh;
+        color: rgba(255, 255, 255, 0.718);
+        background-color: rgba(68, 114, 68, 0.473);
+
+        div ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        hr {
+            margin: 0;
+            margin: 5px;
+            border: 1px solid rgb(11, 11, 11);
+            height: 1px;
+            width: 95vw;
+            background-color: black;
+        }
+    }
+}
+
+
+@media (min-width:1100px) {
+
+    .cortazar {
+        border-width: 2px;
+
+
+        &__encabezado {
+            font-size: 24px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            div nav ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+
+        &cuerpoPrincipal {
+            padding: 10px;
+            border-radius: 5px;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        &__bio{
+            width: 100%;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 30% 30%;
+
+            grid-template-areas:
+            
+            "img txt1"
+            "txt2 txt2"
+            
+            ;
+
+            img {
+                border-radius: 0;
+                border-radius: 150px;
+                height: 90%;
+                width: 90%;
+            }
+        }
+
+
+        &__txt1 {
+            width: 95%;
+            grid-area: txt1;
+        }
+
+        &__txt2 {
+            width: 95%;
+            grid-area: txt2;
+        }
+
+
+
+        &__pieDePagina {
+            font-size: 18px;
+            padding: 10px;
+            background-color: rgba(68, 114, 68, 0.473);
+            div ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.718);
+                margin-top: 10px;    
+            }
+        }
+    }
+}
