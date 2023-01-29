@@ -1,4 +1,3 @@
-
 /* ==========NERUDA============ */
 
 
@@ -11,57 +10,70 @@
     border-width: 2px;
     border-style: groove;
 
-/* ======ENCABEZADO===== */
+    /* ======ENCABEZADO===== */
 
 
 
     &__encabezado {
+        height: 30vh;
         padding: 5px;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
+        @include flex-box (column, center, flex-start);
+        background-color: $color-primario;
         position: sticky;
         top: 0;
         z-index: 2;
-        background-color: rgba(186, 185, 185, 0.516);
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        box-shadow: 10px 0 20px black;
+        gap: 15px;
+
+        h1 {
+            font-size: $fuente-encabezado;
+        }
+
+        nav ul {
+            @include flex-box (column, 0, 0);
+            gap: 25px;
+        }
     }
 
 
-    
-/* ======CUERPO PRINCIPAL===== */
+
+
+    /* ======CUERPO PRINCIPAL===== */
 
     &__cuerpoPrincipal {
         margin-top: 10px;
-        display: flex;
-        flex-direction: column;
+        @include flex-box (column, 0, 0);
     }
 
 
-    
-/* ======AMBIENTACION===== */
 
-    &__ambientacion h2 {
-        font-size: 18px;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        background-color: rgba(186, 185, 185, 0.516);
+    /* ======AMBIENTACION===== */
+
+
+
+    &__ambientacion {
+        width: 50%;
+        align-self: center;
+
+        h2 {
+            font-size: 18px;
+            border-color: black;
+            border-style: groove;
+            border-width: 2px;
+            background-color: $color-ner;
+        }
     }
 
-
-    
     &__poemas h2 {
+        width: 60%;
         font-size: 20px;
         border: black 2px groove;
-        background-color: rgba(186, 185, 185, 0.516);
-        align-self: center;
-        margin-right: 10px;
+        background-color: $color-ner;
+        margin-left: 10px;
     }
 
     &__poema20 h3 {
+        width: max-content;
         border-color: black;
         border-style: groove;
         border-width: 2px;
@@ -78,7 +90,7 @@
         margin: 10px;
         padding: 10px;
         color: black;
-        background-color: rgba(186, 185, 185, 0.516);
+        background-color: $color-ner;
     }
 
     &__poema20 p {
@@ -89,6 +101,7 @@
 
 
     &__poema2 h3 {
+        width: max-content;
         border-color: black;
         border-style: groove;
         border-width: 2px;
@@ -105,7 +118,7 @@
         padding: 10px;
         margin: 10px;
         color: black;
-        background-color: rgba(186, 185, 185, 0.516);
+        background-color: $color-ner;
     }
 
 
@@ -117,6 +130,7 @@
 
 
     &__poema11 h3 {
+        width: max-content;
         border-color: black;
         border-style: groove;
         border-width: 2px;
@@ -133,7 +147,7 @@
         padding: 10px;
         margin: 10px;
         color: black;
-        background-color: rgba(186, 185, 185, 0.516);
+        background-color: $color-ner;
     }
 
     &__poema11 p {
@@ -142,38 +156,46 @@
         text-align: justify;
     }
 
-    &__pieDePaginaNeruda {
+    &__pieDePagina {
         margin-top: 5vh;
-        background-color: rgba(186, 185, 185, 0.516);
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        height: 23vh;
+        background-color: $color-primario;
+        border-style: black 2px groove;
+        @include flex-box (column, flex-start, flex-start);
+
+        div {
+            margin-top: 5vh;
+
+            ul {
+                @include flex-box (column, center, flex-start);
+                gap: 30px;
+            }
+        }
     }
-
-
-    &__pieDePaginaNeruda div ul {
-        font-size: 18px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
 }
 
 
 
-/* ===========revisar============= */
+
+
+
+/* ===========Vista Desktop============= */
 @media (min-width: 1100px) {
 
     .neruda {
         border-width: 2px;
 
         &__encabezado {
+            height: 10vh;
             font-size: 24px;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-box (row, space-between, center);
+
+            nav ul {
+                @include flex-box (row, space-between, center);
+            }
         }
+
+
 
         &__cuerpoPrincipal {
             display: grid;
@@ -189,7 +211,6 @@
 
         &__ambientacion {
             grid-area: ambientacion;
-            width: 50%;
             align-self: center;
             margin-left: 20vw;
         }
@@ -209,6 +230,8 @@
             ;
 
             h2 {
+                border: 0;
+                box-shadow: 10px 10px 15px black;
                 grid-area: titulo;
                 font-size: 28px;
                 text-align: center;
@@ -219,15 +242,15 @@
         &__poema20 {
             text-align: justify;
             margin-top: 3vh;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            border: 0;
+            box-shadow: 10px 10px 15px black;
             padding: 10px;
             color: black;
             grid-area: poema20;
             align-self: center;
 
             h3 {
+                border: 0;
                 font-size: 24px;
 
                 p {
@@ -240,62 +263,62 @@
         &__poema2 {
             text-align: justify;
             margin-top: 10px;
-            border-radius: 5px;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            border: 0;
+            box-shadow: 10px 10px 15px black;
             font-size: 18px;
             padding: 10px;
             color: black;
             grid-area: poema2;
             align-self: center;
 
-            h2 {
-                font-size: 28px;
+            h3 {
+                border: 0;
+                font-size: 24px;
 
-                h3 {
-                    font-size: 24px;
-
-                    p {
-                        font-size: 22px;
-                    }
+                p {
+                    font-size: 22px;
                 }
             }
         }
 
+
         &__poema11 {
             text-align: justify;
             margin-top: 10px;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            border: 0;
+            box-shadow: 10px 10px 15px black;
             font-size: 18px;
             padding: 10px;
             color: black;
             grid-area: poema11;
             align-self: center;
 
-            h2 {
-                font-size: 28px;
 
-                h3 {
-                    font-size: 24px;
+            h3 {
+                border: 0;
+                font-size: 24px;
 
-                    p {
-                        font-size: 22px;
-                    }
+                p {
+                    font-size: 22px;
                 }
             }
         }
 
 
-        &__pieDePaginaNeruda {
+        &__pieDePagina {
+            height: 15vh;
             margin-top: 10vh;
 
-            div ul {
-                font-size: 24px;
-            }
+            div {
+                padding: 10px;
+                width: 100%;
 
+                ul {
+                    font-size: $fuente-piedepagina;
+                    @include flex-box (row, space-between, center);
+                }
+
+            }
         }
     }
 }

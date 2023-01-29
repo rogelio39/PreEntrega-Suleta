@@ -1,164 +1,162 @@
+
 /*===============CONTACTO==============*/
 
 
 .contacto {
-    background-color: rgba(255, 235, 205, 0.651);
+    background-color: $color-primario;
     border-color: black;
     border-style: groove;
     border-width: 2px;
 
 
     &__encabezado {
-        padding: 1vw;
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(236, 181, 108, 0.7);
-        border-color: black;
-        border-style: groove;
-        border-width: 1px;
+        padding: 10px;
+        font-size: $fuente-encabezado;
+        @include flex-box (column, center, flex-start);
+        gap: 20px;
+        background-color: $color-contacto;
+        box-shadow: 0px 0px 15px black;
         position: sticky;
         top: 0;
         z-index: 2;
+        padding-bottom: 30px;
     }
 
     &__formulario h2 {
-        margin-left: 18vw;
-        margin-top: 2vw;
-        font-size: 24px;
+        margin: 10px;
+        margin-top: 10px;
+        font-size: $fuente-h2;
         padding: 10px;
         border-color: black;
         border-style: groove;
         border-width: 1px;
         text-align: center;
-        background-color: rgba(222, 184, 135, 0.636);
+        background-color: $color-contacto;
     }
 
     &__usuario {
-        padding: 10px;
-        margin: 3vw;
+        padding: 15px;
+        margin: 10px;
         border-width: 2px;
         border-color: black;
         border-style: groove;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(222, 184, 135, 0.697);
+        @include flex-box(row, space-between, center);
+        background-color: $color-contacto;
+
+        input {
+            padding: 15px;
+        }
     }
 
 
 
     &__email {
         width: 75vw;
-        padding: 10px;
-        margin: 3vw;
+        padding: 15px;
+        margin: 10px;
         border-width: 2px;
         border-color: black;
         border-style: groove;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(222, 184, 135, 0.697);
+        @include flex-box(row, space-between, center);
+        background-color: $color-contacto;
+
+        input {
+            padding: 15px;
+        }
     }
 
 
 
     &__mensaje {
-        padding: 10px;
-        margin: 3vw;
+        padding: 15px;
+        margin: 10px;
         border-width: 2px;
         border-color: black;
         border-style: groove;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(222, 184, 135, 0.697);
-        width: 80%;
+        @include flex-box(row, space-between, center);
+        background-color: $color-contacto;
+        width: 90%;
 
     }
 
     &__asuntos {
-        width: 50%;
-        padding: 5px;
-        margin: 3vw;
+        width: 70%;
+        padding: 10px;
+        margin: 10px;
         border-width: 2px;
         border-color: black;
         border-style: groove;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: rgba(222, 184, 135, 0.697);
+        @include flex-box(row, space-between, center);
+        background-color: $color-contacto;
+
+        select {
+            padding: 15px;
+        }
     }
 
 
     &__genero {
-        margin: 3vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin: 10px;
+        @include flex-box(row, space-between, center);
         border-style: groove;
         border-color: black;
         border-width: 2px;
-        background-color: rgba(222, 184, 135, 0.697);
-        padding: 0.5vw;
+        background-color: $color-contacto;
+        padding: 20px;
     }
 
     &__novedades {
         width: 45%;
-        margin: 3vw;
-        padding: 0.5vw;
+        margin: 10px;
+        padding: 20px;
         align-items: center;
         border-style: groove;
         border-color: black;
         border-width: 2px;
-        background-color: rgba(222, 184, 135, 0.697);
+        background-color: $color-contacto;
     }
 
     &__enviar {
-        margin: 3vw;
-        padding: 1vw;
+        margin: 10px;
+        padding: 10px;
         border-width: 2px;
         border-color: black;
         border-style: groove;
-        background-color: rgba(222, 184, 135, 0.697);
+        background-color: $color-contacto;
     }
 
 
     #reset {
-        padding: 0.5vw;
+        padding: 13px;
     }
 
     #submit {
-        padding: 0.5vw;
+        padding: 13px;
     }
 
     &__pieDePagina {
-        font-size: 18px;
-        width: 100%;
+        margin-top: 20px;
+        font-size: $fuente-piedepagina;
+        height: 30vh;
         padding: 10px;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
-        padding: 10px;
-        background-color: rgba(222, 184, 135, 0.697);
+        border-style: black 2px groove;
+        background-color: $color-contacto;
 
-        div ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        div {
+            margin-top: 5vh 
         }
-    }
-
+            ul {
+                @include flex-box(column, flex-start, flex-start);
+                gap: 28px;
+            }
+        }
 }
-
-
 
 
 
 @media (min-width:1100px) {
 
-    .contacto{
+    .contacto {
         border-width: 2px;
         background-image: url(../views/img/contacto.jpg);
         background-attachment: fixed;
@@ -166,58 +164,63 @@
         background-position: center;
 
         &__encabezado {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            padding: 20px;
+            @include flex-box(row, space-between, center);
         }
 
         &__formulario h2 {
-            width: 30vw;
+            width: 70%;
             margin: 0;
             margin-top: 2vw;
-            margin-left: 2vw;
+            margin-left: 10px;
         }
 
-        &__formulario h3 {
-            width: 40vw;
-            border-style: groove;
-            border-color: black;
-            border-width: 2px;
-            padding: 10px;
-            background-color: rgba(222, 184, 135, 0.697);
 
-        }
-
-        &__usuario{
-            width: 40vw;
+        &__usuario {
+            width: 70%;
         }
 
         &__email {
-            width: 40vw;
+            width: 70vw;
         }
 
-        &__mensaje{
-            width: 40vw;
+        &__mensaje {
+            width: 80vw;
         }
 
-        &__asuntos{
-            width: 30vw;
+        &__asuntos {
+            width: 40vw;
         }
 
         &__genero {
             width: 60vw;
         }
 
-        &__novedades{
-            width: 28vw;
+        &__novedades {
+            width: 40vw;
             display: flex;
             gap: 40px;
         }
+
+        &__enviar {
+            width: 50%;
+            @include flex-box(row, space-around, center);
+
+        }
+
+
+
+        &__pieDePagina {
+            height: auto;
+            margin-top: 55px;
+
+            div {
+                padding-bottom: 40px
+            }
+
+            ul {
+                @include flex-box(row, space-between, center);
+            }
+        }
     }
-
-
-
-
-
 }

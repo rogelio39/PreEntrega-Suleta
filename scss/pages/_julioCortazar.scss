@@ -14,60 +14,53 @@
     /* ========HEADER=========== */
 
     a {
-        color: rgba(255, 255, 255, 0.718);
+        color: $color-secundario;
     }
 
 
 
     &__encabezado {
-        font-size: 18px;
-        color: rgba(255, 255, 255, 0.718);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        height: 20vh;
+        font-size: $fuente-encabezado;
+        color: $color-primario;
+        @include flex-box (column, center, flex-start);
         position: sticky;
         top: 0;
         z-index: 2;
-        background-color: rgba(68, 114, 68, 0.473);
+        background-color: $color-cor;
         border-style: groove;
         border-radius: 10px;
         border-color: black;
         border-width: 2px;
         padding: 5px;
         margin: 5px;
+        gap: 10px;
     }
 
     &__cuerpoPrincipal {
         padding: 5px;
         margin: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        @include flex-box (column, center, flex-start);
         gap: 20px;
     }
 
 
     &__bio{
-        color: rgba(255, 255, 255, 0.718);
+        color: $color-primario;
         border-radius: 5px;
-        background-color: rgba(68, 114, 68, 0.473);
+        background-color: $color-cor;
         padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-box (column, space-between, center);
         gap: 20px;
 
         img{
             border-radius: 150px;
-            height: 30%;
-            width: 30%;
+            object-fit: cover;
+            object-position: center;
         }
 
         p{
-            font-size: 16px;
+            font-size: $fuente-p;
             text-align: justify;
         }
     }
@@ -78,69 +71,68 @@
         width: 50%;
 
         h2 {
-            width: max-content;
             border-color: black;
             border-style: groove;
             border-width: 2px;
-            font-size: 18px;
+            font-size: $fuente-h2;
             padding: 10px;
-            color: rgba(255, 255, 255, 0.718);
-            background-color: rgba(68, 114, 68, 0.473);
+            color:$color-primario;
+            background-color: $color-cor;
         }
     }
 
     &__poemas {
-        background-color: rgba(68, 114, 68, 0.473);
-        color: rgba(255, 255, 255, 0.718);
+        background-color: $color-cor;
+        color: $color-primario;
         border-color: black;
         border-style: groove;
         border-width: 2px;
         padding: 2vw;
 
         h2 {
-            width: max-content;
             border-color: black;
             border-style: groove;
             border-width: 2px;
-            font-size: 18px;
+            font-size: $fuente-h2;
             padding: 10px;
-            color: rgba(255, 255, 255, 0.718);
-            background-color: rgba(68, 114, 68, 0.473);
+            background-color: $color-cor;
+            color: $color-primario;
         }
 
         h3 {
-            width: max-content;
             border-color: black;
             border-style: groove;
             border-width: 2px;
-            font-size: 18px;
+            font-size: $fuente-h3;
             margin-top: 1vw;
-            color: rgba(255, 255, 255, 0.718);
-            background-color: rgba(68, 114, 68, 0.473);
+            background-color: $color-cor;
+            color: $color-primario;
         }
 
         p {
+            font-size: $fuente-p;
             padding-top: 1vw;
         }
     }
 
-    &__poema1 {
-        font-size: 18px;
-        color: rgba(255, 255, 255, 0.718);
+    &__poema1 p{
+        font-size: $fuente-p;
+        color: $color-primario;
         padding: 2vw;
     }
 
 
     &__pieDePagina {
-        height: 15vh;
+        height: 22vh;
         padding-top: 3vh;
-        color: rgba(255, 255, 255, 0.718);
-        background-color: rgba(68, 114, 68, 0.473);
+        background-color: $color-cor;
+        color: $color-primario;
+        font-size: $fuente-piedepagina;
 
         div ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+            @include flex-box (row, space-around, center);
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         hr {
             margin: 0;
@@ -162,15 +154,10 @@
 
         &__encabezado {
             font-size: 24px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-box (row, space-between, center);
 
             div nav ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex-box (row, space-between, center);
                 gap: 20px;
             }
         }
@@ -181,10 +168,7 @@
             border-color: black;
             border-style: groove;
             border-width: 2px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-box (row, space-between, center);
             gap: 20px;
         }
 
@@ -194,7 +178,7 @@
             padding: 30px;
             display: grid;
             grid-template-columns: 20% 80%;
-            grid-template-rows: 30% 30%;
+            grid-template-rows: 50% 50%;
 
             grid-template-areas:
             
@@ -204,10 +188,8 @@
             ;
 
             img {
-                border-radius: 0;
-                border-radius: 150px;
-                height: 90%;
-                width: 90%;
+                height: 100%;
+                width: 100%;
             }
         }
 
@@ -225,15 +207,12 @@
 
 
         &__pieDePagina {
-            font-size: 18px;
             padding: 10px;
-            background-color: rgba(68, 114, 68, 0.473);
+            background-color: $color-cor;
             div ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: rgba(255, 255, 255, 0.718);
-                margin-top: 10px;    
+                @include flex-box (row, space-between, center);
+                color: $color-primario;
+                margin-top: 20px;    
             }
         }
     }

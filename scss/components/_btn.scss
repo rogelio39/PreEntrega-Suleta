@@ -1,6 +1,15 @@
 
 /* =====Botones===== */
 
-.btn {
-    color: black;
+.btn{
+    border-color: black 2px solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    &:hover{
+        background-color: $color-primario;
+    }
 }

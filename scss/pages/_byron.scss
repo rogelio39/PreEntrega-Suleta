@@ -14,17 +14,18 @@
 
 
     &__encabezado {
-        font-size: 20px;
-        display: flex;
-        flex-direction: column;
+        height: 20vh;
+        font-size: $fuente-encabezado;
+        @include flex-box (column, center, flex-start);
         position: fixed;
         top: 0;
         z-index: 2;
         width: 100%;
-        background-color: rgba(244, 244, 160, 0.578);
+        background-color: $color-byr;
         border-style: groove;
         border-color: black;
         border-width: 2px;
+        gap: 15px;
 
     }
 
@@ -32,31 +33,31 @@
     &__cuerpoPrincipal {
         margin: 10px;
         margin-top: 20vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-box (column, center, center);
 
         h2 {
             border-style: groove;
             border-color: black;
             border-width: 2px;
-            font-size: 24px;
+            font-size: $fuente-h2;
             padding: 10px;
             color: black;
-            background-color: rgba(248, 248, 110, 0.608);
+            background-color: $color-byr;
         }
     }
 
 
     &__ambientacion {
+        margin-top: 10vh;
         margin-bottom: 10vh;
     }
 
     hr {
-        margin: 5px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
         border: 1px solid rgb(11, 11, 11);
         height: 1px;
-        width: 95vw;
+        width: 90vw;
         background-color: black;
     }
 
@@ -68,16 +69,15 @@
     &__poema1 {
         border-style: groove;
         border-color: black;
-        background-color: rgba(244, 244, 117, 0.556);
+        background-color: $color-byr;
         border-width: 2px;
-        font-size: 18px;
+        font-size: $fuente-p;
         padding: 10px;
         color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-box (column, center, center);
 
         h2 {
+            font-size: $fuente-h2;
             text-align: center;
         }
 
@@ -86,10 +86,10 @@
             border-color: black;
             border-style: groove;
             border-width: 2px;
-            font-size: 18px;
+            font-size: $fuente-h3;
             padding: 10px;
             color: black;
-            background-color: rgba(249, 249, 123, 0.614);
+            background-color: $color-byr;
         }
 
         p {
@@ -100,19 +100,20 @@
 
     &__pieDePagina {
         width: 100%;
-        font-size: 18px;
+        font-size: $fuente-piedepagina;
         padding: 10px;
         border-style: groove;
         border-color: black;
         border-width: 2px;
         border-radius: 5px;
         padding: 10px;
-        background-color: rgba(241, 241, 116, 0.522);
+        background-color: $color-byr;
 
         div ul {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
+            @include flex-box (column, center, flex-start);
+            gap: 30px;
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
     }
 }
@@ -120,27 +121,24 @@
 
 
 
+/* ======VISTA======*/
+
 @media (min-width:1100px) {
 
     .byron {
         border-width: 2px;
 
         &__encabezado {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-box (row, space-between, center);
         }
 
         &__pieDePagina div ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            @include flex-box (row, space-between, center);
         }
 
         &__ambientacion {
-            width: 40vw;
-            height: 40vh;
+            width: 50vw;
+            height: 50vh;
         }
 
     }
