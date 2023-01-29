@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ======RESETEO====== */
 * {
   box-sizing: border-box;
@@ -108,6 +109,1295 @@ hr {
   height: 7px;
   width: 90vw;
   background-color: black;
+}
+
+/* ==========index========== */
+.index {
+  background-image: url(../views/img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  /* ======ENCABEZADO===== */
+  /* ======CUERPO PRINCIPAL===== */
+  /* ======SECTION POETAS===== */
+  /* ======SECCION MUSICA PARA LEER===== */
+  /* ======SECCION LIBRO POETAS======= */
+  /* ======PIE DE PAGINA===== */
+}
+.index__encabezado {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 28px;
+  padding: 5px;
+  background-color: rgba(233, 221, 221, 0.868);
+  border-bottom: black 2px groove;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+}
+.index__encabezado li {
+  margin: 25px 0px 25px;
+}
+.index__cuerpoPrincipal {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.index__poetas {
+  margin: 10px;
+  animation-name: scale-in-top;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  background-color: rgba(233, 221, 221, 0.868);
+  border: black 2px groove;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15vw;
+}
+.index__poetas div {
+  border: black 2px groove;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.921);
+}
+.index__poetas div ul {
+  padding: 20px;
+}
+.index__poetas div ul li {
+  display: flex;
+  gap: 20px;
+}
+.index__poetas div ul li img {
+  height: 25vh;
+  border: 2px groove black;
+  padding: 3px;
+}
+.index__ner {
+  position: sticky;
+  top: 200px;
+  z-index: 1;
+}
+.index__cor {
+  position: sticky;
+  top: 95px;
+  z-index: 2;
+}
+.index__byr {
+  position: sticky;
+  top: 95px;
+  z-index: 3;
+}
+.index__musicaParaLeer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation-name: scale-in-top;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.index__musicaParaLeer h2 {
+  margin: 10px;
+  font-size: 24px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.589), rgba(0, 0, 0, 0.616));
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  position: sticky;
+  top: 95px;
+}
+.index__musicaParaLeer h2 div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.index__musicaParaLeer h2 div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  background-color: rgba(233, 221, 221, 0.868);
+}
+.index__musicaParaLeer h2 div ul li {
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  border-radius: 5px;
+}
+.index__librosPoetas {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  animation-name: scale-in-top;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+.index__librosPoetas h2 {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 24px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.589), rgba(0, 0, 0, 0.616));
+  border-color: black 2px groove;
+  position: sticky;
+  top: 95px;
+}
+.index__librosPoetas h2 div {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.index__librosPoetas h2 div ul {
+  background-color: rgba(233, 221, 221, 0.868);
+  margin: 10px;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.index__pieDePagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 26px;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: rgba(233, 221, 221, 0.868);
+  gap: 10px;
+}
+.index__pieDePagina div {
+  padding: 2px;
+}
+.index__pieDePagina div ul {
+  padding: 3px;
+  gap: 20px;
+}
+.index__pieDePagina div ul li {
+  padding: 3px;
+  margin: 20px 0px 20px;
+}
+
+/* =====VERSION DESKTOP===== */
+@media (min-width: 1100px) {
+  .index {
+    border-width: 2px;
+    /* ======AQUI EN LA VERISON DESKTOP SE APLICA GRID===== */
+  }
+  .index__encabezado {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+  .index__encabezado nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .index__cuerpoPrincpal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 50% 50%;
+    grid-template-areas: "poetas" "musica" "libros";
+  }
+  .index__poetas {
+    width: 100%;
+    grid-area: poetas;
+    margin-right: 5vw;
+    gap: 10vw;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+  }
+  .index__poetas div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .index__musicaParaLeer {
+    grid-area: musica;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "titulo" "video";
+  }
+  .index__musicaParaLeer h2 {
+    padding: 10px;
+    font-size: 24px;
+    border-color: black;
+    border-width: 2px;
+    border-style: groove;
+    top: 60px;
+    grid-area: titulo;
+    text-align: center;
+  }
+  .index__musicaParaLeer div {
+    padding: 10px;
+    gap: 20px;
+  }
+  .index__musicaParaLeer div ul {
+    grid-area: video;
+    border: black 2px groove;
+    background-color: rgba(233, 221, 221, 0.868);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .index__musicaParaLeer div ul li {
+    border: 2px groove black;
+  }
+  .index__video {
+    width: 30vw;
+    height: 30vh;
+  }
+  .index__librosPoetas {
+    margin-top: 30px;
+    gap: 10px;
+    grid-area: libros;
+    align-self: center;
+  }
+  .index__librosPoetas h2 {
+    text-align: center;
+  }
+  .index__librosPoetas div {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .index__librosPoetas div ul {
+    background-color: rgba(233, 221, 221, 0.868);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    gap: 10vw;
+  }
+  .index__pieDePagina {
+    padding: 10px;
+    border-style: groove;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+  }
+  .index__pieDePagina div {
+    width: 100%;
+  }
+  .index__pieDePagina ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*===============CONTACTO==============*/
+.contacto {
+  background-color: rgba(233, 221, 221, 0.868);
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+}
+.contacto__encabezado {
+  padding: 10px;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: rgba(238, 193, 134, 0.7);
+  box-shadow: 0px 0px 15px black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding-bottom: 30px;
+}
+.contacto__formulario h2 {
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 24px;
+  padding: 10px;
+  border-color: black;
+  border-style: groove;
+  border-width: 1px;
+  text-align: center;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__usuario {
+  padding: 15px;
+  margin: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__usuario input {
+  padding: 15px;
+}
+.contacto__email {
+  width: 75vw;
+  padding: 15px;
+  margin: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__email input {
+  padding: 15px;
+}
+.contacto__mensaje {
+  padding: 15px;
+  margin: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(238, 193, 134, 0.7);
+  width: 90%;
+}
+.contacto__asuntos {
+  width: 70%;
+  padding: 10px;
+  margin: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__asuntos select {
+  padding: 15px;
+}
+.contacto__genero {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  background-color: rgba(238, 193, 134, 0.7);
+  padding: 20px;
+}
+.contacto__novedades {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  align-items: center;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__enviar {
+  margin: 10px;
+  padding: 10px;
+  border-width: 2px;
+  border-color: black;
+  border-style: groove;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto #reset {
+  padding: 13px;
+}
+.contacto #submit {
+  padding: 13px;
+}
+.contacto__pieDePagina {
+  margin-top: 20px;
+  font-size: 26px;
+  height: 30vh;
+  padding: 10px;
+  border-style: black 2px groove;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__pieDePagina div {
+  margin-top: 5vh;
+}
+.contacto__pieDePagina ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+@media (min-width: 1100px) {
+  .contacto {
+    border-width: 2px;
+    background-image: url(../views/img/contacto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .contacto__encabezado {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contacto__formulario h2 {
+    width: 70%;
+    margin: 0;
+    margin-top: 2vw;
+    margin-left: 10px;
+  }
+  .contacto__usuario {
+    width: 70%;
+  }
+  .contacto__email {
+    width: 70vw;
+  }
+  .contacto__mensaje {
+    width: 80vw;
+  }
+  .contacto__asuntos {
+    width: 40vw;
+  }
+  .contacto__genero {
+    width: 60vw;
+  }
+  .contacto__novedades {
+    width: 40vw;
+    display: flex;
+    gap: 40px;
+  }
+  .contacto__enviar {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contacto__pieDePagina {
+    height: auto;
+    margin-top: 55px;
+  }
+  .contacto__pieDePagina div {
+    padding-bottom: 40px;
+  }
+  .contacto__pieDePagina ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* ===========Nosotros=========== */
+.nosotros {
+  background-image: url(../views/img/quienesSomos.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+}
+.nosotros__encabezado {
+  padding: 25px;
+  font-size: 28px;
+  border: black 2px groove;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(233, 221, 221, 0.868);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  gap: 10px;
+}
+.nosotros__cuerpoPrincipal {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.nosotros__cuerpoPrincipal h2 {
+  padding: 5px;
+  font-size: 24px;
+  margin: 10px;
+  border: black 2px groove;
+  text-align: center;
+  background-color: rgba(233, 221, 221, 0.868);
+}
+.nosotros__galeriaImagenes img {
+  border: black 2px groove;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+.nosotros__texto {
+  margin: 20px;
+  padding: 10px;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  background-color: rgba(233, 221, 221, 0.868);
+  text-align: justify;
+  font-size: 18px;
+}
+.nosotros__pieDePagina {
+  font-size: 26px;
+  padding: 30px;
+  margin-top: 20px;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  background-color: rgba(233, 221, 221, 0.868);
+}
+.nosotros__pieDePagina div ul {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+@media (min-width: 1100px) {
+  .nosotros {
+    border-width: 2px;
+  }
+  .nosotros__encabezado {
+    border-color: black 2px groove;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .nosotros__cuerpoPrincipal {
+    margin: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 5vh 95vh;
+    grid-template-areas: "nosotros galeria" "texto-nosotros galeria";
+    justify-content: center;
+  }
+  .nosotros__cuerpoPrincipal h2 {
+    height: 40px;
+  }
+  .nosotros__galeriaImagenes {
+    grid-area: galeria;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 5vh 47.33vh 47.33vh;
+    grid-template-areas: "titulo titulo" "imagen1 imagen2" "imagen3 imagen4";
+  }
+  .nosotros__galeriaImagenes h2 {
+    height: 40px;
+    padding: 5px;
+    display: grid;
+    grid-area: titulo;
+    font-size: 20px;
+    text-align: center;
+  }
+  .nosotros__imagen1 img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    grid-area: imagen1;
+  }
+  .nosotros__imagen2 img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    grid-area: imagen2;
+  }
+  .nosotros__imagen3 img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    grid-area: imagen3;
+  }
+  .nosotros__imagen4 img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    grid-area: imagen4;
+  }
+  .nosotros__pieDePagina div ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* ==========NERUDA============ */
+.neruda {
+  background-image: url(../views/img/neruda.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  /* ======ENCABEZADO===== */
+  /* ======CUERPO PRINCIPAL===== */
+  /* ======AMBIENTACION===== */
+}
+.neruda__encabezado {
+  height: 30vh;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(233, 221, 221, 0.868);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 10px 0 20px black;
+  gap: 15px;
+}
+.neruda__encabezado h1 {
+  font-size: 28px;
+}
+.neruda__encabezado nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+  gap: 25px;
+}
+.neruda__cuerpoPrincipal {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: 0;
+  align-items: 0;
+}
+.neruda__ambientacion {
+  width: 50%;
+  align-self: center;
+}
+.neruda__ambientacion h2 {
+  font-size: 18px;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  background-color: rgba(238, 174, 125, 0.736);
+}
+.neruda__poemas h2 {
+  width: 60%;
+  font-size: 20px;
+  border: black 2px groove;
+  background-color: rgba(238, 174, 125, 0.736);
+  margin-left: 10px;
+}
+.neruda__poema20 h3 {
+  width: max-content;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+}
+.neruda__poema20 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background-color: rgba(238, 174, 125, 0.736);
+}
+.neruda__poema20 p {
+  font-size: 16px;
+  padding: 10px;
+  text-align: justify;
+}
+.neruda__poema2 h3 {
+  width: max-content;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+}
+.neruda__poema2 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  background-color: rgba(238, 174, 125, 0.736);
+}
+.neruda__poema2 p {
+  font-size: 16px;
+  padding: 10px;
+  text-align: justify;
+}
+.neruda__poema11 h3 {
+  width: max-content;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+}
+.neruda__poema11 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+  background-color: rgba(238, 174, 125, 0.736);
+}
+.neruda__poema11 p {
+  font-size: 16px;
+  padding: 10px;
+  text-align: justify;
+}
+.neruda__pieDePagina {
+  margin-top: 5vh;
+  height: 23vh;
+  background-color: rgba(233, 221, 221, 0.868);
+  border-style: black 2px groove;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.neruda__pieDePagina div {
+  margin-top: 5vh;
+}
+.neruda__pieDePagina div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* ===========Vista Desktop============= */
+@media (min-width: 1100px) {
+  .neruda {
+    border-width: 2px;
+  }
+  .neruda__encabezado {
+    height: 10vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .neruda__encabezado nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .neruda__cuerpoPrincipal {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 13% 87%;
+    grid-template-areas: "ambientacion" "poemas";
+  }
+  .neruda__ambientacion {
+    grid-area: ambientacion;
+    align-self: center;
+    margin-left: 20vw;
+  }
+  .neruda__poemas {
+    grid-area: poemas;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo" "poema20" "poema2" "poema11";
+  }
+  .neruda__poemas h2 {
+    border: 0;
+    box-shadow: 10px 10px 15px black;
+    grid-area: titulo;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 2vh;
+  }
+  .neruda__poema20 {
+    text-align: justify;
+    margin-top: 3vh;
+    border: 0;
+    box-shadow: 10px 10px 15px black;
+    padding: 10px;
+    color: black;
+    grid-area: poema20;
+    align-self: center;
+  }
+  .neruda__poema20 h3 {
+    border: 0;
+    font-size: 24px;
+  }
+  .neruda__poema20 h3 p {
+    font-size: 22px;
+  }
+  .neruda__poema2 {
+    text-align: justify;
+    margin-top: 10px;
+    border: 0;
+    box-shadow: 10px 10px 15px black;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    grid-area: poema2;
+    align-self: center;
+  }
+  .neruda__poema2 h3 {
+    border: 0;
+    font-size: 24px;
+  }
+  .neruda__poema2 h3 p {
+    font-size: 22px;
+  }
+  .neruda__poema11 {
+    text-align: justify;
+    margin-top: 10px;
+    border: 0;
+    box-shadow: 10px 10px 15px black;
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    grid-area: poema11;
+    align-self: center;
+  }
+  .neruda__poema11 h3 {
+    border: 0;
+    font-size: 24px;
+  }
+  .neruda__poema11 h3 p {
+    font-size: 22px;
+  }
+  .neruda__pieDePagina {
+    height: 15vh;
+    margin-top: 10vh;
+  }
+  .neruda__pieDePagina div {
+    padding: 10px;
+    width: 100%;
+  }
+  .neruda__pieDePagina div ul {
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* ===============Julio Cortazar================= */
+.cortazar {
+  background-image: url(../views/img/julioCortazar.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-color: black;
+  border-width: 2px;
+  border-style: groove;
+  /* ========HEADER=========== */
+}
+.cortazar a {
+  color: black;
+}
+.cortazar__encabezado {
+  height: 20vh;
+  font-size: 28px;
+  color: rgba(233, 221, 221, 0.868);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(58, 151, 58, 0.79);
+  border-style: groove;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 2px;
+  padding: 5px;
+  margin: 5px;
+  gap: 10px;
+}
+.cortazar__cuerpoPrincipal {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.cortazar__bio {
+  color: rgba(233, 221, 221, 0.868);
+  border-radius: 5px;
+  background-color: rgba(58, 151, 58, 0.79);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.cortazar__bio img {
+  border-radius: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.cortazar__bio p {
+  font-size: 18px;
+  text-align: justify;
+}
+.cortazar__ambientación {
+  width: 50%;
+}
+.cortazar__ambientación h2 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 24px;
+  padding: 10px;
+  color: rgba(233, 221, 221, 0.868);
+  background-color: rgba(58, 151, 58, 0.79);
+}
+.cortazar__poemas {
+  background-color: rgba(58, 151, 58, 0.79);
+  color: rgba(233, 221, 221, 0.868);
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  padding: 2vw;
+}
+.cortazar__poemas h2 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(58, 151, 58, 0.79);
+  color: rgba(233, 221, 221, 0.868);
+}
+.cortazar__poemas h3 {
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 20px;
+  margin-top: 1vw;
+  background-color: rgba(58, 151, 58, 0.79);
+  color: rgba(233, 221, 221, 0.868);
+}
+.cortazar__poemas p {
+  font-size: 18px;
+  padding-top: 1vw;
+}
+.cortazar__poema1 p {
+  font-size: 18px;
+  color: rgba(233, 221, 221, 0.868);
+  padding: 2vw;
+}
+.cortazar__pieDePagina {
+  height: 22vh;
+  padding-top: 3vh;
+  background-color: rgba(58, 151, 58, 0.79);
+  color: rgba(233, 221, 221, 0.868);
+  font-size: 26px;
+}
+.cortazar__pieDePagina div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cortazar__pieDePagina hr {
+  margin: 0;
+  margin: 5px;
+  border: 1px solid rgb(11, 11, 11);
+  height: 1px;
+  width: 95vw;
+  background-color: black;
+}
+
+@media (min-width: 1100px) {
+  .cortazar {
+    border-width: 2px;
+  }
+  .cortazar__encabezado {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cortazar__encabezado div nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .cortazarcuerpoPrincipal {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: black;
+    border-style: groove;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .cortazar__bio {
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img txt1" "txt2 txt2";
+  }
+  .cortazar__bio img {
+    height: 100%;
+    width: 100%;
+  }
+  .cortazar__txt1 {
+    width: 95%;
+    grid-area: txt1;
+  }
+  .cortazar__txt2 {
+    width: 95%;
+    grid-area: txt2;
+  }
+  .cortazar__pieDePagina {
+    padding: 10px;
+    background-color: rgba(58, 151, 58, 0.79);
+  }
+  .cortazar__pieDePagina div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(233, 221, 221, 0.868);
+    margin-top: 20px;
+  }
+}
+/* ===========Lord Byron=========== */
+.byron {
+  background-image: url(../views/img/lordByron.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  /* ========HEADER=========== */
+}
+.byron__encabezado {
+  height: 20vh;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: rgba(247, 247, 130, 0.733);
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  gap: 15px;
+}
+.byron__cuerpoPrincipal {
+  margin: 10px;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.byron__cuerpoPrincipal h2 {
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  font-size: 24px;
+  padding: 10px;
+  color: black;
+  background-color: rgba(247, 247, 130, 0.733);
+}
+.byron__ambientacion {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.byron hr {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  border: 1px solid rgb(11, 11, 11);
+  height: 1px;
+  width: 90vw;
+  background-color: black;
+}
+.byron__poemas {
+  width: 80%;
+  margin-top: 10vh;
+}
+.byron__poema1 {
+  border-style: groove;
+  border-color: black;
+  background-color: rgba(247, 247, 130, 0.733);
+  border-width: 2px;
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.byron__poema1 h2 {
+  font-size: 24px;
+  text-align: center;
+}
+.byron__poema1 h3 {
+  margin-top: 10px;
+  border-color: black;
+  border-style: groove;
+  border-width: 2px;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  background-color: rgba(247, 247, 130, 0.733);
+}
+.byron__poema1 p {
+  margin-top: 10px;
+  text-align: justify;
+}
+.byron__pieDePagina {
+  width: 100%;
+  font-size: 26px;
+  padding: 10px;
+  border-style: groove;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(247, 247, 130, 0.733);
+}
+.byron__pieDePagina div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* ======VISTA======*/
+@media (min-width: 1100px) {
+  .byron {
+    border-width: 2px;
+  }
+  .byron__encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .byron__pieDePagina div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .byron__ambientacion {
+    width: 50vw;
+    height: 50vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
