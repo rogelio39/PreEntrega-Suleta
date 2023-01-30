@@ -48,8 +48,14 @@
 
 
     &__ambientacion {
+        width: 100%;
         margin-top: 10vh;
         margin-bottom: 10vh;
+
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
     }
 
     hr {
