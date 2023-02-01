@@ -145,12 +145,20 @@
         padding: 13px;
         border-radius: 20px;
         border: black 2px groove;
+        animation-name: heartbeat ;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function:ease-in-out;
     }
 
     #submit {
         padding: 13px;
         border-radius: 20px;
         border: black 2px groove;
+        animation-name: heartbeat ;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function:ease-in-out;
     }
 
     &__pieDePágina {

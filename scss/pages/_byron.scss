@@ -23,6 +23,9 @@
         background-color: $color-byr;
         border: black 2px groove;
         padding: 10px;
+        animation-name: jello-horizontal;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
 
         hr{
             margin: 0;

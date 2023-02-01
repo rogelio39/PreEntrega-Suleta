@@ -10,6 +10,9 @@
     border-color: black;
     border-width: 2px;
     border-style: groove;
+    animation-name: text-focus-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
 
     /* ========HEADER=========== */
 
@@ -57,7 +60,7 @@
         background-color: $color-cor;
         padding: 10px;
         @include flex-box (column, space-between, center);
-        gap: 20px;
+        gap: 10px;
         h2{
             font-size: $fuente-h2;
         }
@@ -170,7 +173,7 @@
 
 @media (min-width:1100px) {
 
-    .cortazar {
+    .cortázar {
         border-width: 2px;
 
 
@@ -185,8 +188,7 @@
 
 
         &__bio{
-            width: 100%;
-            padding: 30px;
+            padding: 20px;
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-rows: 10% 40% 50%;
@@ -206,9 +208,10 @@
             }
 
             img {
-                padding-top: 50px;
+                padding-top: 65px;
                 grid-area: img;
             }
+
 
         }
 

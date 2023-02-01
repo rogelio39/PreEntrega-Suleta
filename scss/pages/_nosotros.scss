@@ -8,6 +8,9 @@
     border-color: black;
     border-width: 2px;
     border-style: groove;
+    animation-name: tracking-in-expand;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 
 
     &__encabezado {
@@ -21,7 +24,7 @@
         z-index: 2;
         gap: 10px;
 
-        &:hover li{
+        &:hover li {
             margin: 25px 0px 25px;
         }
     }
@@ -51,7 +54,7 @@
             margin: 10px;
         }
     }
-    
+
 
     &__texto {
         margin: 20px;
@@ -79,7 +82,8 @@
             @include flex-box(column, space-between, flex-start);
             gap: 20px;
         }
-        &:hover li{
+
+        &:hover li {
             margin: 5px 0px 5px;
         }
 

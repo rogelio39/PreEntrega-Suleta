@@ -6,15 +6,14 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border-color: black;
-    border-width: 2px;
-    border-style: groove;
+    border: black 2px groove;
 
     /* ======ENCABEZADO===== */
 
 
 
     &__encabezado {
+        font-size: $fuente-encabezado;
         padding: 15px;
         @include flex-box (column, center, flex-start);
         background-color: $color-primario;
@@ -24,13 +23,10 @@
         box-shadow: 10px 0 20px black;
         gap: 15px;
 
-        hr{
+
+        hr {
             margin: 0;
             height: 1px;
-        }
-
-        h1 {
-            font-size: $fuente-encabezado;
         }
 
         &:hover li {
@@ -61,50 +57,57 @@
 
 
         h2 {
-            font-size: 18px;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
-            background-color: $color-ner;
+            font-size: $fuente-h2;
+            border: black 2px groove;
+            animation-name: color-change-2x;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
         }
+
         iframe {
             width: 100%;
             height: 100%;
         }
     }
 
+
     &__poemas h2 {
         margin-top: 50px;
         width: 60%;
-        font-size: 20px;
+        font-size: $fuente-h2;
         border: black 2px groove;
-        background-color: $color-ner;
         margin-left: 10px;
+        animation-name: color-change-2x;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
     }
 
     &__poema20 h3 {
         width: max-content;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        font-size: 18px;
+        border: black 2px groove;
+        font-size: $fuente-h3;
         padding: 10px;
         color: black;
     }
 
 
     &__poema20 {
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
+        border: black 2px groove;
         margin: 10px;
         padding: 10px;
         color: black;
-        background-color: $color-ner;
+        animation-name: color-change-2x;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
     }
 
     &__poema20 p {
-        font-size: 16px;
+        font-size: $fuente-p;
+        font-weight:900;
         padding: 10px;
         text-align: justify;
     }
@@ -112,28 +115,30 @@
 
     &__poema2 h3 {
         width: max-content;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        font-size: 18px;
+        border: black 2px groove;
+        font-size: $fuente-h3;
+        font-weight: 900;
         padding: 10px;
         color: black;
     }
 
 
     &__poema2 {
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
+        border: black 2px groove;
         padding: 10px;
         margin: 10px;
         color: black;
-        background-color: $color-ner;
+        animation-name: color-change-2x;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
     }
 
 
     &__poema2 p {
-        font-size: 16px;
+        font-size: $fuente-p;
+        font-size: 900;
         padding: 10px;
         text-align: justify;
     }
@@ -141,47 +146,50 @@
 
     &__poema11 h3 {
         width: max-content;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        font-size: 18px;
+        border: black 2px groove;
+        font-size: $fuente-h3;
+        font-weight: 900;
         padding: 10px;
         color: black;
     }
 
 
     &__poema11 {
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
+        border: black 2px groove;
         padding: 10px;
         margin: 10px;
         color: black;
-        background-color: $color-ner;
+        animation-name: color-change-2x;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
     }
 
     &__poema11 p {
-        font-size: 16px;
+        font-size: $fuente-p;
+        font-weight: 900;
         padding: 10px;
         text-align: justify;
     }
 
     &__pieDePágina {
+        font-size: $fuente-piedepagina;
         margin-top: 10px;
         padding: 15px;
         background-color: $color-primario;
         border-style: black 2px groove;
         @include flex-box (column, flex-start, flex-start);
 
-            ul {
-                @include flex-box (column, center, flex-start);
-                gap: 10px;
-            }
-        &:hover li{
+        ul {
+            @include flex-box (column, center, flex-start);
+            gap: 10px;
+        }
+
+        &:hover li {
             margin: 15px 0px 0px 15px;
         }
-        }
     }
+}
 
 
 
@@ -196,7 +204,6 @@
         border-width: 2px;
 
         &__encabezado {
-            font-size: 24px;
             @include flex-box (row, space-between, center);
 
             nav ul {
@@ -223,7 +230,7 @@
             margin-left: 20px;
             grid-area: ambientacion;
 
-            iframe{
+            iframe {
                 width: 100%;
                 height: 100%;
             }
@@ -265,11 +272,6 @@
 
             h3 {
                 border: 0;
-                font-size: 24px;
-
-                p {
-                    font-size: 22px;
-                }
             }
         }
 
@@ -279,7 +281,6 @@
             margin-top: 10px;
             border: 0;
             box-shadow: 10px 10px 15px black;
-            font-size: 18px;
             padding: 10px;
             color: black;
             grid-area: poema2;
@@ -287,11 +288,6 @@
 
             h3 {
                 border: 0;
-                font-size: 24px;
-
-                p {
-                    font-size: 22px;
-                }
             }
         }
 
@@ -301,7 +297,6 @@
             margin-top: 10px;
             border: 0;
             box-shadow: 10px 10px 15px black;
-            font-size: 18px;
             padding: 10px;
             color: black;
             grid-area: poema11;
@@ -310,11 +305,6 @@
 
             h3 {
                 border: 0;
-                font-size: 24px;
-
-                p {
-                    font-size: 22px;
-                }
             }
         }
 
@@ -327,7 +317,6 @@
                 width: 100%;
 
                 ul {
-                    font-size: $fuente-piedepagina;
                     @include flex-box (row, space-between, center);
                 }
 
@@ -335,4 +324,3 @@
         }
     }
 }
-
