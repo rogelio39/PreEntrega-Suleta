@@ -11,7 +11,7 @@
 
 
     &__encabezado {
-        padding: 25px;
+        padding: 15px;
         font-size: $fuente-encabezado;
         border: black 2px groove;
         @include flex-box(column, flex-start, flex-start);
@@ -20,6 +20,10 @@
         top: 0;
         z-index: 2;
         gap: 10px;
+
+        &:hover li{
+            margin: 25px 0px 25px;
+        }
     }
 
     &__cuerpoPrincipal {
@@ -39,7 +43,7 @@
         }
     }
 
-    &__galeriaImagenes {
+    &__galeríaImágenes {
         img {
             border: black 2px groove;
             width: 100%;
@@ -61,9 +65,9 @@
     }
 
 
-    &__pieDePagina {
+    &__pieDePágina {
         font-size: $fuente-piedepagina;
-        padding: 30px;
+        padding: 15px;
         margin-top: 20px;
         border-style: groove;
         border-color: black;
@@ -73,8 +77,12 @@
         div ul {
             display: flex;
             @include flex-box(column, space-between, flex-start);
-            gap: 30px;
+            gap: 20px;
         }
+        &:hover li{
+            margin: 5px 0px 5px;
+        }
+
     }
 
 }
@@ -100,8 +108,8 @@
             grid-template-columns: 30% 70%;
             grid-template-rows: 5vh 95vh;
             grid-template-areas:
-                "nosotros galeria"
-                "texto-nosotros galeria"
+                "nosotros galería"
+                "texto-nosotros galería"
             ;
 
             justify-content: center;
@@ -113,15 +121,15 @@
         }
 
 
-        &__galeriaImagenes {
-            grid-area: galeria;
+        &__galeríaImágenes {
+            grid-area: galería;
             gap: 10px;
             display: grid;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: 5vh 47.33vh 47.33vh;
             grid-template-areas:
 
-                "titulo titulo"
+                "título título"
                 "imagen1 imagen2"
                 "imagen3 imagen4"
             ;
@@ -130,13 +138,14 @@
                 height: 40px;
                 padding: 5px;
                 display: grid;
-                grid-area: titulo;
+                grid-area: título;
                 font-size: 20px;
                 text-align: center;
             }
         }
 
         &__imagen1 img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
             margin-top: 20px;
@@ -146,6 +155,7 @@
 
 
         &__imagen2 img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
             margin-top: 20px;
@@ -153,20 +163,22 @@
         }
 
         &__imagen3 img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
-            margin-top: 10px;
+            margin-top: 20px;
             grid-area: imagen3;
         }
 
         &__imagen4 img {
+            object-fit: cover;
             width: 100%;
             height: 100%;
-            margin-top: 10px;
+            margin-top: 20px;
             grid-area: imagen4;
         }
 
-        &__pieDePagina div ul {
+        &__pieDePágina div ul {
             font-size: 20px;
             @include flex-box(row, space-between, center);
         }

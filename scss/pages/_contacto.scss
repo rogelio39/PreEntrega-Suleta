@@ -13,13 +13,18 @@
         padding: 10px;
         font-size: $fuente-encabezado;
         @include flex-box (column, center, flex-start);
-        gap: 20px;
+        gap: 15px;
         background-color: $color-contacto;
         box-shadow: 0px 0px 15px black;
         position: sticky;
         top: 0;
         z-index: 2;
-        padding-bottom: 30px;
+
+    
+
+        &:hover li{
+            margin: 15px 0px 15px;
+        }
     }
 
     &__formulario h2 {
@@ -37,14 +42,14 @@
     &__usuario {
         padding: 15px;
         margin: 10px;
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
+        border: black 2px groove;
         @include flex-box(row, space-between, center);
         background-color: $color-contacto;
 
         input {
             padding: 15px;
+            border-radius: 20px;
+            border: black 2px groove;
         }
     }
 
@@ -62,6 +67,8 @@
 
         input {
             padding: 15px;
+            border-radius: 20px;
+            border: black 2px groove;
         }
     }
 
@@ -77,6 +84,12 @@
         background-color: $color-contacto;
         width: 90%;
 
+        textarea{
+            padding: 10px;
+            border-radius: 20px;
+            border: black 2px groove;
+        }
+
     }
 
     &__asuntos {
@@ -91,11 +104,13 @@
 
         select {
             padding: 15px;
+            border-radius: 20px;
+            border: black 2px groove;
         }
     }
 
 
-    &__genero {
+    &__género {
         margin: 10px;
         @include flex-box(row, space-between, center);
         border-style: groove;
@@ -128,27 +143,31 @@
 
     #reset {
         padding: 13px;
+        border-radius: 20px;
+        border: black 2px groove;
     }
 
     #submit {
         padding: 13px;
+        border-radius: 20px;
+        border: black 2px groove;
     }
 
-    &__pieDePagina {
-        margin-top: 20px;
+    &__pieDePágina {
         font-size: $fuente-piedepagina;
-        height: 30vh;
         padding: 10px;
         border-style: black 2px groove;
         background-color: $color-contacto;
 
-        div {
-            margin-top: 5vh 
-        }
-            ul {
-                @include flex-box(column, flex-start, flex-start);
-                gap: 28px;
+        div ul {
+                @include flex-box(column, center, flex-start);
             }
+
+        &:hover li{
+            display: flex;
+            gap: 10px;
+            margin: 5px 0px 5px;
+        }
         }
 }
 
@@ -210,7 +229,7 @@
 
 
 
-        &__pieDePagina {
+        &__pieDePágina {
             height: auto;
             margin-top: 55px;
 

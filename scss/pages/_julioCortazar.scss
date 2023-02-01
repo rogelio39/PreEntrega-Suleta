@@ -2,8 +2,8 @@
 /* ===============Julio Cortazar================= */
 
 
-.cortazar {
-    background-image: url(../views/img/julioCortazar.jpg);
+.cortázar {
+    background-image: url(../views/img/julioCortázar.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +20,6 @@
 
 
     &__encabezado {
-        height: 20vh;
         font-size: $fuente-encabezado;
         color: $color-primario;
         @include flex-box (column, center, flex-start);
@@ -28,13 +27,20 @@
         top: 0;
         z-index: 2;
         background-color: $color-cor;
-        border-style: groove;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 2px;
+        border: black 2px groove;
         padding: 5px;
-        margin: 5px;
-        gap: 10px;
+
+        hr{
+            margin: 0;
+            height: 1px;
+        }
+        ul{
+            padding: 10px;
+        }
+
+        &:hover li{
+            margin: 25px 0px 25px;
+        }
     }
 
     &__cuerpoPrincipal {
@@ -52,6 +58,9 @@
         padding: 10px;
         @include flex-box (column, space-between, center);
         gap: 20px;
+        h2{
+            font-size: $fuente-h2;
+        }
 
         img{
             border-radius: 150px;
@@ -63,14 +72,18 @@
             font-size: $fuente-p;
             text-align: justify;
         }
+
     }
 
-
+    hr{
+        width: 90vw;
+    }
 
     &__ambientación {
         width: 100%;
 
         h2 {
+            width: 50%;
             border-color: black;
             border-style: groove;
             border-width: 2px;
@@ -80,18 +93,17 @@
             background-color: $color-cor;
         }
         iframe{
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            height: 50%;
         }
     }
 
     &__poemas {
         background-color: $color-cor;
         color: $color-primario;
-        border-color: black;
-        border-style: groove;
-        border-width: 2px;
-        padding: 2vw;
+        border: black 2px groove;
+        padding: 10px;
+        width: 100%;
 
         h2 {
             border-color: black;
@@ -112,43 +124,49 @@
             background-color: $color-cor;
             color: $color-primario;
         }
-
-        p {
+        p{
             font-size: $fuente-p;
-            padding-top: 1vw;
+            color: $color-primario;
         }
-    }
 
-    &__poema1 p{
-        font-size: $fuente-p;
-        color: $color-primario;
-        padding: 2vw;
-    }
+        hr{
+            width: 90%;
+        }
+}
 
 
-    &__pieDePagina {
-        height: 22vh;
-        padding-top: 3vh;
+    &__pieDePágina {
+        padding: 15px;
+        margin-top: 30px;
         background-color: $color-cor;
         color: $color-primario;
         font-size: $fuente-piedepagina;
+        @include flex-box (column, center, flex-start);
 
-        div ul {
-            @include flex-box (row, space-around, center);
-            margin-top: 20px;
-            margin-bottom: 20px;
+        ul {
+            @include flex-box (column, flex-start, flex-start);
         }
+        &:hover li{
+                display: flex;
+                gap: 5px;
+                margin: 5px 0px 0px 5px;
+            }
+        }
+
         hr {
             margin: 0;
             margin: 5px;
             border: 1px solid rgb(11, 11, 11);
             height: 1px;
-            width: 95vw;
+            width: 90vw;
             background-color: black;
         }
     }
-}
 
+
+
+
+/*=======VISTA DESKTOP=======*/
 
 @media (min-width:1100px) {
 
@@ -158,22 +176,11 @@
 
         &__encabezado {
             font-size: 24px;
-            @include flex-box (row, space-between, center);
-
             div nav ul {
                 @include flex-box (row, space-between, center);
                 gap: 20px;
             }
-        }
 
-        &cuerpoPrincipal {
-            padding: 10px;
-            border-radius: 5px;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
-            @include flex-box (row, space-between, center);
-            gap: 20px;
         }
 
 
@@ -181,22 +188,31 @@
             width: 100%;
             padding: 30px;
             display: grid;
-            grid-template-columns: 20% 80%;
-            grid-template-rows: 50% 50%;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 10% 40% 50%;
 
             grid-template-areas:
             
+            "txt txt1"
             "img txt1"
             "txt2 txt2"
             
             ;
 
-            img {
-                height: 100%;
-                width: 100%;
+
+            h2{
+                font-size: $fuente-h2;
+                grid-area: txt;
             }
+
+            img {
+                padding-top: 50px;
+                grid-area: img;
+            }
+
         }
 
+        
 
         &__txt1 {
             width: 95%;
@@ -210,10 +226,13 @@
 
 
 
-        &__pieDePagina {
+        &__pieDePágina {
             padding: 10px;
             background-color: $color-cor;
-            div ul {
+            div {
+                width: 100%
+            }
+            ul {
                 @include flex-box (row, space-between, center);
                 color: $color-primario;
                 margin-top: 20px;    

@@ -1,15 +1,13 @@
-
 /* =====Botones===== */
 
-.btn{
-    border-color: black 2px solid;
+
+
+.btn:hover {
     border-radius: 20px;
-    border-width: 2px;
-    border-style: solid;
     padding: 10px;
     margin: 10px;
     background-color: white;
-    &:hover{
-        background-color: $color-primario;
-    }
+    background-color: $color-btn;
+    border: black 3px groove;
+    transition-delay: 1ms;
 }
