@@ -52,27 +52,27 @@
         </header>
 
         <main>
-            <form action="direcciónCompletaDelArchivoQueSeEnviara" class="contacto__formulario">
+            <form name="contacto" netlify class="contacto__formulario">
                 <h2>Formulario de contacto</h2>
                 <div class="contacto__usuario">
-                    <label for="usuario_nombre">Ingrese su nombre y apellido</label>
-                    <input type="text" id="usuario_nombre" placeholder="Nombre y apellido">
+                    <label for="usuario__nombre">Ingrese su nombre y apellido</label>
+                    <input type="text" id="usuario_nombre" name="usuario__nombre" placeholder="Nombre y apellido">
                 </div>
 
                 <div class="contacto__email">
-                    <label for="usuario_email">Ingrese su email</label>
-                    <input type="email" id="usuario_email" placeholder="ejemplo@gmail.com">
+                    <label for="usuario__email">Ingrese su email</label>
+                    <input type="email" id="usuario__email" name="usuario__email" placeholder="ejemplo@gmail.com">
                 </div>
 
                 <div class="contacto__mensaje">
-                    <label for="usuario_mensaje">Ingrese su mensaje</label>
-                    <textarea name="usuario__mensaje" id="usuario_mensaje" cols="30" rows="10"
+                    <label for="usuario__mensaje">Ingrese su mensaje</label>
+                    <textarea name="usuario__mensaje" id="usuario__mensaje" cols="30" rows="10"
                         placeholder="Si quieres pasarnos un poema que te gusta también puedes hacerlo por aqui."></textarea>
                 </div>
 
                 <div class="contacto__asuntos">
-                    <label for="asunto_usuario">Selecciona un asunto:</label>
-                    <select name="asunto_usuario" id="asunto_usuario">
+                    <label for="contacto__usuario">Selecciona un asunto:</label>
+                    <select name="contacto__usuario" id="contacto__usuario">
                         <option value="mensaje">Mensaje</option>
                         <option value="reclamo">Reclamo</option>
                         <option value="consultas">Consultas</option>
@@ -95,13 +95,13 @@
                 </div>
 
                 <div class="contacto__novedades">
-                    <label for="user_news">¿Desea recibir novedades?</label>
-                    <input type="checkbox" id="user_news">
+                    <label for="usuario__noticias">¿Desea recibir novedades?</label>
+                    <input type="checkbox" name="usuario__noticias" id="usuario__noticias">
                 </div>
 
                 <div class="contacto__enviar">
-                    <input type="submit" id="submit" value="Enviar">
-                    <input type="reset" id="reset" value="Restablecer formulario">
+                    <input type="submit" id="submit" name="submit" value="Enviar">
+                    <input type="reset" id="reset" name="reset" value="Restablecer formulario">
                 </div>
 
             </form>
