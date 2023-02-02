@@ -13,18 +13,23 @@
     /* ======ENCABEZADO===== */
 
     &__encabezado {
-        @include flex-box(column, flex-start, flex-start);
         font-size: $fuente-encabezado;
         padding: 15px;
         background-color: $color-primario;
-        border-bottom: black 2px groove;
         position: sticky;
         top: 0;
         z-index: 4;
+        box-shadow: 20px 0px 10px 10px black;
 
-        &:hover li {
-            margin: 25px 0px 25px;
+        &:hover nav {
+            margin: 15px 0px 15px;
         }
+
+        ul{
+            @include flex-box(column, space-between, flex-start);
+            gap: 12px;
+        }
+        
     }
 
 
@@ -39,9 +44,9 @@
     /* ======SECTION POETAS===== */
 
     &__poetas {
+        @include border();
         margin: 10px;
         background-color: $color-primario;
-        border: black 2px groove;
         font-size: $fuente-h2;
         @include flex-box(column, flex-start, flex-start);
         gap: 40px;
@@ -58,7 +63,7 @@
         }
 
         div {
-            border: black 2px groove;
+            @include border();
             width: 100%;
             background-color: rgba(128, 128, 128, 0.921);
 
@@ -71,7 +76,7 @@
 
                     img {
                         height: 25vh;
-                        border: 2px groove black;
+                        @include border();
                         padding: 3px;
                     }
                 }
@@ -103,8 +108,9 @@
 
     /* ======SECCION MUSICA PARA LEER===== */
 
-    &__musicaParaLeer {
+    &__músicaParaLeer {
         margin-top: 10px;
+        padding: 10px;
         @include flex-box(column, center, center);
         gap: 20px;
         animation-name: scale-in-top;
@@ -112,12 +118,10 @@
         animation-timing-function: ease-in-out;
 
         h2 {
+            @include border();
             margin: 10px;
             font-size: $fuente-h2;
             background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.589), rgba(0, 0, 0, 0.616));
-            border-color: black;
-            border-width: 2px;
-            border-style: groove;
             position: sticky;
             top: 150px;
 
@@ -129,15 +133,11 @@
                 ul {
                     @include flex-box(column, flex-start, center);
                     gap: 40px;
-                    border-color: black;
-                    border-width: 2px;
-                    border-style: groove;
+                    @include border();
                     background-color: $color-primario;
 
                     li {
-                        border-color: black;
-                        border-width: 2px;
-                        border-style: groove;
+                        @include border();
                         border-radius: 5px;
                     }
                 }
@@ -166,7 +166,7 @@
             margin: 10px;
             font-size: $fuente-h2;
             background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.589), rgba(0, 0, 0, 0.616));
-            border-color: black 2px groove;
+            @include border();
             position: sticky;
             top: 150px;
 
@@ -179,9 +179,7 @@
                 ul {
                     background-color: $color-primario;
                     margin: 10px;
-                    border-color: black;
-                    border-width: 2px;
-                    border-style: groove;
+                    @include border();
                     @include flex-box(column, space-between, center);
                     gap: 10px;
                 }
@@ -198,25 +196,22 @@
     &__pieDePágina {
         @include flex-box(column, space-between, flex-start);
         font-size: $fuente-piedepagina;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        @include border();
         margin-top: 20px;
         background-color: $color-primario;
         gap: 10px;
 
 
-
         div ul {
                 gap: 20px;
+        }
 
-                li {
-                    padding: 5px;
-                    margin: 20px 0px 20px;
+        &:hover li {
+                    margin: 10px 0px 10px;
                 }
             }
         }
-    }
+    
 
 
 
@@ -297,9 +292,6 @@
             h2 {
                 padding: 10px;
                 font-size: $fuente-h2;
-                border-color: black;
-                border-width: 2px;
-                border-style: groove;
                 top: 100px;
                 grid-area: titulo;
                 text-align: center;
@@ -307,27 +299,21 @@
 
             div {
                 padding: 10px;
-                gap: 20px;
 
                 ul {
                     grid-area: video;
-                    border: black 2px groove;
                     background-color: $color-primario;
                     margin: 5px;
                     padding: 5px;
                     @include flex-box(row, space-between, center);
                     flex-wrap: wrap;
-                    gap: 50px;
-
-                    li {
-                        border: 2px groove black;
-                    }
+                    gap: 20px;
                 }
             }
         }
 
-        &__video {
-            width: 30vw;
+        iframe {
+            width: 40vw;
             height: 30vh;
         }
 
@@ -360,15 +346,14 @@
 
         &__pieDePágina {
             padding: 10px;
-            border-style: groove;
-            border-color: black;
-            border-width: 2px;
-            border-radius: 5px;
 
             div {
                 width: 100%;
             }
 
+            &:hover nav{
+                margin: 10px 0px 10px
+            }
             ul {
                 @include flex-box(row, space-between, center);
             }

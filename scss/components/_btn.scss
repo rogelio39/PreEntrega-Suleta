@@ -8,6 +8,6 @@
     margin: 10px;
     background-color: white;
     background-color: $color-btn;
-    border: black 3px groove;
+    @include border();
     transition-delay: 1ms;
 }

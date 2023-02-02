@@ -7,9 +7,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border-color: black;
-    border-width: 2px;
-    border-style: groove;
+    @include border();
     animation-name: text-focus-in;
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
@@ -30,7 +28,7 @@
         top: 0;
         z-index: 2;
         background-color: $color-cor;
-        border: black 2px groove;
+        @include border();
         padding: 5px;
 
         hr{
@@ -87,9 +85,7 @@
 
         h2 {
             width: 50%;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            @include border();
             font-size: $fuente-h2;
             padding: 10px;
             color:$color-primario;
@@ -104,14 +100,12 @@
     &__poemas {
         background-color: $color-cor;
         color: $color-primario;
-        border: black 2px groove;
+        @include border();
         padding: 10px;
         width: 100%;
 
         h2 {
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            @include border();
             font-size: $fuente-h2;
             padding: 10px;
             background-color: $color-cor;
@@ -119,9 +113,7 @@
         }
 
         h3 {
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            @include border();
             font-size: $fuente-h3;
             margin-top: 1vw;
             background-color: $color-cor;

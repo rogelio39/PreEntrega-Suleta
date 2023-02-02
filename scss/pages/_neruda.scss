@@ -6,7 +6,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border: black 2px groove;
+    @include border();
 
     /* ======ENCABEZADO===== */
 
@@ -14,14 +14,14 @@
 
     &__encabezado {
         font-size: $fuente-encabezado;
-        padding: 15px;
+        padding: 10px;
         @include flex-box (column, center, flex-start);
         background-color: $color-primario;
         position: sticky;
         top: 0;
         z-index: 2;
-        box-shadow: 10px 0 20px black;
-        gap: 15px;
+        box-shadow: 10px 0px 10px 10px black;
+        gap: 10px;
 
 
         hr {
@@ -31,7 +31,6 @@
 
         &:hover li {
             margin: 10px 0px 0px 10px;
-            padding: 10px;
         }
 
     }
@@ -58,7 +57,7 @@
 
         h2 {
             font-size: $fuente-h2;
-            border: black 2px groove;
+            @include border();
             animation-name: color-change-2x;
             animation-duration: 5s;
             animation-iteration-count: infinite;
@@ -76,7 +75,7 @@
         margin-top: 50px;
         width: 60%;
         font-size: $fuente-h2;
-        border: black 2px groove;
+        @include border();
         margin-left: 10px;
         animation-name: color-change-2x;
         animation-duration: 5s;
@@ -86,7 +85,7 @@
 
     &__poema20 h3 {
         width: max-content;
-        border: black 2px groove;
+        @include border();
         font-size: $fuente-h3;
         padding: 10px;
         color: black;
@@ -94,7 +93,7 @@
 
 
     &__poema20 {
-        border: black 2px groove;
+        @include border();
         margin: 10px;
         padding: 10px;
         color: black;
@@ -115,7 +114,7 @@
 
     &__poema2 h3 {
         width: max-content;
-        border: black 2px groove;
+        @include border();
         font-size: $fuente-h3;
         font-weight: 900;
         padding: 10px;
@@ -124,7 +123,7 @@
 
 
     &__poema2 {
-        border: black 2px groove;
+        @include border();
         padding: 10px;
         margin: 10px;
         color: black;
@@ -146,7 +145,7 @@
 
     &__poema11 h3 {
         width: max-content;
-        border: black 2px groove;
+        @include border();
         font-size: $fuente-h3;
         font-weight: 900;
         padding: 10px;
@@ -155,7 +154,7 @@
 
 
     &__poema11 {
-        border: black 2px groove;
+        @include border();
         padding: 10px;
         margin: 10px;
         color: black;
@@ -177,7 +176,7 @@
         margin-top: 10px;
         padding: 15px;
         background-color: $color-primario;
-        border-style: black 2px groove;
+        @include border();
         @include flex-box (column, flex-start, flex-start);
 
         ul {
@@ -203,13 +202,9 @@
     .neruda {
         border-width: 2px;
 
-        &__encabezado {
+        &__encabezado nav ul {
             @include flex-box (row, space-between, center);
-
-            nav ul {
-                @include flex-box (row, space-between, center);
-                padding: 10px;
-            }
+            padding: 10px;
         }
 
 

@@ -6,9 +6,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border-style: groove;
-    border-color: black;
-    border-width: 2px;
+    @include border();
 
     /* ========HEADER=========== */
 
@@ -21,13 +19,14 @@
         top: 0;
         z-index: 2;
         background-color: $color-byr;
-        border: black 2px groove;
+        @include border();
         padding: 10px;
         animation-name: jello-horizontal;
         animation-timing-function: ease-in-out;
         animation-duration: 3s;
 
         hr{
+            width: 80vw;
             margin: 0;
             height: 1px;
         }
@@ -48,9 +47,7 @@
         @include flex-box (column, center, center);
 
         h2 {
-            border-style: groove;
-            border-color: black;
-            border-width: 2px;
+            @include border();
             font-size: $fuente-h2;
             padding: 10px;
             color: black;
@@ -75,7 +72,7 @@
     }
 
     &__poema1 {
-        border-style: black 2px groove;
+        @include border();
         background-color: $color-byr;
         border-width: 2px;
         font-size: $fuente-p;
@@ -90,9 +87,7 @@
 
         h3 {
             margin-top: 10px;
-            border-color: black;
-            border-style: groove;
-            border-width: 2px;
+            @include border();
             font-size: $fuente-h3;
             padding: 10px;
             color: black;
@@ -109,9 +104,7 @@
         width: 100%;
         font-size: $fuente-piedepagina;
         padding: 10px;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        @include border();
         border-radius: 5px;
         padding: 10px;
         background-color: $color-byr;
@@ -145,14 +138,20 @@
             @include flex-box (row, space-between, center);
         }
 
-        &__ambientacion {
+        &__ambientación {
             width: 100%;
+            padding-left: 25vw;
 
-            iframe{
-                width: 100%;
-                height: 100%;
+            h2{
+                width: 70%;
             }
-        }
+
+                iframe{
+                    width: 70%;
+                    height: 30vh;
+                }
+            }
+
 
         &__pieDePágina div ul {
             @include flex-box (row, space-between, center);

@@ -4,9 +4,7 @@
 
 .contacto {
     background-color: $color-primario;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
+    @include border();
 
 
     &__encabezado {
@@ -20,7 +18,11 @@
         top: 0;
         z-index: 2;
 
-    
+        hr{
+            margin: 0;
+            height: 1px;
+            color: black;
+        }
 
         &:hover li{
             margin: 15px 0px 15px;
@@ -32,9 +34,7 @@
         margin-top: 10px;
         font-size: $fuente-h2;
         padding: 10px;
-        border-color: black;
-        border-style: groove;
-        border-width: 1px;
+        @include border();
         text-align: center;
         background-color: $color-contacto;
     }
@@ -42,14 +42,14 @@
     &__usuario {
         padding: 15px;
         margin: 10px;
-        border: black 2px groove;
+        @include border();
         @include flex-box(row, space-between, center);
         background-color: $color-contacto;
 
         input {
             padding: 15px;
             border-radius: 20px;
-            border: black 2px groove;
+            @include border();
         }
     }
 
@@ -59,9 +59,7 @@
         width: 75vw;
         padding: 15px;
         margin: 10px;
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
+        @include border();
         @include flex-box(row, space-between, center);
         background-color: $color-contacto;
 
@@ -77,9 +75,7 @@
     &__mensaje {
         padding: 15px;
         margin: 10px;
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
+        @include border();
         @include flex-box(row, space-between, center);
         background-color: $color-contacto;
         width: 90%;
@@ -87,7 +83,7 @@
         textarea{
             padding: 10px;
             border-radius: 20px;
-            border: black 2px groove;
+            @include border();
         }
 
     }
@@ -96,16 +92,14 @@
         width: 70%;
         padding: 10px;
         margin: 10px;
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
+        @include border();
         @include flex-box(row, space-between, center);
         background-color: $color-contacto;
 
         select {
             padding: 15px;
             border-radius: 20px;
-            border: black 2px groove;
+            @include border();
         }
     }
 
@@ -113,9 +107,7 @@
     &__género {
         margin: 10px;
         @include flex-box(row, space-between, center);
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        @include border();
         background-color: $color-contacto;
         padding: 20px;
     }
@@ -125,18 +117,14 @@
         margin: 10px;
         padding: 20px;
         align-items: center;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        @include border();
         background-color: $color-contacto;
     }
 
     &__enviar {
         margin: 10px;
         padding: 10px;
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
+        @include border();
         background-color: $color-contacto;
     }
 
@@ -144,7 +132,7 @@
     #reset {
         padding: 13px;
         border-radius: 20px;
-        border: black 2px groove;
+        @include border();
         animation-name: heartbeat ;
         animation-duration: 3s;
         animation-iteration-count: infinite;
@@ -154,7 +142,7 @@
     #submit {
         padding: 13px;
         border-radius: 20px;
-        border: black 2px groove;
+        @include border();
         animation-name: heartbeat ;
         animation-duration: 3s;
         animation-iteration-count: infinite;
@@ -164,7 +152,7 @@
     &__pieDePágina {
         font-size: $fuente-piedepagina;
         padding: 10px;
-        border-style: black 2px groove;
+        @include border();
         background-color: $color-contacto;
 
         div ul {
@@ -181,18 +169,25 @@
 
 
 
+/*=======Vista Desktop======*/
+
+
 @media (min-width:1100px) {
 
     .contacto {
-        border-width: 2px;
         background-image: url(../views/img/contacto.jpg);
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
 
         &__encabezado {
-            padding: 20px;
-            @include flex-box(row, space-between, center);
+            padding: 15px;
+            @include flex-box(row, space-around, center);
+
+
+            hr{
+                display: none;
+            }
         }
 
         &__formulario h2 {

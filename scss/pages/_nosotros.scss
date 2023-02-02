@@ -5,18 +5,16 @@
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    border-color: black;
-    border-width: 2px;
-    border-style: groove;
+    @include border();
     animation-name: tracking-in-expand;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 
 
     &__encabezado {
         padding: 15px;
         font-size: $fuente-encabezado;
-        border: black 2px groove;
+        @include border();
         @include flex-box(column, flex-start, flex-start);
         background-color: $color-primario;
         position: sticky;
@@ -40,7 +38,7 @@
             padding: 5px;
             font-size: $fuente-h2;
             margin: 10px;
-            border: black 2px groove;
+            @include border();
             text-align: center;
             background-color: $color-primario;
         }
@@ -48,7 +46,7 @@
 
     &__galeríaImágenes {
         img {
-            border: black 2px groove;
+            @include border();
             width: 100%;
             height: 100%;
             margin: 10px;
@@ -59,9 +57,7 @@
     &__texto {
         margin: 20px;
         padding: 10px;
-        border-color: black;
-        border-width: 2px;
-        border-style: groove;
+        @include border();
         background-color: $color-primario;
         text-align: justify;
         font-size: $fuente-p;
@@ -72,9 +68,7 @@
         font-size: $fuente-piedepagina;
         padding: 15px;
         margin-top: 20px;
-        border-style: groove;
-        border-color: black;
-        border-width: 2px;
+        @include border();
         background-color: $color-primario;
 
         div ul {
@@ -98,7 +92,7 @@
         border-width: 2px;
 
         &__encabezado {
-            border-color: black 2px groove;
+            @include border();
             @include flex-box(row, space-between, center);
             position: sticky;
             top: 0;

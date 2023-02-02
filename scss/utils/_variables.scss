@@ -6,3 +6,8 @@
 }
 
 
+@mixin border($color:black, $width:2px, $style:groove){
+    border-color: $color;
+    border-width: width;
+    border-style: $style;
+}
