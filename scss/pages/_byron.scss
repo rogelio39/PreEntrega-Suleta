@@ -25,16 +25,17 @@
         animation-timing-function: ease-in-out;
         animation-duration: 3s;
 
-        hr{
+        hr {
             width: 80vw;
             margin: 0;
             height: 1px;
         }
-        & ul{
+
+        & ul {
             padding: 10px;
         }
 
-        &:hover li{
+        &:hover li {
             margin: 15px 0px 15px;
         }
 
@@ -60,7 +61,7 @@
         margin-top: 10vh;
         margin-bottom: 10vh;
 
-        iframe{
+        iframe {
             width: 100%;
             height: 100%;
         }
@@ -108,8 +109,8 @@
         border-radius: 5px;
         padding: 10px;
         background-color: $color-byr;
-        
-        hr{
+
+        hr {
             margin-top: 30px;
             margin-bottom: 30px;
         }
@@ -118,7 +119,8 @@
             @include flex-box (column, center, flex-start);
             gap: 15px;
         }
-        &:hover li{
+
+        &:hover li {
             margin: 10px 0px 0px 10px;
         }
     }
@@ -142,15 +144,15 @@
             width: 100%;
             padding-left: 25vw;
 
-            h2{
+            h2 {
                 width: 70%;
             }
 
-                iframe{
-                    width: 70%;
-                    height: 30vh;
-                }
+            iframe {
+                width: 70%;
+                height: 30vh;
             }
+        }
 
 
         &__pieDePágina div ul {

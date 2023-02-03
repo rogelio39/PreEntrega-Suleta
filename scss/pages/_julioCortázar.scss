@@ -1,4 +1,3 @@
-
 /* ===============Julio Cortazar================= */
 
 
@@ -14,10 +13,6 @@
 
     /* ========HEADER=========== */
 
-    a {
-        color: black;
-    }
-
 
 
     &__encabezado {
@@ -31,15 +26,16 @@
         @include border();
         padding: 5px;
 
-        hr{
+        hr {
             margin: 0;
             height: 1px;
         }
-        ul{
+
+        ul {
             padding: 10px;
         }
 
-        &:hover li{
+        &:hover li {
             margin: 25px 0px 25px;
         }
     }
@@ -52,31 +48,32 @@
     }
 
 
-    &__bio{
+    &__bio {
         color: $color-primario;
         border-radius: 5px;
         background-color: $color-cor;
         padding: 10px;
         @include flex-box (column, space-between, center);
         gap: 10px;
-        h2{
+
+        h2 {
             font-size: $fuente-h2;
         }
 
-        img{
+        img {
             border-radius: 150px;
             object-fit: cover;
             object-position: center;
         }
 
-        p{
+        p {
             font-size: $fuente-p;
             text-align: justify;
         }
 
     }
 
-    hr{
+    hr {
         width: 90vw;
     }
 
@@ -88,10 +85,11 @@
             @include border();
             font-size: $fuente-h2;
             padding: 10px;
-            color:$color-primario;
+            color: $color-primario;
             background-color: $color-cor;
         }
-        iframe{
+
+        iframe {
             width: 50%;
             height: 50%;
         }
@@ -119,15 +117,16 @@
             background-color: $color-cor;
             color: $color-primario;
         }
-        p{
+
+        p {
             font-size: $fuente-p;
             color: $color-primario;
         }
 
-        hr{
+        hr {
             width: 90%;
         }
-}
+    }
 
 
     &__pieDePágina {
@@ -141,22 +140,23 @@
         ul {
             @include flex-box (column, flex-start, flex-start);
         }
-        &:hover li{
-                display: flex;
-                gap: 5px;
-                margin: 5px 0px 0px 5px;
-            }
-        }
 
-        hr {
-            margin: 0;
-            margin: 5px;
-            border: 1px solid rgb(11, 11, 11);
-            height: 1px;
-            width: 90vw;
-            background-color: black;
+        &:hover li {
+            display: flex;
+            gap: 5px;
+            margin: 5px 0px 0px 5px;
         }
     }
+
+    hr {
+        margin: 0;
+        margin: 5px;
+        border: 1px solid rgb(11, 11, 11);
+        height: 1px;
+        width: 90vw;
+        background-color: black;
+    }
+}
 
 
 
@@ -171,6 +171,7 @@
 
         &__encabezado {
             font-size: 24px;
+
             div nav ul {
                 @include flex-box (row, space-between, center);
                 gap: 20px;
@@ -179,22 +180,22 @@
         }
 
 
-        &__bio{
+        &__bio {
             padding: 20px;
             display: grid;
             grid-template-columns: 40% 60%;
             grid-template-rows: 10% 40% 50%;
 
             grid-template-areas:
-            
-            "txt txt1"
-            "img txt1"
-            "txt2 txt2"
-            
+
+                "txt txt1"
+                "img txt1"
+                "txt2 txt2"
+
             ;
 
 
-            h2{
+            h2 {
                 font-size: $fuente-h2;
                 grid-area: txt;
             }
@@ -207,7 +208,7 @@
 
         }
 
-        
+
 
         &__txt1 {
             width: 95%;
@@ -224,13 +225,15 @@
         &__pieDePágina {
             padding: 10px;
             background-color: $color-cor;
+
             div {
                 width: 100%
             }
+
             ul {
                 @include flex-box (row, space-between, center);
                 color: $color-primario;
-                margin-top: 20px;    
+                margin-top: 20px;
             }
         }
     }

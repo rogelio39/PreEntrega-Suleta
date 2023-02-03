@@ -1,4 +1,3 @@
-
 /*===============CONTACTO==============*/
 
 
@@ -18,13 +17,13 @@
         top: 0;
         z-index: 2;
 
-        hr{
+        hr {
             margin: 0;
             height: 1px;
             color: black;
         }
 
-        &:hover li{
+        &:hover li {
             margin: 15px 0px 15px;
         }
     }
@@ -80,7 +79,7 @@
         background-color: $color-contacto;
         width: 90%;
 
-        textarea{
+        textarea {
             padding: 10px;
             border-radius: 20px;
             @include border();
@@ -133,20 +132,20 @@
         padding: 13px;
         border-radius: 20px;
         @include border();
-        animation-name: heartbeat ;
+        animation-name: heartbeat;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        animation-timing-function:ease-in-out;
+        animation-timing-function: ease-in-out;
     }
 
     #submit {
         padding: 13px;
         border-radius: 20px;
         @include border();
-        animation-name: heartbeat ;
+        animation-name: heartbeat;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        animation-timing-function:ease-in-out;
+        animation-timing-function: ease-in-out;
     }
 
     &__pieDePágina {
@@ -156,15 +155,15 @@
         background-color: $color-contacto;
 
         div ul {
-                @include flex-box(column, center, flex-start);
-            }
+            @include flex-box(column, center, flex-start);
+        }
 
-        &:hover li{
+        &:hover li {
             display: flex;
             gap: 10px;
             margin: 5px 0px 5px;
         }
-        }
+    }
 }
 
 
@@ -185,7 +184,7 @@
             @include flex-box(row, space-around, center);
 
 
-            hr{
+            hr {
                 display: none;
             }
         }

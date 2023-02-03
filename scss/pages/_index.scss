@@ -23,11 +23,11 @@
             margin: 15px 0px 15px;
         }
 
-        ul{
+        ul {
             @include flex-box(column, space-between, flex-start);
             gap: 12px;
         }
-        
+
     }
 
 
@@ -51,9 +51,9 @@
         animation-name: scale-in-top;
         animation-duration: 2s;
         animation-timing-function: ease-in-out;
-    
 
-        h2{
+
+        h2 {
             font-size: $fuente-h2;
             padding: 10px;
             width: 100%;
@@ -201,15 +201,15 @@
 
 
         div ul {
-                gap: 20px;
+            gap: 20px;
         }
 
         &:hover li {
-                    margin: 10px 0px 10px;
-                }
-            }
+            margin: 10px 0px 10px;
         }
-    
+    }
+}
+
 
 
 
@@ -349,9 +349,10 @@
                 width: 100%;
             }
 
-            &:hover nav{
+            &:hover nav {
                 margin: 10px 0px 10px
             }
+
             ul {
                 @include flex-box(row, space-between, center);
             }

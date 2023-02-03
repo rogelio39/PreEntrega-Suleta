@@ -1,4 +1,4 @@
-@mixin flex-box($direction, $justify, $align){
+@mixin flex-box($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -6,7 +6,7 @@
 }
 
 
-@mixin border($color:black, $width:2px, $style:groove){
+@mixin border($color: black, $width: 2px, $style: groove) {
     border-color: $color;
     border-width: width;
     border-style: $style;

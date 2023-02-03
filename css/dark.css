@@ -16,6 +16,32 @@ a {
     color: white;
 }
 
+p {
+    color: white;
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.749);
+}
+
+h2 {
+    background-color: black;
+}
+
+h3 {
+    background-color: white;
+}
+
+input{
+    background-color: black;
+}
+
+
+select{
+    background-color: black;
+}
+
+/*================pages===============*/
 .index__encabezado {
     background-color: black;
     box-shadow: 10px 0px 10px white;
@@ -52,14 +78,20 @@ a {
 }
 
 
-.neruda__poema20, neruda__poema2, neruda__poema11 {
+.neruda__poema20,
+neruda__poema2,
+neruda__poema11 {
     animation-name: color-change-2x;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.neruda__pieDePágina{
+.neruda__poema20 h2 {
+    color: white;
+}
+
+.neruda__pieDePágina {
     background-color: black;
 }
 
@@ -102,17 +134,16 @@ a {
 }
 
 
-
-
 /*========CORTÁZAR=======*/
-
-/*======NERUDA=======*/
-
 
 
 .cortázar {
     background-color: rgba(0, 0, 0, 0.634);
     opacity: 0.7;
+}
+
+.cortazar a {
+    color: white;
 }
 
 
@@ -122,14 +153,144 @@ a {
 }
 
 
-.cortázar__bio{
+.cortázar__bio {
     background-color: rgba(0, 0, 0, 0.651);
 }
 
 .cortázar__poemas {
-background-color: rgba(0, 0, 0, 0.673);
+    background-color: rgba(0, 0, 0, 0.673);
 }
 
-.cortázar__pieDePágina{
+.cortázar__pieDePágina {
+    background-color: black;
+}
+
+
+
+
+/*======BYRON=======*/
+
+
+
+.byron {
+    background-color: rgba(0, 0, 0, 0.634);
+    opacity: 0.7;
+}
+
+.byron a {
+    color: white;
+}
+
+
+.byron__encabezado {
+    background-color: black;
+    box-shadow: 10px 0px 10px white;
+}
+
+
+.byron__bio {
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.byron__poemas {
+    background-color: rgba(0, 0, 0, 0.673);
+}
+
+.byron__poema1{
+    background-color: rgba(0, 0, 0, 0.685);
+}
+
+.byron__pieDePágina {
+    background-color: black;
+}
+
+
+
+/*======CONTACTO=======*/
+
+
+
+.contacto {
+    background-color: rgba(53, 52, 52, 0.634);
+    opacity: 0.7;
+}
+
+.contacto a {
+    color: white;
+}
+
+
+.contacto__encabezado {
+    background-color: black;
+    box-shadow: 10px 0px 10px white;
+}
+
+
+.contacto__usuario {
+    background-color: rgba(41, 38, 38, 0.651);
+}
+
+.contacto__email {
+    background-color: rgba(44, 42, 42, 0.673);
+}
+
+.contacto__mensaje{
+    background-color: rgba(52, 49, 49, 0.685);
+}
+
+.contacto__asuntos{
+    background-color: rgba(35, 33, 33, 0.685);
+}
+
+.contacto__género{
+    background-color: rgba(31, 29, 29, 0.685);
+}
+
+.contacto__novedades{
+    background-color: rgba(36, 34, 34, 0.685);
+}
+
+.contacto__enviar{
+    background-color: rgba(48, 45, 45, 0.685);
+}
+
+
+
+
+.contacto__pieDePágina {
+    background-color: black;
+}
+
+
+/*======CONTACTO=======*/
+
+
+
+.nosotros {
+    background-color: rgba(53, 52, 52, 0.634);
+    opacity: 0.7;
+}
+
+.nosotros h2, h3{
+    color: black;
+}
+
+.nosotros a {
+    color: white;
+}
+
+
+.nosotros__encabezado {
+    background-color: black;
+    box-shadow: 10px 0px 10px white;
+}
+
+.nosotros__texto {
+    background-color: black;
+}
+
+
+
+.contacto__pieDePágina {
     background-color: black;
 }
