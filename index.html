@@ -28,9 +28,10 @@
         content="Poesía nocturna. Poesía para leer de noche. Música para escuchar mientras lees poesía. Sugiéreme poesía.">
     <meta property="twitter:image"
         content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./css/dark.css">
+    <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+
 
 
 
@@ -38,6 +39,10 @@
 </head>
 
 <body>
+
+    <dark-mode-toggle id="dark-mode-toggle-1" legend="Theme Switcher" appearance="switch" dark="Dark" light="Light"
+        remember="Remember this"></dark-mode-toggle>
+
     <div class="index">
         <header class="index__encabezado">
             <h1>Poemario</h1>
@@ -94,7 +99,10 @@
                                 allowfullscreen></iframe>
                         </li>
                         <li>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OyLTwBxxnL4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OyLTwBxxnL4"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
                         </li>
                     </ul>
                 </div>
@@ -109,6 +117,7 @@
                     </ul>
                 </div>
             </section>
+
         </main>
 
 

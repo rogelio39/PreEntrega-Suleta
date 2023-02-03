@@ -5,9 +5,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    border-color: black;
-    border-style: groove;
-    border-width: 2px;
+    @include border();
 
 
     /* ======ENCABEZADO===== */
