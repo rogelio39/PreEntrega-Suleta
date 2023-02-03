@@ -57,7 +57,7 @@
     }
 
 
-    &__ambientación {
+    &__ambientacion {
         margin-top: 10vh;
         margin-bottom: 10vh;
 
@@ -101,7 +101,7 @@
         }
     }
 
-    &__pieDePágina {
+    &__pieDePagina {
         width: 100%;
         font-size: $fuente-piedepagina;
         padding: 10px;
@@ -155,7 +155,7 @@
         }
 
 
-        &__pieDePágina div ul {
+        &__pieDePagina div ul {
             @include flex-box (row, space-between, center);
         }
 

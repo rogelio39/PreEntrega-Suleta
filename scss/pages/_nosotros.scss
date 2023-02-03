@@ -44,7 +44,7 @@
         }
     }
 
-    &__galeríaImágenes {
+    &__galeriaImagenes {
         img {
             @include border();
             width: 100%;
@@ -64,7 +64,7 @@
     }
 
 
-    &__pieDePágina {
+    &__pieDePagina {
         font-size: $fuente-piedepagina;
         padding: 15px;
         margin-top: 20px;
@@ -119,7 +119,7 @@
         }
 
 
-        &__galeríaImágenes {
+        &__galeriaImagenes {
             grid-area: galería;
             gap: 10px;
             display: grid;
@@ -176,7 +176,7 @@
             grid-area: imagen4;
         }
 
-        &__pieDePágina div ul {
+        &__pieDePagina div ul {
             font-size: 20px;
             @include flex-box(row, space-between, center);
         }

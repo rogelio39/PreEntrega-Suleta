@@ -1,8 +1,8 @@
 /* ===============Julio Cortazar================= */
 
 
-.cortázar {
-    background-image: url(../views/img/julioCortázar.jpg);
+.cortazar {
+    background-image: url(../views/img/julioCortazar.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -77,7 +77,7 @@
         width: 90vw;
     }
 
-    &__ambientación {
+    &__ambientacion {
         width: 100%;
 
         h2 {
@@ -129,7 +129,7 @@
     }
 
 
-    &__pieDePágina {
+    &__pieDePagina {
         padding: 15px;
         margin-top: 30px;
         background-color: $color-cor;
@@ -165,7 +165,7 @@
 
 @media (min-width:1100px) {
 
-    .cortázar {
+    .cortazar {
         border-width: 2px;
 
 
@@ -222,7 +222,7 @@
 
 
 
-        &__pieDePágina {
+        &__pieDePagina {
             padding: 10px;
             background-color: $color-cor;
 

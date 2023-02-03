@@ -106,7 +106,7 @@
 
     /* ======SECCION MUSICA PARA LEER===== */
 
-    &__músicaParaLeer {
+    &__musicaParaLeer {
         margin-top: 10px;
         padding: 10px;
         @include flex-box(column, center, center);
@@ -191,7 +191,7 @@
     /* ======PIE DE PAGINA===== */
 
 
-    &__pieDePágina {
+    &__pieDePagina {
         @include flex-box(column, space-between, flex-start);
         font-size: $fuente-piedepagina;
         @include border();
@@ -274,7 +274,7 @@
         }
 
 
-        &__músicaParaLeer {
+        &__musicaParaLeer {
             grid-area: musica;
             display: grid;
             grid-template-columns: 100%;
@@ -342,7 +342,7 @@
             }
         }
 
-        &__pieDePágina {
+        &__pieDePagina {
             padding: 10px;
 
             div {

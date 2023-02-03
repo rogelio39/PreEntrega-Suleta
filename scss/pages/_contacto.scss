@@ -103,7 +103,7 @@
     }
 
 
-    &__género {
+    &__genero {
         margin: 10px;
         @include flex-box(row, space-between, center);
         @include border();
@@ -148,7 +148,7 @@
         animation-timing-function: ease-in-out;
     }
 
-    &__pieDePágina {
+    &__pieDePagina {
         font-size: $fuente-piedepagina;
         padding: 10px;
         @include border();
@@ -231,7 +231,7 @@
 
 
 
-        &__pieDePágina {
+        &__pieDePagina {
             height: auto;
             margin-top: 55px;
 

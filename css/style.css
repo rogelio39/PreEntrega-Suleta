@@ -482,7 +482,7 @@ hr {
   top: 95px;
   z-index: 3;
 }
-.index__músicaParaLeer {
+.index__musicaParaLeer {
   margin-top: 10px;
   padding: 10px;
   display: flex;
@@ -494,7 +494,7 @@ hr {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
-.index__músicaParaLeer h2 {
+.index__musicaParaLeer h2 {
   border-color: black;
   border-width: width;
   border-style: groove;
@@ -504,7 +504,7 @@ hr {
   position: sticky;
   top: 150px;
 }
-.index__músicaParaLeer h2 div {
+.index__musicaParaLeer h2 div {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -512,7 +512,7 @@ hr {
   align-items: center;
   gap: 20px;
 }
-.index__músicaParaLeer h2 div ul {
+.index__musicaParaLeer h2 div ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -523,13 +523,13 @@ hr {
   border-style: groove;
   background-color: rgba(233, 221, 221, 0.868);
 }
-.index__músicaParaLeer h2 div ul li {
+.index__musicaParaLeer h2 div ul li {
   border-color: black;
   border-width: width;
   border-style: groove;
   border-radius: 5px;
 }
-.index__músicaParaLeer iframe {
+.index__musicaParaLeer iframe {
   width: 100%;
   height: 100%;
 }
@@ -577,7 +577,7 @@ hr {
   align-items: center;
   gap: 10px;
 }
-.index__pieDePágina {
+.index__pieDePagina {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -590,10 +590,10 @@ hr {
   background-color: rgba(233, 221, 221, 0.868);
   gap: 10px;
 }
-.index__pieDePágina div ul {
+.index__pieDePagina div ul {
   gap: 20px;
 }
-.index__pieDePágina:hover li {
+.index__pieDePagina:hover li {
   margin: 10px 0px 10px;
 }
 
@@ -646,24 +646,24 @@ hr {
     align-items: center;
     gap: 30px;
   }
-  .index__músicaParaLeer {
+  .index__musicaParaLeer {
     grid-area: musica;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
     grid-template-areas: "titulo" "video";
   }
-  .index__músicaParaLeer h2 {
+  .index__musicaParaLeer h2 {
     padding: 10px;
     font-size: 1.4rem;
     top: 100px;
     grid-area: titulo;
     text-align: center;
   }
-  .index__músicaParaLeer div {
+  .index__musicaParaLeer div {
     padding: 10px;
   }
-  .index__músicaParaLeer div ul {
+  .index__musicaParaLeer div ul {
     grid-area: video;
     background-color: rgba(233, 221, 221, 0.868);
     margin: 5px;
@@ -704,16 +704,16 @@ hr {
     padding: 10px;
     gap: 10vw;
   }
-  .index__pieDePágina {
+  .index__pieDePagina {
     padding: 10px;
   }
-  .index__pieDePágina div {
+  .index__pieDePagina div {
     width: 100%;
   }
-  .index__pieDePágina:hover nav {
+  .index__pieDePagina:hover nav {
     margin: 10px 0px 10px;
   }
-  .index__pieDePágina ul {
+  .index__pieDePagina ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -837,7 +837,7 @@ hr {
   border-width: width;
   border-style: groove;
 }
-.contacto__género {
+.contacto__genero {
   margin: 10px;
   display: flex;
   flex-direction: row;
@@ -889,7 +889,7 @@ hr {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.contacto__pieDePágina {
+.contacto__pieDePagina {
   font-size: 1.2rem;
   padding: 10px;
   border-color: black;
@@ -897,13 +897,13 @@ hr {
   border-style: groove;
   background-color: rgba(238, 193, 134, 0.7);
 }
-.contacto__pieDePágina div ul {
+.contacto__pieDePagina div ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.contacto__pieDePágina:hover li {
+.contacto__pieDePagina:hover li {
   display: flex;
   gap: 10px;
   margin: 5px 0px 5px;
@@ -960,14 +960,14 @@ hr {
     justify-content: space-around;
     align-items: center;
   }
-  .contacto__pieDePágina {
+  .contacto__pieDePagina {
     height: auto;
     margin-top: 55px;
   }
-  .contacto__pieDePágina div {
+  .contacto__pieDePagina div {
     padding-bottom: 40px;
   }
-  .contacto__pieDePágina ul {
+  .contacto__pieDePagina ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1026,7 +1026,7 @@ hr {
   text-align: center;
   background-color: rgba(233, 221, 221, 0.868);
 }
-.nosotros__galeríaImágenes img {
+.nosotros__galeriaImagenes img {
   border-color: black;
   border-width: width;
   border-style: groove;
@@ -1044,7 +1044,7 @@ hr {
   text-align: justify;
   font-size: 1rem;
 }
-.nosotros__pieDePágina {
+.nosotros__pieDePagina {
   font-size: 1.2rem;
   padding: 15px;
   margin-top: 20px;
@@ -1053,7 +1053,7 @@ hr {
   border-style: groove;
   background-color: rgba(233, 221, 221, 0.868);
 }
-.nosotros__pieDePágina div ul {
+.nosotros__pieDePagina div ul {
   display: flex;
   display: flex;
   flex-direction: column;
@@ -1061,7 +1061,7 @@ hr {
   align-items: flex-start;
   gap: 20px;
 }
-.nosotros__pieDePágina:hover li {
+.nosotros__pieDePagina:hover li {
   margin: 5px 0px 5px;
 }
 
@@ -1093,7 +1093,7 @@ hr {
   .nosotros__cuerpoPrincipal h2 {
     height: 40px;
   }
-  .nosotros__galeríaImágenes {
+  .nosotros__galeriaImagenes {
     grid-area: galería;
     gap: 10px;
     display: grid;
@@ -1101,7 +1101,7 @@ hr {
     grid-template-rows: 5vh 47.33vh 47.33vh;
     grid-template-areas: "título título" "imagen1 imagen2" "imagen3 imagen4";
   }
-  .nosotros__galeríaImágenes h2 {
+  .nosotros__galeriaImagenes h2 {
     height: 40px;
     padding: 5px;
     display: grid;
@@ -1137,7 +1137,7 @@ hr {
     margin-top: 20px;
     grid-area: imagen4;
   }
-  .nosotros__pieDePágina div ul {
+  .nosotros__pieDePagina div ul {
     font-size: 20px;
     display: flex;
     flex-direction: row;
@@ -1299,7 +1299,7 @@ hr {
   padding: 10px;
   text-align: justify;
 }
-.neruda__pieDePágina {
+.neruda__pieDePagina {
   font-size: 1.2rem;
   margin-top: 10px;
   padding: 15px;
@@ -1312,14 +1312,14 @@ hr {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.neruda__pieDePágina ul {
+.neruda__pieDePagina ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
 }
-.neruda__pieDePágina:hover li {
+.neruda__pieDePagina:hover li {
   margin: 15px 0px 0px 15px;
 }
 
@@ -1403,14 +1403,14 @@ hr {
   .neruda__poema11 h3 {
     border: 0;
   }
-  .neruda__pieDePágina {
+  .neruda__pieDePagina {
     margin-top: 15vh;
   }
-  .neruda__pieDePágina div {
+  .neruda__pieDePagina div {
     padding: 10px;
     width: 100%;
   }
-  .neruda__pieDePágina div ul {
+  .neruda__pieDePagina div ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1418,8 +1418,8 @@ hr {
   }
 }
 /* ===============Julio Cortazar================= */
-.cortázar {
-  background-image: url(../views/img/julioCortázar.jpg);
+.cortazar {
+  background-image: url(../views/img/julioCortazar.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -1431,7 +1431,7 @@ hr {
   animation-timing-function: ease-in-out;
   /* ========HEADER=========== */
 }
-.cortázar__encabezado {
+.cortazar__encabezado {
   font-size: 1.2rem;
   color: rgba(233, 221, 221, 0.868);
   display: flex;
@@ -1447,17 +1447,17 @@ hr {
   border-style: groove;
   padding: 5px;
 }
-.cortázar__encabezado hr {
+.cortazar__encabezado hr {
   margin: 0;
   height: 1px;
 }
-.cortázar__encabezado ul {
+.cortazar__encabezado ul {
   padding: 10px;
 }
-.cortázar__encabezado:hover li {
+.cortazar__encabezado:hover li {
   margin: 25px 0px 25px;
 }
-.cortázar__cuerpoPrincipal {
+.cortazar__cuerpoPrincipal {
   padding: 5px;
   margin: 5px;
   display: flex;
@@ -1466,7 +1466,7 @@ hr {
   align-items: flex-start;
   gap: 20px;
 }
-.cortázar__bio {
+.cortazar__bio {
   color: rgba(233, 221, 221, 0.868);
   border-radius: 5px;
   background-color: rgba(58, 151, 58, 0.79);
@@ -1477,25 +1477,25 @@ hr {
   align-items: center;
   gap: 10px;
 }
-.cortázar__bio h2 {
+.cortazar__bio h2 {
   font-size: 1.4rem;
 }
-.cortázar__bio img {
+.cortazar__bio img {
   border-radius: 150px;
   object-fit: cover;
   object-position: center;
 }
-.cortázar__bio p {
+.cortazar__bio p {
   font-size: 1rem;
   text-align: justify;
 }
-.cortázar hr {
+.cortazar hr {
   width: 90vw;
 }
-.cortázar__ambientación {
+.cortazar__ambientacion {
   width: 100%;
 }
-.cortázar__ambientación h2 {
+.cortazar__ambientacion h2 {
   width: 50%;
   border-color: black;
   border-width: width;
@@ -1505,11 +1505,11 @@ hr {
   color: rgba(233, 221, 221, 0.868);
   background-color: rgba(58, 151, 58, 0.79);
 }
-.cortázar__ambientación iframe {
+.cortazar__ambientacion iframe {
   width: 50%;
   height: 50%;
 }
-.cortázar__poemas {
+.cortazar__poemas {
   background-color: rgba(58, 151, 58, 0.79);
   color: rgba(233, 221, 221, 0.868);
   border-color: black;
@@ -1518,7 +1518,7 @@ hr {
   padding: 10px;
   width: 100%;
 }
-.cortázar__poemas h2 {
+.cortazar__poemas h2 {
   border-color: black;
   border-width: width;
   border-style: groove;
@@ -1527,7 +1527,7 @@ hr {
   background-color: rgba(58, 151, 58, 0.79);
   color: rgba(233, 221, 221, 0.868);
 }
-.cortázar__poemas h3 {
+.cortazar__poemas h3 {
   border-color: black;
   border-width: width;
   border-style: groove;
@@ -1536,14 +1536,14 @@ hr {
   background-color: rgba(58, 151, 58, 0.79);
   color: rgba(233, 221, 221, 0.868);
 }
-.cortázar__poemas p {
+.cortazar__poemas p {
   font-size: 1rem;
   color: rgba(233, 221, 221, 0.868);
 }
-.cortázar__poemas hr {
+.cortazar__poemas hr {
   width: 90%;
 }
-.cortázar__pieDePágina {
+.cortazar__pieDePagina {
   padding: 15px;
   margin-top: 30px;
   background-color: rgba(58, 151, 58, 0.79);
@@ -1554,18 +1554,18 @@ hr {
   justify-content: center;
   align-items: flex-start;
 }
-.cortázar__pieDePágina ul {
+.cortazar__pieDePagina ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.cortázar__pieDePágina:hover li {
+.cortazar__pieDePagina:hover li {
   display: flex;
   gap: 5px;
   margin: 5px 0px 0px 5px;
 }
-.cortázar hr {
+.cortazar hr {
   margin: 0;
   margin: 5px;
   border: 1px solid rgb(11, 11, 11);
@@ -1576,50 +1576,50 @@ hr {
 
 /*=======VISTA DESKTOP=======*/
 @media (min-width: 1100px) {
-  .cortázar {
+  .cortazar {
     border-width: 2px;
   }
-  .cortázar__encabezado {
+  .cortazar__encabezado {
     font-size: 24px;
   }
-  .cortázar__encabezado div nav ul {
+  .cortazar__encabezado div nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
   }
-  .cortázar__bio {
+  .cortazar__bio {
     padding: 20px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 10% 40% 50%;
     grid-template-areas: "txt txt1" "img txt1" "txt2 txt2";
   }
-  .cortázar__bio h2 {
+  .cortazar__bio h2 {
     font-size: 1.4rem;
     grid-area: txt;
   }
-  .cortázar__bio img {
+  .cortazar__bio img {
     padding-top: 100px;
     grid-area: img;
   }
-  .cortázar__txt1 {
+  .cortazar__txt1 {
     width: 95%;
     grid-area: txt1;
   }
-  .cortázar__txt2 {
+  .cortazar__txt2 {
     width: 95%;
     grid-area: txt2;
   }
-  .cortázar__pieDePágina {
+  .cortazar__pieDePagina {
     padding: 10px;
     background-color: rgba(58, 151, 58, 0.79);
   }
-  .cortázar__pieDePágina div {
+  .cortazar__pieDePagina div {
     width: 100%;
   }
-  .cortázar__pieDePágina ul {
+  .cortazar__pieDePagina ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1685,11 +1685,11 @@ hr {
   color: black;
   background-color: rgba(247, 247, 130, 0.733);
 }
-.byron__ambientación {
+.byron__ambientacion {
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
-.byron__ambientación iframe {
+.byron__ambientacion iframe {
   width: 100%;
   height: 100%;
 }
@@ -1728,7 +1728,7 @@ hr {
   margin-top: 10px;
   text-align: justify;
 }
-.byron__pieDePágina {
+.byron__pieDePagina {
   width: 100%;
   font-size: 1.2rem;
   padding: 10px;
@@ -1739,18 +1739,18 @@ hr {
   padding: 10px;
   background-color: rgba(247, 247, 130, 0.733);
 }
-.byron__pieDePágina hr {
+.byron__pieDePagina hr {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.byron__pieDePágina div ul {
+.byron__pieDePagina div ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
 }
-.byron__pieDePágina:hover li {
+.byron__pieDePagina:hover li {
   margin: 10px 0px 0px 10px;
 }
 
@@ -1776,7 +1776,7 @@ hr {
     width: 70%;
     height: 30vh;
   }
-  .byron__pieDePágina div ul {
+  .byron__pieDePagina div ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

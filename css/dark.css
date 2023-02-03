@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    background-color: white;
+    background-color: rgb(225, 222, 222);
 }
 
 input{
@@ -51,7 +51,7 @@ select{
     background-color: rgba(0, 0, 0, 0.618);
 }
 
-.index__músicaParaLeer {
+.index__musicaParaLeer {
     background-color: rgba(0, 0, 0, 0.645);
 }
 
@@ -59,7 +59,7 @@ select{
     background-color: rgba(0, 0, 0, 0.674);
 }
 
-.index__pieDePágina {
+.index__pieDePagina {
     background-color: rgb(0, 0, 0);
 }
 
@@ -91,7 +91,7 @@ neruda__poema11 {
     color: white;
 }
 
-.neruda__pieDePágina {
+.neruda__pieDePagina {
     background-color: black;
 }
 
@@ -137,7 +137,7 @@ neruda__poema11 {
 /*========CORTÁZAR=======*/
 
 
-.cortázar {
+.cortazar {
     background-color: rgba(0, 0, 0, 0.634);
     opacity: 0.7;
 }
@@ -147,21 +147,21 @@ neruda__poema11 {
 }
 
 
-.cortázar__encabezado {
+.cortazar__encabezado {
     background-color: black;
     box-shadow: 10px 0px 10px white;
 }
 
 
-.cortázar__bio {
+.cortazar__bio {
     background-color: rgba(0, 0, 0, 0.651);
 }
 
-.cortázar__poemas {
+.cortazar__poemas {
     background-color: rgba(0, 0, 0, 0.673);
 }
 
-.cortázar__pieDePágina {
+.cortazar__pieDePagina {
     background-color: black;
 }
 
@@ -173,7 +173,7 @@ neruda__poema11 {
 
 
 .byron {
-    background-color: rgba(0, 0, 0, 0.634);
+    background-color: rgba(18, 18, 18, 0.634);
     opacity: 0.7;
 }
 
@@ -200,7 +200,7 @@ neruda__poema11 {
     background-color: rgba(0, 0, 0, 0.685);
 }
 
-.byron__pieDePágina {
+.byron__pieDePagina {
     background-color: black;
 }
 
@@ -242,7 +242,7 @@ neruda__poema11 {
     background-color: rgba(35, 33, 33, 0.685);
 }
 
-.contacto__género{
+.contacto__genero{
     background-color: rgba(31, 29, 29, 0.685);
 }
 
@@ -257,7 +257,7 @@ neruda__poema11 {
 
 
 
-.contacto__pieDePágina {
+.contacto__pieDePagina {
     background-color: black;
 }
 
@@ -291,6 +291,6 @@ neruda__poema11 {
 
 
 
-.contacto__pieDePágina {
+.contacto__pieDePagina {
     background-color: black;
 }
