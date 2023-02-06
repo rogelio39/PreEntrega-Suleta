@@ -57,6 +57,34 @@
     }
 
 
+    &__bio {
+        width: 80%;
+        color: $color-primario;
+        border-radius: 5px;
+        background-color: rgba(171, 213, 107, 0.623);
+        padding: 10px;
+        @include flex-box (column, space-between, center);
+        gap: 10px;
+
+        h2 {
+            font-size: $fuente-h2;
+        }
+
+        img {
+            border-radius: 150px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        p {
+            font-size: $fuente-p;
+            text-align: justify;
+        }
+
+    }
+
+
+
     &__ambientacion {
         margin-top: 10vh;
         margin-bottom: 10vh;
@@ -70,6 +98,8 @@
 
     &__poemas {
         margin-top: 10vh;
+        @include flex-box (column, center, center);
+        gap: 20px
     }
 
     &__poema1 {
@@ -80,11 +110,6 @@
         padding: 10px;
         color: black;
         @include flex-box (column, center, center);
-
-        h2 {
-            font-size: $fuente-h2;
-            text-align: center;
-        }
 
         h3 {
             margin-top: 10px;
@@ -99,6 +124,33 @@
             margin-top: 10px;
             text-align: justify;
         }
+    }
+
+    &__poema2 {
+        width: 80%;
+        @include border();
+        background-color: $color-byr;
+        border-width: 2px;
+        font-size: $fuente-p;
+        padding: 10px;
+        color: black;
+        @include flex-box (column, center, center);
+
+        h3 {
+            margin-top: 10px;
+            @include border();
+            font-size: $fuente-h3;
+            padding: 10px;
+            color: black;
+            background-color: $color-byr;
+        }
+
+        p {
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+
     }
 
     &__pieDePagina {
@@ -128,8 +180,62 @@
 
 
 
+/* ======VISTA TABLET======*/
 
-/* ======VISTA======*/
+
+@media (min-width:760px) and (max-width:1099px) {
+
+    .byron {
+        @include border();
+
+        &__encabezado {
+            @include flex-box(column, space-between, center);
+            gap: 12px;
+        }
+
+
+
+        &__poemas {
+            padding-bottom: 4rem;
+            margin: 10px;
+            @include grid(50% 50%, 10% 70%,
+
+                "titulo titulo"
+                "poema1 poema2"
+
+
+            );
+
+            h2 {
+                text-align: center;
+                grid-area: titulo;
+                margin-bottom: 70px;
+            }
+
+        }
+
+
+        &__poema1 {
+            margin-left: 30px;
+            grid-area: poema1;
+
+        }
+
+        &__poema2 {
+            grid-area: poema2;
+
+        }
+
+
+
+    }
+
+}
+
+
+
+
+/* ======VISTA DESKTOP======*/
 
 @media (min-width:1100px) {
 
@@ -140,7 +246,45 @@
             @include flex-box (row, space-between, center);
         }
 
-        &__ambientación {
+
+        &__bio {
+            padding: 20px;
+            @include grid(40% 60%, 10% 40% 50%,  
+            
+            
+            
+                "txt txt1"
+                "img txt1"
+                "txt2 txt2"
+
+            );
+
+            h2 {
+                font-size: $fuente-h2;
+                grid-area: txt;
+            }
+
+            img {
+                padding-top: 100px;
+                grid-area: img;
+            }
+
+
+        }
+
+
+
+        &__txt1 {
+            width: 95%;
+            grid-area: txt1;
+        }
+
+        &__txt2 {
+            width: 95%;
+            grid-area: txt2;
+        }
+
+        &__ambientacion {
             width: 100%;
             padding-left: 25vw;
 

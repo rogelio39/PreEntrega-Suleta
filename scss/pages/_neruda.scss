@@ -14,7 +14,7 @@
 
     &__encabezado {
         font-size: $fuente-encabezado;
-        padding: 10px;
+        padding: 15px;
         @include flex-box (column, center, flex-start);
         background-color: $color-primario;
         position: sticky;
@@ -25,7 +25,7 @@
 
 
         hr {
-            margin: 0;
+            margin: 15px;
             height: 1px;
         }
 
@@ -42,9 +42,40 @@
 
     &__cuerpoPrincipal {
         margin-top: 50px;
-        @include flex-box (column, 0, 0);
+        @include flex-box (column, flex-start, flex-start);
     }
 
+
+
+
+    /*=========Bíografia==========*/
+
+    &__bio {
+        width: 80%;
+        align-self: center;
+        color: $color-primario;
+        border-radius: 5px;
+        background-color: rgba(92, 70, 113, 0.466);
+        padding: 10px;
+        @include flex-box (column, space-between, center);
+        gap: 10px;
+
+        h2 {
+            font-size: $fuente-h2;
+        }
+
+        img {
+            border-radius: 150px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        p {
+            font-size: $fuente-p;
+            text-align: justify;
+        }
+
+    }
 
 
     /* ======AMBIENTACION===== */
@@ -195,6 +226,58 @@
 
 
 
+/* =====VERSION TABLET===== */
+
+@media (min-width:760px) and (max-width:1099px) {
+
+    .neruda {
+        @include border();
+
+        &__encabezado {
+            @include flex-box(column, space-between, center);
+            gap: 12px;
+        }
+
+
+        &__poemas {
+            padding-bottom: 4rem;
+            margin: 10px;
+            @include grid(50% 50%, 8% 52% 40%,
+
+                "titulo titulo"
+                "poema20 poema20"
+                "poema2 poema11"
+
+
+            );
+
+        }
+
+
+        &__poema20 {
+            grid-area: poema20;
+
+        }
+
+        &__poema2 {
+            grid-area: poema2;
+
+        }
+
+        &__poema11 {
+            height: max-content;
+            grid-area: poema11;
+        }
+
+
+    }
+
+}
+
+
+
+
+
 
 /* ===========Vista Desktop============= */
 @media (min-width: 1100px) {
@@ -202,32 +285,82 @@
     .neruda {
         border-width: 2px;
 
+
         &__encabezado nav ul {
             @include flex-box (row, space-between, center);
             padding: 10px;
         }
 
 
-
         &__cuerpoPrincipal {
+            @include grid(repeat(2, 50%), 25% 15% 60%,
+
+
+                "biografia biografia"
+                "ambientacion ambientacion"
+                "poemas poemas"
+            );
+            
+            hr{
+                display: none
+            }
+
+        }
+
+
+        &__bio {
+            margin-left: 10vw;
+            grid-area: biografia;
+            padding: 20px;
             display: grid;
-            grid-template-columns: repeat(2, 50%);
-            grid-template-rows: 13% 87%;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 10% 40% 50%;
 
             grid-template-areas:
 
-                "ambientacion ."
-                "poemas poemas"
+                "txt txt1"
+                "img txt1"
+                "txt2 txt2"
+
             ;
+
+
+            h2 {
+                font-size: $fuente-h2;
+                grid-area: txt;
+            }
+
+            img {
+                padding-top: 100px;
+                grid-area: img;
+            }
+
+            margin-bottom: 50px;
+
         }
 
+
+
+        &__txt1 {
+            width: 95%;
+            grid-area: txt1;
+        }
+
+        &__txt2 {
+            width: 95%;
+            grid-area: txt2;
+        }
+
+
+
         &__ambientacion {
-            margin-left: 20px;
+            width: max-content;
+            margin-left: 10vw;
             grid-area: ambientacion;
 
             iframe {
-                width: 100%;
-                height: 100%;
+                width: 60vw;
+                height: 30vh;
             }
         }
 

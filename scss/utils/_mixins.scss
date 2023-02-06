@@ -11,3 +11,13 @@
     border-width: width;
     border-style: $style;
 }
+
+
+
+
+@mixin grid ($columns, $rows, $areas){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+}

@@ -597,6 +597,42 @@ hr {
   margin: 10px 0px 10px;
 }
 
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .index {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .index__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .index__cuerpoPrincipal {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 45% 5% 45%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "poetas hr musica" "libros libros libros";
+  }
+  .index hr {
+    grid-area: hr;
+    width: 3px;
+    height: 100vh;
+  }
+  .index__poetas {
+    grid-area: poetas;
+  }
+  .index__musicaParaLeer {
+    grid-area: musica;
+  }
+  .index__librosPoetas {
+    grid-area: libros;
+  }
+}
 /* =====VERSION DESKTOP===== */
 @media (min-width: 1100px) {
   .index {
@@ -1065,6 +1101,47 @@ hr {
   margin: 5px 0px 5px;
 }
 
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .nosotros {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .nosotros__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .nosotros__galeriaImagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: 6% repeat(2, 47%);
+    grid-template-areas: "titulo titulo" "imagen1 imagen2" "imagen3 imagen4";
+  }
+  .nosotros__galeriaImagenes h2 {
+    grid-area: titulo;
+  }
+  .nosotros__imagen1 {
+    grid-area: imagen1;
+    object-fit: cover;
+  }
+  .nosotros__imagen2 {
+    grid-area: imagen2;
+    object-fit: cover;
+  }
+  .nosotros__imagen3 {
+    grid-area: imagen3;
+    object-fit: cover;
+  }
+  .nosotros__imagen4 {
+    grid-area: imagen4;
+    object-fit: cover;
+  }
+}
+/*===============vista desktop==========*/
 @media (min-width: 1100px) {
   .nosotros {
     border-width: 2px;
@@ -1156,11 +1233,12 @@ hr {
   border-style: groove;
   /* ======ENCABEZADO===== */
   /* ======CUERPO PRINCIPAL===== */
+  /*=========Bíografia==========*/
   /* ======AMBIENTACION===== */
 }
 .neruda__encabezado {
   font-size: 1.2rem;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1173,7 +1251,7 @@ hr {
   gap: 10px;
 }
 .neruda__encabezado hr {
-  margin: 0;
+  margin: 15px;
   height: 1px;
 }
 .neruda__encabezado:hover li {
@@ -1183,8 +1261,33 @@ hr {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: 0;
-  align-items: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.neruda__bio {
+  width: 80%;
+  align-self: center;
+  color: rgba(233, 221, 221, 0.868);
+  border-radius: 5px;
+  background-color: rgba(92, 70, 113, 0.466);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.neruda__bio h2 {
+  font-size: 1.4rem;
+}
+.neruda__bio img {
+  border-radius: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.neruda__bio p {
+  font-size: 1rem;
+  text-align: justify;
 }
 .neruda__ambientacion {
   align-self: center;
@@ -1323,6 +1426,39 @@ hr {
   margin: 15px 0px 0px 15px;
 }
 
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .neruda {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .neruda__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .neruda__poemas {
+    padding-bottom: 4rem;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8% 52% 40%;
+    grid-template-areas: "titulo titulo" "poema20 poema20" "poema2 poema11";
+  }
+  .neruda__poema20 {
+    grid-area: poema20;
+  }
+  .neruda__poema2 {
+    grid-area: poema2;
+  }
+  .neruda__poema11 {
+    height: max-content;
+    grid-area: poema11;
+  }
+}
 /* ===========Vista Desktop============= */
 @media (min-width: 1100px) {
   .neruda {
@@ -1338,16 +1474,46 @@ hr {
   .neruda__cuerpoPrincipal {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 13% 87%;
-    grid-template-areas: "ambientacion ." "poemas poemas";
+    grid-template-rows: 25% 15% 60%;
+    grid-template-areas: "biografia biografia" "ambientacion ambientacion" "poemas poemas";
+  }
+  .neruda__cuerpoPrincipal hr {
+    display: none;
+  }
+  .neruda__bio {
+    margin-left: 10vw;
+    grid-area: biografia;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 40% 50%;
+    grid-template-areas: "txt txt1" "img txt1" "txt2 txt2";
+    margin-bottom: 50px;
+  }
+  .neruda__bio h2 {
+    font-size: 1.4rem;
+    grid-area: txt;
+  }
+  .neruda__bio img {
+    padding-top: 100px;
+    grid-area: img;
+  }
+  .neruda__txt1 {
+    width: 95%;
+    grid-area: txt1;
+  }
+  .neruda__txt2 {
+    width: 95%;
+    grid-area: txt2;
   }
   .neruda__ambientacion {
-    margin-left: 20px;
+    width: max-content;
+    margin-left: 10vw;
     grid-area: ambientacion;
   }
   .neruda__ambientacion iframe {
-    width: 100%;
-    height: 100%;
+    width: 60vw;
+    height: 30vh;
   }
   .neruda__poemas {
     grid-area: poemas;
@@ -1510,6 +1676,11 @@ hr {
   height: 50%;
 }
 .cortazar__poemas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
   background-color: rgba(58, 151, 58, 0.79);
   color: rgba(233, 221, 221, 0.868);
   border-color: black;
@@ -1574,6 +1745,54 @@ hr {
   background-color: black;
 }
 
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .cortazar {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .cortazar__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .cortazar__poemas {
+    padding: 30px;
+    padding-bottom: 4rem;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8% 8% 80%;
+    grid-template-areas: "titulo titulo" "hr hr" "poema1 poema2";
+  }
+  .cortazar__poemas hr {
+    grid-area: hr;
+  }
+  .cortazar__poemas h2 {
+    width: max-content;
+    grid-area: titulo;
+  }
+  .cortazar__poemas h3 {
+    margin-bottom: 10px;
+  }
+  .cortazar__poema1 {
+    padding: 10px;
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+    grid-area: poema1;
+  }
+  .cortazar__poema2 {
+    padding: 10px;
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+    grid-area: poema2;
+  }
+}
 /*=======VISTA DESKTOP=======*/
 @media (min-width: 1100px) {
   .cortazar {
@@ -1611,6 +1830,30 @@ hr {
   .cortazar__txt2 {
     width: 95%;
     grid-area: txt2;
+  }
+  .cortazar__poemas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cortazar__poemas hr {
+    display: none;
+  }
+  .cortazar__poemas h3 {
+    margin-bottom: 10px;
+  }
+  .cortazar__poema1 {
+    padding: 10px;
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .cortazar__poema2 {
+    padding: 10px;
+    border-color: black;
+    border-width: width;
+    border-style: groove;
   }
   .cortazar__pieDePagina {
     padding: 10px;
@@ -1685,6 +1928,30 @@ hr {
   color: black;
   background-color: rgba(247, 247, 130, 0.733);
 }
+.byron__bio {
+  width: 80%;
+  color: rgba(233, 221, 221, 0.868);
+  border-radius: 5px;
+  background-color: rgba(171, 213, 107, 0.623);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.byron__bio h2 {
+  font-size: 1.4rem;
+}
+.byron__bio img {
+  border-radius: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.byron__bio p {
+  font-size: 1rem;
+  text-align: justify;
+}
 .byron__ambientacion {
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -1695,6 +1962,11 @@ hr {
 }
 .byron__poemas {
   margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .byron__poema1 {
   border-color: black;
@@ -1710,10 +1982,6 @@ hr {
   justify-content: center;
   align-items: center;
 }
-.byron__poema1 h2 {
-  font-size: 1.4rem;
-  text-align: center;
-}
 .byron__poema1 h3 {
   margin-top: 10px;
   border-color: black;
@@ -1725,6 +1993,35 @@ hr {
   background-color: rgba(247, 247, 130, 0.733);
 }
 .byron__poema1 p {
+  margin-top: 10px;
+  text-align: justify;
+}
+.byron__poema2 {
+  width: 80%;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  background-color: rgba(247, 247, 130, 0.733);
+  border-width: 2px;
+  font-size: 1rem;
+  padding: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.byron__poema2 h3 {
+  margin-top: 10px;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  font-size: 1.3rem;
+  padding: 10px;
+  color: black;
+  background-color: rgba(247, 247, 130, 0.733);
+}
+.byron__poema2 p {
   margin-top: 10px;
   text-align: justify;
 }
@@ -1754,7 +2051,42 @@ hr {
   margin: 10px 0px 0px 10px;
 }
 
-/* ======VISTA======*/
+/* ======VISTA TABLET======*/
+@media (min-width: 760px) and (max-width: 1099px) {
+  .byron {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+  }
+  .byron__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .byron__poemas {
+    padding-bottom: 4rem;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 70%;
+    grid-template-areas: "titulo titulo" "poema1 poema2";
+  }
+  .byron__poemas h2 {
+    text-align: center;
+    grid-area: titulo;
+    margin-bottom: 70px;
+  }
+  .byron__poema1 {
+    margin-left: 30px;
+    grid-area: poema1;
+  }
+  .byron__poema2 {
+    grid-area: poema2;
+  }
+}
+/* ======VISTA DESKTOP======*/
 @media (min-width: 1100px) {
   .byron {
     border-width: 2px;
@@ -1765,14 +2097,37 @@ hr {
     justify-content: space-between;
     align-items: center;
   }
-  .byron__ambientación {
+  .byron__bio {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 10% 40% 50%;
+    grid-template-areas: "txt txt1" "img txt1" "txt2 txt2";
+  }
+  .byron__bio h2 {
+    font-size: 1.4rem;
+    grid-area: txt;
+  }
+  .byron__bio img {
+    padding-top: 100px;
+    grid-area: img;
+  }
+  .byron__txt1 {
+    width: 95%;
+    grid-area: txt1;
+  }
+  .byron__txt2 {
+    width: 95%;
+    grid-area: txt2;
+  }
+  .byron__ambientacion {
     width: 100%;
     padding-left: 25vw;
   }
-  .byron__ambientación h2 {
+  .byron__ambientacion h2 {
     width: 70%;
   }
-  .byron__ambientación iframe {
+  .byron__ambientacion iframe {
     width: 70%;
     height: 30vh;
   }
