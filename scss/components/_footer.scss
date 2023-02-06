@@ -1,0 +1,255 @@
+/*=============index=================*/
+
+
+.index__pieDePagina {
+    padding: 20px;
+    @include flex-box(column, space-between, flex-start);
+    font-size: $fuente-piedepagina;
+    @include border();
+    margin-top: 20px;
+    background-color: $color-primario;
+    gap: 15px;
+
+
+    div ul {
+        gap: 20px;
+    }
+
+    &:hover li {
+        margin: 10px 0px 10px;
+    }
+}
+
+
+/* =====VERSION DESKTOP===== */
+
+@media (min-width:1100px) {
+
+    .index__pieDePagina {
+        padding: 10px;
+
+        div {
+            width: 100%;
+        }
+
+        &:hover nav {
+            margin: 10px 0px 10px
+        }
+
+        ul {
+            @include flex-box(row, space-between, center);
+        }
+    }
+}
+
+
+
+
+/*=================================================*/
+
+
+/*=================nosotros==========================*/
+
+.nosotros__pieDePagina {
+    font-size: $fuente-piedepagina;
+    padding: 15px;
+    margin-top: 20px;
+    @include border();
+    background-color: $color-primario;
+
+    div ul {
+        display: flex;
+        @include flex-box(column, space-between, flex-start);
+        gap: 20px;
+    }
+
+    &:hover li {
+        margin: 5px 0px 5px;
+    }
+
+}
+
+
+/*===============vista desktop==========*/
+
+
+@media (min-width: 1100px) {
+
+    .nosotros__pieDePagina div ul {
+        font-size: 20px;
+        @include flex-box(row, space-between, center);
+    }
+}
+
+
+
+
+/*===================================================*/
+
+/*=================neruda=====================*/
+
+.neruda__pieDePagina {
+    font-size: $fuente-piedepagina;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: $color-primario;
+    @include border();
+    @include flex-box (column, flex-start, flex-start);
+
+    ul {
+        @include flex-box (column, center, flex-start);
+        gap: 10px;
+    }
+
+    &:hover li {
+        margin: 15px 0px 0px 15px;
+    }
+}
+
+/* ===========Vista Desktop============= */
+@media (min-width: 1100px) {
+    .neruda__pieDePagina {
+        margin-top: 15vh;
+
+        div {
+            padding: 10px;
+            width: 100%;
+
+            ul {
+                @include flex-box (row, space-between, center);
+            }
+
+        }
+    }
+}
+
+
+
+
+
+/*===============================================*/
+
+/*======================Julio Cortázar=====================*/
+
+.cortazar__pieDePagina {
+    padding: 15px;
+    margin-top: 30px;
+    background-color: $color-cor;
+    color: $color-primario;
+    font-size: $fuente-piedepagina;
+    @include flex-box (column, center, flex-start);
+
+    ul {
+        @include flex-box (column, flex-start, flex-start);
+    }
+
+    &:hover li {
+        display: flex;
+        gap: 5px;
+        margin: 5px 0px 0px 5px;
+    }
+}
+
+
+/*=======VISTA DESKTOP=======*/
+
+@media (min-width:1100px) {
+
+
+    .cortazar__pieDePagina {
+        padding: 10px;
+        background-color: $color-cor;
+
+        div {
+            width: 100%
+        }
+
+        ul {
+            @include flex-box (row, space-between, center);
+            color: $color-primario;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+
+/*=========================================================*/
+
+/*=====================Lord Byron========================*/
+
+
+.byron__pieDePagina {
+    width: 100%;
+    font-size: $fuente-piedepagina;
+    padding: 10px;
+    @include border();
+    border-radius: 5px;
+    padding: 10px;
+    background-color: $color-byr;
+
+    hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    div ul {
+        @include flex-box (column, center, flex-start);
+        gap: 15px;
+    }
+
+    &:hover li {
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+/* ======VISTA DESKTOP======*/
+
+@media (min-width:1100px) {
+
+    .byron__pieDePagina div ul {
+        @include flex-box (row, space-between, center);
+    }
+}
+
+
+
+/*=======================================================*/
+
+/*===============contacto===================*/
+
+.contacto__pieDePagina {
+    font-size: $fuente-piedepagina;
+    padding: 10px;
+    @include border();
+    background-color: $color-contacto;
+
+    div ul {
+        @include flex-box(column, center, flex-start);
+    }
+
+    &:hover li {
+        display: flex;
+        gap: 10px;
+        margin: 5px 0px 5px;
+    }
+}
+
+/*=======Vista Desktop======*/
+
+
+@media (min-width:1100px) {
+
+    .contacto__pieDePagina {
+        height: auto;
+        margin-top: 55px;
+
+        div {
+            padding-bottom: 40px
+        }
+
+        ul {
+            @include flex-box(row, space-between, center);
+        }
+    }
+}

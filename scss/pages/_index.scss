@@ -8,29 +8,6 @@
     @include border();
 
 
-    /* ======ENCABEZADO===== */
-
-    &__encabezado {
-        font-size: $fuente-encabezado;
-        padding: 15px;
-        background-color: $color-primario;
-        position: sticky;
-        top: 0;
-        z-index: 4;
-        box-shadow: 20px 0px 10px 10px black;
-
-        &:hover nav {
-            margin: 15px 0px 15px;
-        }
-
-        ul{
-            @include flex-box(column, space-between, flex-start);
-            gap: 12px;
-        }
-
-
-    }
-
 
     /* ======CUERPO PRINCIPAL===== */
 
@@ -186,100 +163,58 @@
         }
     }
 
-
-
-
-    /* ======PIE DE PAGINA===== */
-
-
-    &__pieDePagina {
-        @include flex-box(column, space-between, flex-start);
-        font-size: $fuente-piedepagina;
-        @include border();
-        margin-top: 20px;
-        background-color: $color-primario;
-        gap: 10px;
-
-
-        div ul {
-            gap: 20px;
-        }
-
-        &:hover li {
-            margin: 10px 0px 10px;
-        }
-    }
 }
 
 
+    /* =====VERSION TABLET===== */
 
-/* =====VERSION TABLET===== */
+    @media (min-width:760px) and (max-width:1099px) {
 
-@media (min-width:760px) and (max-width:1099px)  {
+        .index {
+            @include border();
 
-    .index {
-        @include border();
+            &__cuerpoPrincipal {
+                margin: 10px;
+                @include grid(45% 5% 45%, 60% 40%,
 
-        &__encabezado {
-            @include flex-box(column, space-between, center);
-            gap: 12px;
+                    "poetas hr musica"
+                    "libros libros libros"
+
+
+                );
+            }
+
+            hr {
+                grid-area: hr;
+                width: 3px;
+                height: 100vh;
+            }
+
+            &__poetas {
+                grid-area: poetas;
+
+            }
+
+            &__musicaParaLeer {
+                grid-area: musica;
+
+            }
+
+            &__librosPoetas {
+                grid-area: libros;
+            }
+
+
         }
-
-
-        &__cuerpoPrincipal {
-            margin: 10px;
-            @include grid(45% 5% 45%, 60% 40%,
-
-                "poetas hr musica"
-                "libros libros libros"
-
-
-            );
-        }
-
-        hr{
-            grid-area: hr;
-            width: 3px;
-            height: 100vh;
-        }
-        &__poetas {
-            grid-area: poetas;
-
-        }
-
-        &__musicaParaLeer {
-            grid-area: musica;
-
-        }
-
-        &__librosPoetas {
-            grid-area: libros;
-        }
-
 
     }
 
-}
     /* =====VERSION DESKTOP===== */
 
     @media (min-width:1100px) {
 
         .index {
             border-width: 2px;
-
-            &__encabezado {
-                padding: 5px;
-                @include flex-box(row, space-between, center);
-                position: sticky;
-                top: 0;
-                z-index: 4;
-
-                nav ul {
-                    @include flex-box(row, space-between, center);
-                    gap: 20px;
-                }
-            }
-
 
 
             /* ======AQUI EN LA VERISON DESKTOP SE APLICA GRID===== */
@@ -383,22 +318,6 @@
                         padding: 10px;
                         gap: 10vw;
                     }
-                }
-            }
-
-            &__pieDePagina {
-                padding: 10px;
-
-                div {
-                    width: 100%;
-                }
-
-                &:hover nav {
-                    margin: 10px 0px 10px
-                }
-
-                ul {
-                    @include flex-box(row, space-between, center);
                 }
             }
         }

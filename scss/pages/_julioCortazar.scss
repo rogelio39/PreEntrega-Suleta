@@ -11,34 +11,7 @@
     animation-duration: 1.5s;
     animation-timing-function: ease-in-out;
 
-    /* ========HEADER=========== */
 
-
-
-    &__encabezado {
-        font-size: $fuente-encabezado;
-        color: $color-primario;
-        @include flex-box (column, center, flex-start);
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        background-color: $color-cor;
-        @include border();
-        padding: 5px;
-
-        hr {
-            margin: 0;
-            height: 1px;
-        }
-
-        ul {
-            padding: 10px;
-        }
-
-        &:hover li {
-            margin: 25px 0px 25px;
-        }
-    }
 
     &__cuerpoPrincipal {
         padding: 5px;
@@ -131,26 +104,6 @@
     }
 
 
-
-    &__pieDePagina {
-        padding: 15px;
-        margin-top: 30px;
-        background-color: $color-cor;
-        color: $color-primario;
-        font-size: $fuente-piedepagina;
-        @include flex-box (column, center, flex-start);
-
-        ul {
-            @include flex-box (column, flex-start, flex-start);
-        }
-
-        &:hover li {
-            display: flex;
-            gap: 5px;
-            margin: 5px 0px 0px 5px;
-        }
-    }
-
     hr {
         margin: 0;
         margin: 5px;
@@ -167,15 +120,10 @@
 
 /* =====VERSION TABLET===== */
 
-@media (min-width:760px) and (max-width:1099px)  {
+@media (min-width:760px) and (max-width:1099px) {
 
-    .cortazar{
+    .cortazar {
         @include border();
-
-        &__encabezado {
-            @include flex-box(column, space-between, center);
-            gap: 12px;
-        }
 
 
         &__poemas {
@@ -190,21 +138,22 @@
 
             );
 
-            hr{
+            hr {
                 grid-area: hr;
             }
 
-            h2{
+            h2 {
                 width: max-content;
                 grid-area: titulo;
             }
-            h3{
+
+            h3 {
                 margin-bottom: 10px;
             }
         }
 
 
-        &__poema1{
+        &__poema1 {
             padding: 10px;
             @include border(black, 2px, groove);
             grid-area: poema1;
@@ -235,28 +184,16 @@
     .cortazar {
         border-width: 2px;
 
-
-        &__encabezado {
-            font-size: 24px;
-
-            div nav ul {
-                @include flex-box (row, space-between, center);
-                gap: 20px;
-            }
-
-        }
-
-
         &__bio {
             padding: 20px;
-            @include grid(40% 60%, 10% 40% 50%, 
-            
-            
-            "txt txt1"
-            "img txt1"
-            "txt2 txt2"
-            
-            
+            @include grid(40% 60%, 10% 40% 50%,
+
+
+                "txt txt1"
+                "img txt1"
+                "txt2 txt2"
+
+
             );
 
 
@@ -286,20 +223,20 @@
         }
 
 
-        &__poemas{
+        &__poemas {
             @include flex-box(row, space-between, center);
 
-            hr{
+            hr {
                 display: none;
             }
-            
-            h3{
+
+            h3 {
                 margin-bottom: 10px;
             }
         }
 
-        
-        &__poema1{
+
+        &__poema1 {
             padding: 10px;
             @include border(black, 2px, groove);
 
@@ -311,22 +248,5 @@
 
         }
 
-
-
-
-        &__pieDePagina {
-            padding: 10px;
-            background-color: $color-cor;
-
-            div {
-                width: 100%
-            }
-
-            ul {
-                @include flex-box (row, space-between, center);
-                color: $color-primario;
-                margin-top: 20px;
-            }
-        }
     }
 }

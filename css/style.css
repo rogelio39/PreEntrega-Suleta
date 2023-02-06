@@ -382,22 +382,7 @@ hr {
   background-color: black;
 }
 
-/* ==========index========== */
-.index {
-  background-image: url(../views/img/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  /* ======ENCABEZADO===== */
-  /* ======CUERPO PRINCIPAL===== */
-  /* ======SECTION POETAS===== */
-  /* ======SECCION MUSICA PARA LEER===== */
-  /* ======SECCION LIBRO POETAS======= */
-  /* ======PIE DE PAGINA===== */
-}
+/*============INDEX===========*/
 .index__encabezado {
   font-size: 1.2rem;
   padding: 15px;
@@ -416,6 +401,515 @@ hr {
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
+}
+
+/*=======VERSION TABLET=========*/
+@media (min-width: 760px) and (max-width: 1099px) {
+  .index__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+}
+/*======VERSION DESKTOP==========*/
+@media (min-width: 1100px) {
+  .index__encabezado {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+  .index__encabezado nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+/*==========================================================================*/
+/*============NOSOTROS===========*/
+.nosotros__encabezado {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: rgba(233, 221, 221, 0.868);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  gap: 10px;
+}
+.nosotros__encabezado:hover li {
+  margin: 25px 0px 25px;
+}
+
+/*===========VERSION TABLET============*/
+@media (min-width: 760px) and (max-width: 1099px) {
+  .nosotros__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+}
+/*=============VERSION DESKTOP==============*/
+@media (min-width: 1100px) {
+  .nosotros__encabezado {
+    border-color: black;
+    border-width: width;
+    border-style: groove;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}
+/*================================================================*/
+/*====================NERUDA=============================*/
+.neruda__encabezado {
+  font-size: 1.2rem;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(233, 221, 221, 0.868);
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 10px 0px 10px 10px black;
+  gap: 10px;
+}
+.neruda__encabezado hr {
+  margin: 15px;
+  height: 1px;
+}
+.neruda__encabezado:hover li {
+  margin: 10px 0px 0px 10px;
+}
+
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .neruda__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+}
+/* ===========Vista Desktop============= */
+@media (min-width: 1100px) {
+  .neruda__encabezado nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+}
+/*============================================================*/
+/*=================Julio Cortázar======================*/
+.cortazar__encabezado {
+  font-size: 1.2rem;
+  color: rgba(233, 221, 221, 0.868);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(58, 151, 58, 0.79);
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  padding: 5px;
+}
+.cortazar__encabezado hr {
+  margin: 0;
+  height: 1px;
+}
+.cortazar__encabezado ul {
+  padding: 10px;
+}
+.cortazar__encabezado:hover li {
+  margin: 25px 0px 25px;
+}
+
+/* =====VERSION TABLET===== */
+@media (min-width: 760px) and (max-width: 1099px) {
+  .cortazar__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+}
+/*=======VISTA DESKTOP=======*/
+@media (min-width: 1100px) {
+  .cortazar__encabezado {
+    font-size: 24px;
+  }
+  .cortazar__encabezado div nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+/*======================================================*/
+/*===============Lord Byron=============*/
+.byron__encabezado {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(247, 247, 130, 0.733);
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  padding: 10px;
+  animation-name: jello-horizontal;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+.byron__encabezado hr {
+  width: 80vw;
+  margin: 0;
+  height: 1px;
+}
+.byron__encabezado ul {
+  padding: 10px;
+}
+.byron__encabezado:hover li {
+  margin: 15px 0px 15px;
+}
+
+/* ======VISTA TABLET======*/
+@media (min-width: 760px) and (max-width: 1099px) {
+  .byron__encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+}
+/* ======VISTA DESKTOP======*/
+@media (min-width: 1100px) {
+  .byron__encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*================================================*/
+/*=====================contacto==============*/
+.contacto__encabezado {
+  padding: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: rgba(238, 193, 134, 0.7);
+  box-shadow: 0px 0px 15px black;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.contacto__encabezado hr {
+  margin: 0;
+  height: 1px;
+  color: black;
+}
+.contacto__encabezado:hover li {
+  margin: 15px 0px 15px;
+}
+
+/*=======Vista Desktop======*/
+@media (min-width: 1100px) {
+  .contacto__encabezado {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contacto__encabezado hr {
+    display: none;
+  }
+}
+/*=============index=================*/
+.index__pieDePagina {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  margin-top: 20px;
+  background-color: rgba(233, 221, 221, 0.868);
+  gap: 15px;
+}
+.index__pieDePagina div ul {
+  gap: 20px;
+}
+.index__pieDePagina:hover li {
+  margin: 10px 0px 10px;
+}
+
+/* =====VERSION DESKTOP===== */
+@media (min-width: 1100px) {
+  .index__pieDePagina {
+    padding: 10px;
+  }
+  .index__pieDePagina div {
+    width: 100%;
+  }
+  .index__pieDePagina:hover nav {
+    margin: 10px 0px 10px;
+  }
+  .index__pieDePagina ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*=================================================*/
+/*=================nosotros==========================*/
+.nosotros__pieDePagina {
+  font-size: 1.2rem;
+  padding: 15px;
+  margin-top: 20px;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  background-color: rgba(233, 221, 221, 0.868);
+}
+.nosotros__pieDePagina div ul {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+.nosotros__pieDePagina:hover li {
+  margin: 5px 0px 5px;
+}
+
+/*===============vista desktop==========*/
+@media (min-width: 1100px) {
+  .nosotros__pieDePagina div ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*===================================================*/
+/*=================neruda=====================*/
+.neruda__pieDePagina {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: rgba(233, 221, 221, 0.868);
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.neruda__pieDePagina ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.neruda__pieDePagina:hover li {
+  margin: 15px 0px 0px 15px;
+}
+
+/* ===========Vista Desktop============= */
+@media (min-width: 1100px) {
+  .neruda__pieDePagina {
+    margin-top: 15vh;
+  }
+  .neruda__pieDePagina div {
+    padding: 10px;
+    width: 100%;
+  }
+  .neruda__pieDePagina div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*===============================================*/
+/*======================Julio Cortázar=====================*/
+.cortazar__pieDePagina {
+  padding: 15px;
+  margin-top: 30px;
+  background-color: rgba(58, 151, 58, 0.79);
+  color: rgba(233, 221, 221, 0.868);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cortazar__pieDePagina ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cortazar__pieDePagina:hover li {
+  display: flex;
+  gap: 5px;
+  margin: 5px 0px 0px 5px;
+}
+
+/*=======VISTA DESKTOP=======*/
+@media (min-width: 1100px) {
+  .cortazar__pieDePagina {
+    padding: 10px;
+    background-color: rgba(58, 151, 58, 0.79);
+  }
+  .cortazar__pieDePagina div {
+    width: 100%;
+  }
+  .cortazar__pieDePagina ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(233, 221, 221, 0.868);
+    margin-top: 20px;
+  }
+}
+/*=========================================================*/
+/*=====================Lord Byron========================*/
+.byron__pieDePagina {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(247, 247, 130, 0.733);
+}
+.byron__pieDePagina hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.byron__pieDePagina div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.byron__pieDePagina:hover li {
+  margin: 10px 0px 0px 10px;
+}
+
+/* ======VISTA DESKTOP======*/
+@media (min-width: 1100px) {
+  .byron__pieDePagina div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*=======================================================*/
+/*===============contacto===================*/
+.contacto__pieDePagina {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-color: black;
+  border-width: width;
+  border-style: groove;
+  background-color: rgba(238, 193, 134, 0.7);
+}
+.contacto__pieDePagina div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contacto__pieDePagina:hover li {
+  display: flex;
+  gap: 10px;
+  margin: 5px 0px 5px;
+}
+
+/*=======Vista Desktop======*/
+@media (min-width: 1100px) {
+  .contacto__pieDePagina {
+    height: auto;
+    margin-top: 55px;
+  }
+  .contacto__pieDePagina div {
+    padding-bottom: 40px;
+  }
+  .contacto__pieDePagina ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* ==========index========== */
+.index {
+  background-image: url(../views/img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-color: black;
+  border-width: width;
+  border-style: groove; /* ======CUERPO PRINCIPAL===== */
+  /* ======SECTION POETAS===== */
+  /* ======SECCION MUSICA PARA LEER===== */
+  /* ======SECCION LIBRO POETAS======= */
 }
 .index__cuerpoPrincipal {
   margin: 10px;
@@ -577,25 +1071,6 @@ hr {
   align-items: center;
   gap: 10px;
 }
-.index__pieDePagina {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  font-size: 1.2rem;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  margin-top: 20px;
-  background-color: rgba(233, 221, 221, 0.868);
-  gap: 10px;
-}
-.index__pieDePagina div ul {
-  gap: 20px;
-}
-.index__pieDePagina:hover li {
-  margin: 10px 0px 10px;
-}
 
 /* =====VERSION TABLET===== */
 @media (min-width: 760px) and (max-width: 1099px) {
@@ -603,13 +1078,6 @@ hr {
     border-color: black;
     border-width: width;
     border-style: groove;
-  }
-  .index__encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
   }
   .index__cuerpoPrincipal {
     margin: 10px;
@@ -638,23 +1106,6 @@ hr {
   .index {
     border-width: 2px;
     /* ======AQUI EN LA VERISON DESKTOP SE APLICA GRID===== */
-  }
-  .index__encabezado {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 4;
-  }
-  .index__encabezado nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
   }
   .index__cuerpoPrincpal {
     display: grid;
@@ -740,21 +1191,6 @@ hr {
     padding: 10px;
     gap: 10vw;
   }
-  .index__pieDePagina {
-    padding: 10px;
-  }
-  .index__pieDePagina div {
-    width: 100%;
-  }
-  .index__pieDePagina:hover nav {
-    margin: 10px 0px 10px;
-  }
-  .index__pieDePagina ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 /*===============CONTACTO==============*/
 .contacto {
@@ -762,28 +1198,6 @@ hr {
   border-color: black;
   border-width: width;
   border-style: groove;
-}
-.contacto__encabezado {
-  padding: 10px;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-  background-color: rgba(238, 193, 134, 0.7);
-  box-shadow: 0px 0px 15px black;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-.contacto__encabezado hr {
-  margin: 0;
-  height: 1px;
-  color: black;
-}
-.contacto__encabezado:hover li {
-  margin: 15px 0px 15px;
 }
 .contacto__formulario h2 {
   margin: 10px;
@@ -925,25 +1339,6 @@ hr {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.contacto__pieDePagina {
-  font-size: 1.2rem;
-  padding: 10px;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  background-color: rgba(238, 193, 134, 0.7);
-}
-.contacto__pieDePagina div ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.contacto__pieDePagina:hover li {
-  display: flex;
-  gap: 10px;
-  margin: 5px 0px 5px;
-}
 
 /*=======Vista Desktop======*/
 @media (min-width: 1100px) {
@@ -952,16 +1347,6 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-  }
-  .contacto__encabezado {
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .contacto__encabezado hr {
-    display: none;
   }
   .contacto__formulario h2 {
     width: 70%;
@@ -996,19 +1381,6 @@ hr {
     justify-content: space-around;
     align-items: center;
   }
-  .contacto__pieDePagina {
-    height: auto;
-    margin-top: 55px;
-  }
-  .contacto__pieDePagina div {
-    padding-bottom: 40px;
-  }
-  .contacto__pieDePagina ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 /* ===========Nosotros=========== */
 .nosotros {
@@ -1022,25 +1394,6 @@ hr {
   animation-name: tracking-in-expand;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
-}
-.nosotros__encabezado {
-  padding: 15px;
-  font-size: 1.2rem;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: rgba(233, 221, 221, 0.868);
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  gap: 10px;
-}
-.nosotros__encabezado:hover li {
-  margin: 25px 0px 25px;
 }
 .nosotros__cuerpoPrincipal {
   padding: 20px;
@@ -1080,26 +1433,6 @@ hr {
   text-align: justify;
   font-size: 1rem;
 }
-.nosotros__pieDePagina {
-  font-size: 1.2rem;
-  padding: 15px;
-  margin-top: 20px;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  background-color: rgba(233, 221, 221, 0.868);
-}
-.nosotros__pieDePagina div ul {
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-}
-.nosotros__pieDePagina:hover li {
-  margin: 5px 0px 5px;
-}
 
 /* =====VERSION TABLET===== */
 @media (min-width: 760px) and (max-width: 1099px) {
@@ -1107,13 +1440,6 @@ hr {
     border-color: black;
     border-width: width;
     border-style: groove;
-  }
-  .nosotros__encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
   }
   .nosotros__galeriaImagenes {
     display: grid;
@@ -1145,18 +1471,6 @@ hr {
 @media (min-width: 1100px) {
   .nosotros {
     border-width: 2px;
-  }
-  .nosotros__encabezado {
-    border-color: black;
-    border-width: width;
-    border-style: groove;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 2;
   }
   .nosotros__cuerpoPrincipal {
     margin: 10px;
@@ -1214,13 +1528,6 @@ hr {
     margin-top: 20px;
     grid-area: imagen4;
   }
-  .nosotros__pieDePagina div ul {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 /* ==========NERUDA============ */
 .neruda {
@@ -1230,32 +1537,9 @@ hr {
   background-attachment: fixed;
   border-color: black;
   border-width: width;
-  border-style: groove;
-  /* ======ENCABEZADO===== */
-  /* ======CUERPO PRINCIPAL===== */
+  border-style: groove; /* ======CUERPO PRINCIPAL===== */
   /*=========Bíografia==========*/
   /* ======AMBIENTACION===== */
-}
-.neruda__encabezado {
-  font-size: 1.2rem;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: rgba(233, 221, 221, 0.868);
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  box-shadow: 10px 0px 10px 10px black;
-  gap: 10px;
-}
-.neruda__encabezado hr {
-  margin: 15px;
-  height: 1px;
-}
-.neruda__encabezado:hover li {
-  margin: 10px 0px 0px 10px;
 }
 .neruda__cuerpoPrincipal {
   margin-top: 50px;
@@ -1402,29 +1686,6 @@ hr {
   padding: 10px;
   text-align: justify;
 }
-.neruda__pieDePagina {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  padding: 15px;
-  background-color: rgba(233, 221, 221, 0.868);
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.neruda__pieDePagina ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
-}
-.neruda__pieDePagina:hover li {
-  margin: 15px 0px 0px 15px;
-}
 
 /* =====VERSION TABLET===== */
 @media (min-width: 760px) and (max-width: 1099px) {
@@ -1432,13 +1693,6 @@ hr {
     border-color: black;
     border-width: width;
     border-style: groove;
-  }
-  .neruda__encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
   }
   .neruda__poemas {
     padding-bottom: 4rem;
@@ -1463,13 +1717,6 @@ hr {
 @media (min-width: 1100px) {
   .neruda {
     border-width: 2px;
-  }
-  .neruda__encabezado nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
   }
   .neruda__cuerpoPrincipal {
     display: grid;
@@ -1569,19 +1816,6 @@ hr {
   .neruda__poema11 h3 {
     border: 0;
   }
-  .neruda__pieDePagina {
-    margin-top: 15vh;
-  }
-  .neruda__pieDePagina div {
-    padding: 10px;
-    width: 100%;
-  }
-  .neruda__pieDePagina div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
 }
 /* ===============Julio Cortazar================= */
 .cortazar {
@@ -1595,33 +1829,6 @@ hr {
   animation-name: text-focus-in;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
-  /* ========HEADER=========== */
-}
-.cortazar__encabezado {
-  font-size: 1.2rem;
-  color: rgba(233, 221, 221, 0.868);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: rgba(58, 151, 58, 0.79);
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  padding: 5px;
-}
-.cortazar__encabezado hr {
-  margin: 0;
-  height: 1px;
-}
-.cortazar__encabezado ul {
-  padding: 10px;
-}
-.cortazar__encabezado:hover li {
-  margin: 25px 0px 25px;
 }
 .cortazar__cuerpoPrincipal {
   padding: 5px;
@@ -1714,28 +1921,6 @@ hr {
 .cortazar__poemas hr {
   width: 90%;
 }
-.cortazar__pieDePagina {
-  padding: 15px;
-  margin-top: 30px;
-  background-color: rgba(58, 151, 58, 0.79);
-  color: rgba(233, 221, 221, 0.868);
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.cortazar__pieDePagina ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.cortazar__pieDePagina:hover li {
-  display: flex;
-  gap: 5px;
-  margin: 5px 0px 0px 5px;
-}
 .cortazar hr {
   margin: 0;
   margin: 5px;
@@ -1751,13 +1936,6 @@ hr {
     border-color: black;
     border-width: width;
     border-style: groove;
-  }
-  .cortazar__encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
   }
   .cortazar__poemas {
     padding: 30px;
@@ -1797,16 +1975,6 @@ hr {
 @media (min-width: 1100px) {
   .cortazar {
     border-width: 2px;
-  }
-  .cortazar__encabezado {
-    font-size: 24px;
-  }
-  .cortazar__encabezado div nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
   }
   .cortazar__bio {
     padding: 20px;
@@ -1855,21 +2023,6 @@ hr {
     border-width: width;
     border-style: groove;
   }
-  .cortazar__pieDePagina {
-    padding: 10px;
-    background-color: rgba(58, 151, 58, 0.79);
-  }
-  .cortazar__pieDePagina div {
-    width: 100%;
-  }
-  .cortazar__pieDePagina ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    color: rgba(233, 221, 221, 0.868);
-    margin-top: 20px;
-  }
 }
 /* ===========Lord Byron=========== */
 .byron {
@@ -1880,36 +2033,6 @@ hr {
   border-color: black;
   border-width: width;
   border-style: groove;
-  /* ========HEADER=========== */
-}
-.byron__encabezado {
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: rgba(247, 247, 130, 0.733);
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  padding: 10px;
-  animation-name: jello-horizontal;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s;
-}
-.byron__encabezado hr {
-  width: 80vw;
-  margin: 0;
-  height: 1px;
-}
-.byron__encabezado ul {
-  padding: 10px;
-}
-.byron__encabezado:hover li {
-  margin: 15px 0px 15px;
 }
 .byron__cuerpoPrincipal {
   margin: 10px;
@@ -2025,31 +2148,6 @@ hr {
   margin-top: 10px;
   text-align: justify;
 }
-.byron__pieDePagina {
-  width: 100%;
-  font-size: 1.2rem;
-  padding: 10px;
-  border-color: black;
-  border-width: width;
-  border-style: groove;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: rgba(247, 247, 130, 0.733);
-}
-.byron__pieDePagina hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.byron__pieDePagina div ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 15px;
-}
-.byron__pieDePagina:hover li {
-  margin: 10px 0px 0px 10px;
-}
 
 /* ======VISTA TABLET======*/
 @media (min-width: 760px) and (max-width: 1099px) {
@@ -2057,13 +2155,6 @@ hr {
     border-color: black;
     border-width: width;
     border-style: groove;
-  }
-  .byron__encabezado {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
   }
   .byron__poemas {
     padding-bottom: 4rem;
@@ -2090,12 +2181,6 @@ hr {
 @media (min-width: 1100px) {
   .byron {
     border-width: 2px;
-  }
-  .byron__encabezado {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
   .byron__bio {
     padding: 20px;
@@ -2130,12 +2215,6 @@ hr {
   .byron__ambientacion iframe {
     width: 70%;
     height: 30vh;
-  }
-  .byron__pieDePagina div ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 

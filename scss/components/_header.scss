@@ -1,0 +1,338 @@
+/*============INDEX===========*/
+
+.index__encabezado {
+    font-size: $fuente-encabezado;
+    padding: 15px;
+    background-color: $color-primario;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    box-shadow: 20px 0px 10px 10px black;
+
+    &:hover nav {
+        margin: 15px 0px 15px;
+    }
+
+    ul {
+        @include flex-box(column, space-between, flex-start);
+        gap: 12px;
+    }
+
+
+}
+
+
+/*=======VERSION TABLET=========*/
+
+@media (min-width:760px) and (max-width:1099px) {
+
+    .index__encabezado {
+        @include flex-box(column, space-between, center);
+        gap: 12px;
+    }
+}
+
+
+/*======VERSION DESKTOP==========*/
+
+@media (min-width: 1100px) {
+    .index__encabezado {
+        padding: 5px;
+        @include flex-box(row, space-between, center);
+        position: sticky;
+        top: 0;
+        z-index: 4;
+
+        nav ul {
+            @include flex-box(row, space-between, center);
+            gap: 20px;
+        }
+    }
+}
+
+
+
+
+/*==========================================================================*/
+
+
+/*============NOSOTROS===========*/
+.nosotros__encabezado {
+    padding: 15px;
+    font-size: $fuente-encabezado;
+    @include border();
+    @include flex-box(column, flex-start, flex-start);
+    background-color: $color-primario;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    gap: 10px;
+
+    &:hover li {
+        margin: 25px 0px 25px;
+    }
+}
+
+
+
+
+/*===========VERSION TABLET============*/
+
+@media (min-width:760px) and (max-width:1099px) {
+    .nosotros__encabezado {
+        @include flex-box(column, space-between, center);
+        gap: 12px;
+    }
+}
+
+
+
+/*=============VERSION DESKTOP==============*/
+
+@media (min-width: 1100px) {
+    .nosotros__encabezado {
+        @include border();
+        @include flex-box(row, space-between, center);
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+}
+
+
+
+
+/*================================================================*/
+
+
+/*====================NERUDA=============================*/
+
+
+
+.neruda__encabezado {
+    font-size: $fuente-encabezado;
+    padding: 15px;
+    @include flex-box (column, center, flex-start);
+    background-color: $color-primario;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 10px 0px 10px 10px black;
+    gap: 10px;
+
+
+    hr {
+        margin: 15px;
+        height: 1px;
+    }
+
+    &:hover li {
+        margin: 10px 0px 0px 10px;
+    }
+
+}
+
+/* =====VERSION TABLET===== */
+
+@media (min-width:760px) and (max-width:1099px) {
+
+    .neruda__encabezado {
+        @include flex-box(column, space-between, center);
+        gap: 12px;
+    }
+}
+
+
+
+/* ===========Vista Desktop============= */
+@media (min-width: 1100px) {
+
+
+
+    .neruda__encabezado nav ul {
+        @include flex-box (row, space-between, center);
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+/*============================================================*/
+
+
+
+/*=================Julio Cortázar======================*/
+
+
+.cortazar__encabezado {
+    font-size: $fuente-encabezado;
+    color: $color-primario;
+    @include flex-box (column, center, flex-start);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: $color-cor;
+    @include border();
+    padding: 5px;
+
+    hr {
+        margin: 0;
+        height: 1px;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    &:hover li {
+        margin: 25px 0px 25px;
+    }
+}
+
+/* =====VERSION TABLET===== */
+
+@media (min-width:760px) and (max-width:1099px) {
+
+    .cortazar__encabezado {
+        @include flex-box(column, space-between, center);
+        gap: 12px;
+    }
+}
+
+
+/*=======VISTA DESKTOP=======*/
+
+@media (min-width:1100px) {
+
+    .cortazar__encabezado {
+        font-size: 24px;
+
+        div nav ul {
+            @include flex-box (row, space-between, center);
+            gap: 20px;
+        }
+
+    }
+
+}
+
+
+/*======================================================*/
+
+
+
+/*===============Lord Byron=============*/
+
+.byron__encabezado {
+
+    font-size: $fuente-encabezado;
+    @include flex-box (column, center, flex-start);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: $color-byr;
+    @include border();
+    padding: 10px;
+    animation-name: jello-horizontal;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+
+    hr {
+        width: 80vw;
+        margin: 0;
+        height: 1px;
+    }
+
+    & ul {
+        padding: 10px;
+    }
+
+    &:hover li {
+        margin: 15px 0px 15px;
+    }
+
+}
+
+
+
+/* ======VISTA TABLET======*/
+
+
+@media (min-width:760px) and (max-width:1099px) {
+
+
+    .byron__encabezado {
+        @include flex-box(column, space-between, center);
+        gap: 12px;
+    }
+}
+
+
+/* ======VISTA DESKTOP======*/
+
+@media (min-width:1100px) {
+    .byron__encabezado {
+        @include flex-box (row, space-between, center);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================================================*/
+
+/*=====================contacto==============*/
+
+
+.contacto__encabezado {
+    padding: 10px;
+    font-size: $fuente-encabezado;
+    @include flex-box (column, center, flex-start);
+    gap: 15px;
+    background-color: $color-contacto;
+    box-shadow: 0px 0px 15px black;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    hr {
+        margin: 0;
+        height: 1px;
+        color: black;
+    }
+
+    &:hover li {
+        margin: 15px 0px 15px;
+    }
+}
+
+/*=======Vista Desktop======*/
+
+
+@media (min-width:1100px) {
+
+    .contacto__encabezado {
+        padding: 15px;
+        @include flex-box(row, space-around, center);
+
+
+        hr {
+            display: none;
+        }
+    }
+}
+
+
+
+

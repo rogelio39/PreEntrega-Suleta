@@ -11,22 +11,6 @@
     animation-timing-function: ease-in-out;
 
 
-    &__encabezado {
-        padding: 15px;
-        font-size: $fuente-encabezado;
-        @include border();
-        @include flex-box(column, flex-start, flex-start);
-        background-color: $color-primario;
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        gap: 10px;
-
-        &:hover li {
-            margin: 25px 0px 25px;
-        }
-    }
-
     &__cuerpoPrincipal {
         padding: 20px;
         margin: 10px;
@@ -64,82 +48,57 @@
     }
 
 
-    &__pieDePagina {
-        font-size: $fuente-piedepagina;
-        padding: 15px;
-        margin-top: 20px;
-        @include border();
-        background-color: $color-primario;
-
-        div ul {
-            display: flex;
-            @include flex-box(column, space-between, flex-start);
-            gap: 20px;
-        }
-
-        &:hover li {
-            margin: 5px 0px 5px;
-        }
-
-    }
-
 }
 
 
 /* =====VERSION TABLET===== */
 
-@media (min-width:760px) and (max-width:1099px)  {
+@media (min-width:760px) and (max-width:1099px) {
 
-    .nosotros{
+    .nosotros {
         @include border();
 
-        &__encabezado {
-            @include flex-box(column, space-between, center);
-            gap: 12px;
-        }
+        &__galeriaImagenes {
+            @include grid(repeat(2, 45%), 6% repeat(2, 47%),
+
+                "titulo titulo"
+                "imagen1 imagen2"
+                "imagen3 imagen4"
 
 
-        &__galeriaImagenes{
-            @include grid(repeat(2, 45%), 6% repeat(2, 47%), 
-            
-            "titulo titulo"
-            "imagen1 imagen2"
-            "imagen3 imagen4"
-            
-            
             );
 
-            h2{
+            h2 {
                 grid-area: titulo;
             }
 
-            }
+        }
 
-            &__imagen1{
-                grid-area: imagen1;
-                object-fit: cover;
-            }
+        &__imagen1 {
+            grid-area: imagen1;
+            object-fit: cover;
+        }
 
-            &__imagen2{
-                grid-area: imagen2;
-                object-fit: cover;
-            }
-            
-            &__imagen3{
-                grid-area: imagen3;
-                object-fit: cover;
-            }
+        &__imagen2 {
+            grid-area: imagen2;
+            object-fit: cover;
+        }
 
-            &__imagen4{
-                grid-area: imagen4;
-                object-fit: cover;
-            }
+        &__imagen3 {
+            grid-area: imagen3;
+            object-fit: cover;
+        }
 
-
+        &__imagen4 {
+            grid-area: imagen4;
+            object-fit: cover;
         }
 
 
     }
+
+
+}
 
 
 
@@ -151,14 +110,6 @@
 
     .nosotros {
         border-width: 2px;
-
-        &__encabezado {
-            @include border();
-            @include flex-box(row, space-between, center);
-            position: sticky;
-            top: 0;
-            z-index: 2;
-        }
 
         &__cuerpoPrincipal {
             margin: 10px;
@@ -235,11 +186,6 @@
             height: 100%;
             margin-top: 20px;
             grid-area: imagen4;
-        }
-
-        &__pieDePagina div ul {
-            font-size: 20px;
-            @include flex-box(row, space-between, center);
         }
     }
 

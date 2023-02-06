@@ -8,35 +8,6 @@
     background-attachment: fixed;
     @include border();
 
-    /* ======ENCABEZADO===== */
-
-
-
-    &__encabezado {
-        font-size: $fuente-encabezado;
-        padding: 15px;
-        @include flex-box (column, center, flex-start);
-        background-color: $color-primario;
-        position: sticky;
-        top: 0;
-        z-index: 2;
-        box-shadow: 10px 0px 10px 10px black;
-        gap: 10px;
-
-
-        hr {
-            margin: 15px;
-            height: 1px;
-        }
-
-        &:hover li {
-            margin: 10px 0px 0px 10px;
-        }
-
-    }
-
-
-
 
     /* ======CUERPO PRINCIPAL===== */
 
@@ -202,23 +173,7 @@
         text-align: justify;
     }
 
-    &__pieDePagina {
-        font-size: $fuente-piedepagina;
-        margin-top: 10px;
-        padding: 15px;
-        background-color: $color-primario;
-        @include border();
-        @include flex-box (column, flex-start, flex-start);
 
-        ul {
-            @include flex-box (column, center, flex-start);
-            gap: 10px;
-        }
-
-        &:hover li {
-            margin: 15px 0px 0px 15px;
-        }
-    }
 }
 
 
@@ -232,11 +187,6 @@
 
     .neruda {
         @include border();
-
-        &__encabezado {
-            @include flex-box(column, space-between, center);
-            gap: 12px;
-        }
 
 
         &__poemas {
@@ -285,13 +235,6 @@
     .neruda {
         border-width: 2px;
 
-
-        &__encabezado nav ul {
-            @include flex-box (row, space-between, center);
-            padding: 10px;
-        }
-
-
         &__cuerpoPrincipal {
             @include grid(repeat(2, 50%), 25% 15% 60%,
 
@@ -300,8 +243,8 @@
                 "ambientacion ambientacion"
                 "poemas poemas"
             );
-            
-            hr{
+
+            hr {
                 display: none
             }
 
@@ -437,18 +380,5 @@
         }
 
 
-        &__pieDePagina {
-            margin-top: 15vh;
-
-            div {
-                padding: 10px;
-                width: 100%;
-
-                ul {
-                    @include flex-box (row, space-between, center);
-                }
-
-            }
-        }
     }
 }
