@@ -166,159 +166,155 @@
 }
 
 
-    /* =====VERSION TABLET===== */
+/* =====VERSION TABLET===== */
 
-    @media (min-width:760px) and (max-width:1099px) {
+@media (min-width:760px) and (max-width:1099px) {
 
-        .index {
-            @include border();
+    .index {
+        @include border();
 
-            &__cuerpoPrincipal {
-                margin: 10px;
-                @include grid(45% 5% 45%, 60% 40%,
+        &__cuerpoPrincipal {
+            margin: 10px;
+            @include grid(45% 5% 45%, 60% 40%,
 
-                    "poetas hr musica"
-                    "libros libros libros"
+                "poetas hr musica"
+                "libros libros libros"
 
 
-                );
-            }
+            );
+        }
 
-            hr {
-                grid-area: hr;
-                width: 3px;
-                height: 100vh;
-            }
+        hr {
+            grid-area: hr;
+            width: 3px;
+            height: 100vh;
+        }
 
-            &__poetas {
-                grid-area: poetas;
-
-            }
-
-            &__musicaParaLeer {
-                grid-area: musica;
-
-            }
-
-            &__librosPoetas {
-                grid-area: libros;
-            }
-
+        &__poetas {
+            grid-area: poetas;
 
         }
 
+        &__musicaParaLeer {
+            grid-area: musica;
+
+        }
+
+        &__librosPoetas {
+            grid-area: libros;
+        }
+
+
     }
 
-    /* =====VERSION DESKTOP===== */
+}
 
-    @media (min-width:1100px) {
+/* =====VERSION DESKTOP===== */
 
-        .index {
-            border-width: 2px;
+@media (min-width:1100px) {
 
-
-            /* ======AQUI EN LA VERISON DESKTOP SE APLICA GRID===== */
-
-            &__cuerpoPrincpal {
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: auto 50% 50%;
-                grid-template-areas:
-
-                    "poetas"
-                    "musica"
-                    "libros"
-                ;
-
-            }
+    .index {
+        border-width: 2px;
 
 
-            &__poetas {
-                width: 100%;
-                grid-area: poetas;
-                margin-right: 5vw;
+        /* ======AQUI EN LA VERISON DESKTOP SE APLICA GRID===== */
 
-                gap: 10vw;
-                padding: 10px;
-                margin: 10px;
+        &__cuerpoPrincpal {
+            @include grid (100%, auto 50% 50%,
+
+
+                "poetas"
+                "musica"
+                "libros"
+
+            );
+
+        }
+
+
+        &__poetas {
+            width: 100%;
+            grid-area: poetas;
+            margin-right: 5vw;
+
+            gap: 10vw;
+            padding: 10px;
+            margin: 10px;
+            @include flex-box(row, space-between, center);
+            overflow: auto;
+
+            div ul {
                 @include flex-box(row, space-between, center);
-                overflow: auto;
+                gap: 30px;
 
-                div ul {
+            }
+
+        }
+
+
+        &__musicaParaLeer {
+            grid-area: musica;
+            @include grid(100%, 10% 90%,
+
+                "titulo"
+                "video"
+
+            );
+
+
+            h2 {
+                padding: 10px;
+                font-size: $fuente-h2;
+                top: 100px;
+                grid-area: titulo;
+                text-align: center;
+            }
+
+            div {
+                padding: 10px;
+
+                ul {
+                    grid-area: video;
+                    background-color: $color-primario;
+                    margin: 5px;
+                    padding: 5px;
                     @include flex-box(row, space-between, center);
-                    gap: 30px;
-
-                }
-
-            }
-
-
-            &__musicaParaLeer {
-                grid-area: musica;
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 10% 90%;
-
-                grid-template-areas:
-
-                    "titulo"
-                    "video"
-
-                ;
-
-                h2 {
-                    padding: 10px;
-                    font-size: $fuente-h2;
-                    top: 100px;
-                    grid-area: titulo;
-                    text-align: center;
-                }
-
-                div {
-                    padding: 10px;
-
-                    ul {
-                        grid-area: video;
-                        background-color: $color-primario;
-                        margin: 5px;
-                        padding: 5px;
-                        @include flex-box(row, space-between, center);
-                        flex-wrap: wrap;
-                        gap: 20px;
-                    }
+                    flex-wrap: wrap;
+                    gap: 20px;
                 }
             }
+        }
 
-            iframe {
-                width: 40vw;
-                height: 30vh;
+        iframe {
+            width: 40vw;
+            height: 30vh;
+        }
+
+
+        &__librosPoetas {
+            margin-top: 30px;
+            gap: 10px;
+            grid-area: libros;
+            align-self: center;
+
+            h2 {
+                text-align: center;
+                top: 100px;
             }
 
-
-            &__librosPoetas {
+            div {
                 margin-top: 30px;
                 gap: 10px;
-                grid-area: libros;
-                align-self: center;
 
-                h2 {
-                    text-align: center;
-                    top: 100px;
-                }
-
-                div {
-                    margin-top: 30px;
-                    gap: 10px;
-
-                    ul {
-                        background-color: $color-primario;
-                        @include flex-box(row, space-between, center);
-                        flex-wrap: wrap;
-                        margin: 10px;
-                        padding: 10px;
-                        gap: 10vw;
-                    }
+                ul {
+                    background-color: $color-primario;
+                    @include flex-box(row, space-between, center);
+                    flex-wrap: wrap;
+                    margin: 10px;
+                    padding: 10px;
+                    gap: 10vw;
                 }
             }
         }
     }
+}

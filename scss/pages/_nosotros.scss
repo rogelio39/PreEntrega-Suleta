@@ -134,15 +134,15 @@
         &__galeriaImagenes {
             grid-area: galería;
             gap: 10px;
-            display: grid;
-            grid-template-columns: repeat(2, 50%);
-            grid-template-rows: 5vh 47.33vh 47.33vh;
-            grid-template-areas:
+            @include grid(repeat(2, 50%), 5vh 47.33vh 47.33vh,
+
 
                 "título título"
                 "imagen1 imagen2"
                 "imagen3 imagen4"
-            ;
+
+            );
+
 
             h2 {
                 height: 40px;
