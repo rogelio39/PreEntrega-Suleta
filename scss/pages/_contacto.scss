@@ -24,6 +24,7 @@
         background-color: $color-contacto;
 
         input {
+            width: 15rem;
             padding: 15px;
             border-radius: 20px;
             @include border();
@@ -41,6 +42,7 @@
         background-color: $color-contacto;
 
         input {
+            width: 17rem;
             padding: 15px;
             border-radius: 20px;
             border: black 2px groove;
@@ -74,6 +76,7 @@
         background-color: $color-contacto;
 
         select {
+            width: 10rem;
             padding: 15px;
             border-radius: 20px;
             @include border();
@@ -107,6 +110,7 @@
 
 
     #reset {
+        width: 15rem;
         padding: 13px;
         border-radius: 20px;
         @include border();
@@ -117,6 +121,7 @@
     }
 
     #submit {
+        width: 10rem;
         padding: 13px;
         border-radius: 20px;
         @include border();
