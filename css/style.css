@@ -451,6 +451,11 @@ hr {
   z-index: 2;
   gap: 10px;
 }
+.nosotros__encabezado hr {
+  margin: 20px;
+  width: 80vw;
+  height: 1px;
+}
 .nosotros__encabezado:hover li {
   margin: 25px 0px 25px;
 }
