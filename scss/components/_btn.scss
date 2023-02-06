@@ -5,9 +5,9 @@
 .btn:hover {
     border-radius: 20px;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
     background-color: white;
     background-color: $color-btn;
     @include border();
-    transition-delay: 1ms;
+    transition-delay: 0.1s;
 }

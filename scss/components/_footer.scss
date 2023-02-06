@@ -15,8 +15,8 @@
         gap: 20px;
     }
 
-    &:hover li {
-        margin: 10px 0px 10px;
+    li {
+        padding: 10px;
     }
 }
 
@@ -52,7 +52,7 @@
 
 .nosotros__pieDePagina {
     font-size: $fuente-piedepagina;
-    padding: 15px;
+    padding: 20px;
     margin-top: 20px;
     @include border();
     background-color: $color-primario;
@@ -63,8 +63,8 @@
         gap: 20px;
     }
 
-    &:hover li {
-        margin: 5px 0px 5px;
+    li {
+        padding: 10px;
     }
 
 }
@@ -91,7 +91,7 @@
 .neruda__pieDePagina {
     font-size: $fuente-piedepagina;
     margin-top: 10px;
-    padding: 15px;
+    padding: 20px;
     background-color: $color-primario;
     @include border();
     @include flex-box (column, flex-start, flex-start);
@@ -101,8 +101,8 @@
         gap: 10px;
     }
 
-    &:hover li {
-        margin: 15px 0px 0px 15px;
+    li {
+        padding: 10px;
     }
 }
 
@@ -112,7 +112,6 @@
         margin-top: 15vh;
 
         div {
-            padding: 10px;
             width: 100%;
 
             ul {
@@ -132,7 +131,7 @@
 /*======================Julio Cortázar=====================*/
 
 .cortazar__pieDePagina {
-    padding: 15px;
+    padding: 20px;
     margin-top: 30px;
     background-color: $color-cor;
     color: $color-primario;
@@ -143,11 +142,10 @@
         @include flex-box (column, flex-start, flex-start);
     }
 
-    &:hover li {
-        display: flex;
-        gap: 5px;
-        margin: 5px 0px 0px 5px;
+    li {
+        padding: 10px;
     }
+
 }
 
 
@@ -157,7 +155,6 @@
 
 
     .cortazar__pieDePagina {
-        padding: 10px;
         background-color: $color-cor;
 
         div {
@@ -185,7 +182,7 @@
     padding: 10px;
     @include border();
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     background-color: $color-byr;
 
     hr {
@@ -198,9 +195,6 @@
         gap: 15px;
     }
 
-    &:hover li {
-        margin: 10px 0px 0px 10px;
-    }
 }
 
 /* ======VISTA DESKTOP======*/
@@ -228,11 +222,11 @@
         @include flex-box(column, center, flex-start);
     }
 
-    &:hover li {
-        display: flex;
-        gap: 10px;
+    li {
+        padding: 10px;
         margin: 5px 0px 5px;
     }
+
 }
 
 /*=======Vista Desktop======*/
@@ -241,11 +235,10 @@
 @media (min-width:1100px) {
 
     .contacto__pieDePagina {
-        height: auto;
         margin-top: 55px;
 
         div {
-            padding-bottom: 40px
+            padding-bottom: 20px
         }
 
         ul {

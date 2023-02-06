@@ -361,13 +361,13 @@ hr {
 .btn:hover {
   border-radius: 20px;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
   background-color: white;
   background-color: rgba(70, 140, 214, 0.71);
   border-color: black;
   border-width: width;
   border-style: groove;
-  transition-delay: 1ms;
+  transition-delay: 0.1s;
 }
 
 /* ======separador===== */
@@ -501,6 +501,7 @@ hr {
   height: 1px;
 }
 .neruda__encabezado:hover li {
+  padding: 5px;
   margin: 10px 0px 0px 10px;
 }
 
@@ -683,8 +684,8 @@ hr {
 .index__pieDePagina div ul {
   gap: 20px;
 }
-.index__pieDePagina:hover li {
-  margin: 10px 0px 10px;
+.index__pieDePagina li {
+  padding: 10px;
 }
 
 /* =====VERSION DESKTOP===== */
@@ -709,7 +710,7 @@ hr {
 /*=================nosotros==========================*/
 .nosotros__pieDePagina {
   font-size: 1.2rem;
-  padding: 15px;
+  padding: 20px;
   margin-top: 20px;
   border-color: black;
   border-width: width;
@@ -724,8 +725,8 @@ hr {
   align-items: flex-start;
   gap: 20px;
 }
-.nosotros__pieDePagina:hover li {
-  margin: 5px 0px 5px;
+.nosotros__pieDePagina li {
+  padding: 10px;
 }
 
 /*===============vista desktop==========*/
@@ -743,7 +744,7 @@ hr {
 .neruda__pieDePagina {
   font-size: 1.2rem;
   margin-top: 10px;
-  padding: 15px;
+  padding: 20px;
   background-color: rgba(233, 221, 221, 0.868);
   border-color: black;
   border-width: width;
@@ -760,8 +761,8 @@ hr {
   align-items: flex-start;
   gap: 10px;
 }
-.neruda__pieDePagina:hover li {
-  margin: 15px 0px 0px 15px;
+.neruda__pieDePagina li {
+  padding: 10px;
 }
 
 /* ===========Vista Desktop============= */
@@ -770,7 +771,6 @@ hr {
     margin-top: 15vh;
   }
   .neruda__pieDePagina div {
-    padding: 10px;
     width: 100%;
   }
   .neruda__pieDePagina div ul {
@@ -783,7 +783,7 @@ hr {
 /*===============================================*/
 /*======================Julio Cortázar=====================*/
 .cortazar__pieDePagina {
-  padding: 15px;
+  padding: 20px;
   margin-top: 30px;
   background-color: rgba(58, 151, 58, 0.79);
   color: rgba(233, 221, 221, 0.868);
@@ -799,16 +799,13 @@ hr {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.cortazar__pieDePagina:hover li {
-  display: flex;
-  gap: 5px;
-  margin: 5px 0px 0px 5px;
+.cortazar__pieDePagina li {
+  padding: 10px;
 }
 
 /*=======VISTA DESKTOP=======*/
 @media (min-width: 1100px) {
   .cortazar__pieDePagina {
-    padding: 10px;
     background-color: rgba(58, 151, 58, 0.79);
   }
   .cortazar__pieDePagina div {
@@ -833,7 +830,7 @@ hr {
   border-width: width;
   border-style: groove;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(247, 247, 130, 0.733);
 }
 .byron__pieDePagina hr {
@@ -846,9 +843,6 @@ hr {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-}
-.byron__pieDePagina:hover li {
-  margin: 10px 0px 0px 10px;
 }
 
 /* ======VISTA DESKTOP======*/
@@ -876,20 +870,18 @@ hr {
   justify-content: center;
   align-items: flex-start;
 }
-.contacto__pieDePagina:hover li {
-  display: flex;
-  gap: 10px;
+.contacto__pieDePagina li {
+  padding: 10px;
   margin: 5px 0px 5px;
 }
 
 /*=======Vista Desktop======*/
 @media (min-width: 1100px) {
   .contacto__pieDePagina {
-    height: auto;
     margin-top: 55px;
   }
   .contacto__pieDePagina div {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .contacto__pieDePagina ul {
     display: flex;
