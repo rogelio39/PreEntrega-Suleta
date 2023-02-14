@@ -192,7 +192,7 @@
         &__poemas {
             padding-bottom: 4rem;
             margin: 10px;
-            @include grid(50% 50%, 8% 52% 40%,
+            @include grid(50% 50%, 8% 47% 45%,
 
                 "titulo titulo"
                 "poema20 poema20"
@@ -322,6 +322,8 @@
                 text-align: center;
                 margin-left: 2vh;
             }
+
+            margin-bottom: 30px;
         }
 
         &__poema20 {

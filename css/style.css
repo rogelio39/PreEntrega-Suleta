@@ -1095,7 +1095,7 @@ hr {
     margin: 10px;
     display: grid;
     grid-template-columns: 45% 5% 45%;
-    grid-template-rows: 60% 40%;
+    grid-template-rows: 55% 45%;
     grid-template-areas: "poetas hr musica" "libros libros libros";
   }
   .index hr {
@@ -1463,6 +1463,7 @@ hr {
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: 6% repeat(2, 47%);
     grid-template-areas: "titulo titulo" "imagen1 imagen2" "imagen3 imagen4";
+    gap: 10px;
   }
   .nosotros__galeriaImagenes h2 {
     grid-area: titulo;
@@ -1716,7 +1717,7 @@ hr {
     margin: 10px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 8% 52% 40%;
+    grid-template-rows: 8% 47% 45%;
     grid-template-areas: "titulo titulo" "poema20 poema20" "poema2 poema11";
   }
   .neruda__poema20 {
@@ -1785,6 +1786,7 @@ hr {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "titulo" "poema20" "poema2" "poema11";
+    margin-bottom: 30px;
   }
   .neruda__poemas h2 {
     border: 0;
