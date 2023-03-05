@@ -16,10 +16,12 @@ let usuarioEmail
 
 let usuarioContraseña
 
+let decision 
 
 let creacionUsuario = true
 
 while (creacionUsuario === true) {
+
     decision = prompt("Desea crearse un usuario?")
 
     if (decision === "si") {
@@ -45,10 +47,6 @@ while (creacionUsuario === true) {
 
 
 
+const usuarioNuevo = new Usuario(usuarioNombre, usuarioEmail, usuarioContraseña);
 
-
-
-while (usuarioContraseña.lenght() < 6) {
-    usuarioContraseña = prompt("Ingrese una contraseña que tenga mas de 6 caracteres")
-}
-
+console.log(usuarioNuevo);
