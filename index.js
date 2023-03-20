@@ -41,7 +41,6 @@ let registro = prompt("Desea crearse un usuario?");
 if (registro === "no") {
     registro = prompt("Esta bien, puede continuar sin un usuario ");
 } else if (registro === "si") {
-    alert("sadsadsad")
     const nombre = prompt("Ingrese nombre de usuario")
     const email = prompt("ingrese email: ")
     const contraseña = prompt("ingrese contraseña: ")
