@@ -8,9 +8,17 @@ class Usuario {
     }
 }
 
+const users = [];
+
+let usuarioNuevo1 = new Usuario("Juan", "Galvan", "juan123");
+let usuarioNuevo2 = new Usuario("Pedro", "Pascal", "Pascal1712");
+
+users.push(usuarioNuevo1, usuarioNuevo2);
+
+
 //se crea la variable para la creacion de un nuevo usuario
 
-let usuarioNuevo
+let usuarioNuevo3
 
 //funcion que chequea si los datos ingresados para la creacion de un nuevo usuario coinciden al momento de ingresar a la cuenta. Si coinciden te da la bienvenida y sino te da usuario incorrecto y te pide ingresar nuevamente los datos.
 function checkUser() {
@@ -22,7 +30,7 @@ function checkUser() {
 
     //Se agrega bucle while para que no te permita salir del mismo hasta ingresar un usuario correcto. 
 
-    while (usuarioNuevo.nombre !== checkNombre && usuarioNuevo.email !== checkEmail && usuarioNuevo.contraseña !== checkPass) {
+    while (usuarioNuevo3.nombre !== checkNombre && usuarioNuevo3.email !== checkEmail && usuarioNuevo3.contraseña !== checkPass) {
         alert("Usuario incorrecto. Por favor intente nuevamente")
         checkNombre = prompt("Ingrese nombre de usuario")
         checkEmail = prompt("ingrese email: ")
@@ -41,25 +49,31 @@ let registro = prompt("Desea crearse un usuario?");
 if (registro === "no") {
     registro = prompt("Esta bien, puede continuar sin un usuario ");
 } else if (registro === "si") {
-    alert("sadsadsad")
-    const nombre = prompt("Ingrese nombre de usuario")
-    const email = prompt("ingrese email: ")
-    const contraseña = prompt("ingrese contraseña: ")
+    let nombre = prompt("Ingrese nombre de usuario")
+    let email = prompt("ingrese email: ")
+    let contraseña = prompt("ingrese contraseña: ")
 
 
     //se crea un nuevo usuario
 
-    usuarioNuevo = new Usuario(nombre, email, contraseña);
+    usuarioNuevo3 = new Usuario(nombre, email, contraseña);
     alert("Usuario creado con exito.")
     alert("Ingrese ahora su cuenta")
 
     //se llama a la funcion checkUser
     checkUser();
+    users.push(usuarioNuevo3)
 
-    alert(`Bienvenido a poesia nocturna, tu nombre de usuario es ${usuarioNuevo.nombre} y el email con el que te creaste la cuenta ${usuarioNuevo.email} `)
+    alert(`Bienvenido a poesia nocturna, tu nombre de usuario es "${usuarioNuevo3.nombre}" y el email con el que te creaste la cuenta "${usuarioNuevo3.email}" `)
 } else {
     alert("Entrada invalida")
 }
+
+
+
+console.log(users);
+
+
 
 
 
