@@ -10,8 +10,8 @@ class Usuario {
 
 const users = [];
 
-let usuarioNuevo1 = new Usuario("Juan", "Galvan", "juan123456");
-let usuarioNuevo2 = new Usuario("Pedro", "Pascal", "pascal171217");
+let usuarioNuevo1 = new Usuario("Juan", "Galvan@gmail.com", "juan123456");
+let usuarioNuevo2 = new Usuario("Pedro", "Gabo@gmail.com", "pascal171217");
 
 users.push(usuarioNuevo1, usuarioNuevo2);
 
@@ -52,17 +52,10 @@ if (registro === "no") {
 } else if (registro === "si") {
 
     const nombre = prompt("Ingrese nombre de usuario")
-    if (usuarioNuevo1.includes(nombre) || usuarioNuevo2.includes(nombre)) {
-        alert("Nombre de usuario no disponible")
-    }
     const email = prompt("ingrese email: ")
-    if (usuarioNuevo1.includes(email) || usuarioNuevo2.includes(email)) {
-        alert("Ya existe una cuenta con ese email. Por favor ingrese otro o recupere su cuenta")
-    }
+    let contraseña = parseInt(prompt("ingrese contraseña numerica: "));
 
-    const contraseña = prompt("ingrese contraseña: ")
-
-    while (contraseña.length < 8) {
+    while (contraseña < 10000000) {
         alert("Contraseña demasiado corta. Por favor ingrese una contraseña mas larga");
         contraseña = prompt("ingrese contraseña: ");
     }
@@ -89,6 +82,13 @@ for (const usuario of users){
     console.log(usuario.nombre, usuario.email);
 }
 
+
+const usuarioRogelio = users.find(usuario => usuario.nombre === "rogelio"); 
+
+
+const usersEmails = users.filter(user => user.emails === "G");
+
+console.log(usersEmails);
 
 
 
