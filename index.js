@@ -51,8 +51,8 @@ if (registro === "no") {
     registro = prompt("Esta bien, puede continuar sin un usuario ");
 } else if (registro === "si") {
 
-    const nombre = prompt("Ingrese nombre de usuario")
-    const email = prompt("ingrese email: ")
+    let nombre = prompt("Ingrese nombre de usuario")
+    let email = prompt("ingrese email: ")
     let contraseña = parseInt(prompt("ingrese contraseña numerica: "));
 
     while (contraseña < 10000000) {
